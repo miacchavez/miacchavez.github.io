@@ -174,7 +174,7 @@ footer {
       <a href="/about/" class="gold">About Me</a>
       <a href="/experiences/">Experiences</a>
       <a href="/skills/" class="gold">Skills</a>
-      <a href="/contact/" class="gold">Contact Me</a>
+      <a href="/contact/">Contact Me</a>
     </div>
   </div>
 </section>
