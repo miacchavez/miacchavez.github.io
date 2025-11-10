@@ -1,0 +1,32 @@
+title: "Mia Chavez"
+description: >
+  Fourth-year Biomedical & Mechanical Engineering student at Colorado State University
+  with a Business Administration minor and Entrepreneurship Certificate.
+theme: minima
+author: "Mia Chavez"
+email: "your.email@colostate.edu"  # optional — replace or remove
+baseurl: ""  # leave empty since this is your main site repo
+url: "https://miacchavez.github.io"
+
+# Navigation links at the top
+header_pages:
+  - index.md
+  - about.md
+  - experiences.md
+  - skills.md
+
+# Appearance
+markdown: kramdown
+highlighter: rouge
+
+# Social links (optional — you can add LinkedIn, etc.)
+linkedin: "https://www.linkedin.com/in/mia-c-chavez/"
+github: "https://github.com/miacchavez"
+
+# Custom colors (CSU Green + Gold)
+sass:
+  style: compressed
+
+# Build settings
+plugins:
+  - jekyll-feed
