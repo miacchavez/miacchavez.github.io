@@ -201,32 +201,31 @@ footer {
   </div>
 </section>
 
-<!-- ---------- INTERACTIVE VENN DIAGRAM 2.0 ---------- -->
+<!-- ---------- INTERACTIVE VENN DIAGRAM 3.0 ---------- -->
 <section>
   <h2 style="text-align:center; color:var(--csu-green); margin-top:4rem;">Interdisciplinary Focus</h2>
   <p style="text-align:center; max-width:750px; margin:0 auto 1rem;">
-    My education bridges <strong>engineering, business, and human-centered design</strong>.
-    Click on any circle or overlap to explore how my studies intersect across disciplines.
+    My education bridges <strong>engineering, business, and human-centered design</strong>. 
   </p>
 
-  <div style="text-align:center; margin-bottom:2rem; color:#555;">
-    🖱️ <em>Click each area to reveal the related skills</em>
-  </div>
+  <h3 style="text-align:center; color:#444; font-style:italic; margin-bottom:2rem;">
+    Click on the Venn diagram to explore my interdisciplinary skills.
+  </h3>
 
   <style>
     .venn-wrapper {
       position: relative;
-      width: 600px;
-      height: 450px;
+      width: 800px;
+      height: 600px;
       margin: 0 auto;
     }
 
     .circle {
       position: absolute;
-      width: 300px;
-      height: 300px;
+      width: 400px;
+      height: 400px;
       border-radius: 50%;
-      opacity: 0.7;
+      opacity: 0.75;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -234,45 +233,65 @@ footer {
       font-weight: bold;
       text-align: center;
       cursor: pointer;
-      transition: transform 0.3s, opacity 0.3s;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      transition: transform 0.3s, opacity 0.3s, box-shadow 0.3s;
     }
 
     .circle:hover {
       transform: scale(1.05);
+      box-shadow: 0 0 20px rgba(0,0,0,0.3);
       opacity: 0.9;
     }
 
-    #mech { background: var(--csu-green); left: 50px; top: 80px; }
-    #bio { background: var(--csu-gold); left: 250px; top: 80px; color:black; }
-    #honors { background: #6b8e23; left: 150px; top: 200px; }
+    /* Main circles */
+    #mech { background: var(--csu-green); left: 60px; top: 100px; }
+    #bio { background: var(--csu-gold); left: 340px; top: 100px; color: black; }
+    #honors { background: #6b8e23; left: 200px; top: 250px; }
 
-    /* Overlap clickable areas */
+    /* Overlap highlights */
     .overlap {
       position: absolute;
-      width: 150px;
-      height: 100px;
       border-radius: 50%;
       cursor: pointer;
       z-index: 10;
-      opacity: 0;
+      opacity: 0.85;
+      transition: transform 0.3s, opacity 0.3s;
     }
 
-    #overlap-mech-bio { left: 200px; top: 120px; }
-    #overlap-bio-honors { left: 240px; top: 210px; }
-    #overlap-mech-honors { left: 120px; top: 210px; }
-    #overlap-center { left: 200px; top: 180px; width: 160px; height: 120px; }
+    .overlap:hover {
+      transform: scale(1.05);
+      opacity: 1;
+    }
+
+    #overlap-mech-bio {
+      left: 270px; top: 160px; width: 200px; height: 150px;
+      background: rgba(104,140,52,0.7);
+    }
+
+    #overlap-bio-honors {
+      left: 340px; top: 280px; width: 200px; height: 150px;
+      background: rgba(210,190,90,0.65);
+    }
+
+    #overlap-mech-honors {
+      left: 160px; top: 280px; width: 200px; height: 150px;
+      background: rgba(100,120,60,0.7);
+    }
+
+    #overlap-center {
+      left: 270px; top: 250px; width: 220px; height: 160px;
+      background: rgba(180,165,80,0.8);
+    }
 
     /* Info boxes */
     .info-box {
       display: none;
       background: #f9f9f9;
       border-left: 6px solid var(--csu-green);
-      padding: 1.2rem;
-      margin: 1rem auto;
-      max-width: 750px;
+      padding: 1.3rem;
+      margin: 1.5rem auto;
+      max-width: 800px;
       border-radius: 8px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      box-shadow: 0 3px 8px rgba(0,0,0,0.1);
       animation: fadeIn 0.4s ease-in-out;
     }
 
@@ -281,30 +300,30 @@ footer {
     }
 
     @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(10px); }
+      from { opacity: 0; transform: translateY(15px); }
       to { opacity: 1; transform: translateY(0); }
     }
 
     @media (max-width: 768px) {
       .venn-wrapper { width: 100%; height: 400px; }
-      .circle { width: 200px; height: 200px; font-size: 0.8rem; }
+      .circle { width: 250px; height: 250px; font-size: 0.9rem; }
     }
   </style>
 
   <div class="venn-wrapper">
-    <!-- Main Circles -->
+    <!-- Main circles -->
     <div class="circle" id="mech" onclick="showInfo('mechBox')">Mechanical<br>Engineering</div>
     <div class="circle" id="bio" onclick="showInfo('bioBox')">Biomedical<br>Engineering</div>
     <div class="circle" id="honors" onclick="showInfo('honorsBox')">Honors,<br>Business &<br>Liberal Arts</div>
 
-    <!-- Invisible overlap areas -->
+    <!-- Colored overlaps -->
     <div class="overlap" id="overlap-mech-bio" onclick="showInfo('mechBioBox')"></div>
     <div class="overlap" id="overlap-bio-honors" onclick="showInfo('bioHonorsBox')"></div>
     <div class="overlap" id="overlap-mech-honors" onclick="showInfo('mechHonorsBox')"></div>
     <div class="overlap" id="overlap-center" onclick="showInfo('centerBox')"></div>
   </div>
 
-  <!-- Info boxes below -->
+  <!-- Info Boxes -->
   <div id="mechBox" class="info-box">
     <h3 style="color:var(--csu-green);">Mechanical Engineering</h3>
     <ul>
@@ -317,7 +336,7 @@ footer {
   </div>
 
   <div id="bioBox" class="info-box">
-    <h3 style="color:#a88b00;">Biomedical Engineering</h3>
+    <h3 style="color:#b59800;">Biomedical Engineering</h3>
     <ul>
       <li>Medical device design & testing</li>
       <li>Anatomy & biomechanics</li>
@@ -338,7 +357,7 @@ footer {
     </ul>
   </div>
 
-  <!-- Overlap info -->
+  <!-- Overlap boxes -->
   <div id="mechBioBox" class="info-box">
     <h3 style="color:var(--csu-green);">Mechanical + Biomedical</h3>
     <ul>
@@ -388,7 +407,6 @@ footer {
     }
   </script>
 </section>
-
 
 
 <footer>
