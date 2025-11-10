@@ -218,3 +218,8 @@ footer {
 <footer>
   <p><strong>Mia Chavez | Biomedical & Mechanical Engineer | CSU Class of 2027</strong></p>
 </footer>
+/* Hide Jekyll's built-in footer */
+.site-footer {
+  display: none !important;
+}
+
