@@ -201,23 +201,24 @@ footer {
   </div>
 </section>
 
-<!-- ---------- STATIC LABELED VENN DIAGRAM ---------- -->
+<!-- ---------- CSU COLOR VENN DIAGRAM WITH REAL OVERLAPS ---------- -->
 <section>
-  <h2 style="text-align:center; color:var(--csu-green); margin-top:4rem;">Interdisciplinary Focus</h2>
-  <p style="text-align:center; max-width:750px; margin:0 auto 2rem;">
-    Click or hover over each section of the Venn diagram to see how my studies in 
-    <strong>Mechanical Engineering</strong>, <strong>Biomedical Engineering</strong>, and 
-    <strong>Honors, Business & Liberal Arts</strong> intersect.
+  <h2 style="text-align:center; color:#1E4D2B; margin-top:4rem;">Interdisciplinary Focus</h2>
+  <p style="text-align:center; max-width:750px; margin:0 auto 1.5rem;">
+    This Venn diagram shows how my studies in 
+    <strong>Mechanical Engineering</strong>, 
+    <strong>Biomedical Engineering</strong>, and 
+    <strong>Honors, Business & Liberal Arts</strong> overlap to shape my skills and values.
   </p>
 
-  <div style="text-align:center; margin-bottom:1rem; color:#444;">
-    🖱️ <em>Click each area to learn more</em>
-  </div>
+  <h3 style="text-align:center; color:#444; font-style:italic; margin-bottom:2rem;">
+    Click or hover over each section to explore connections.
+  </h3>
 
   <style>
     .venn-diagram {
       position: relative;
-      width: 700px;
+      width: 750px;
       height: 550px;
       margin: 0 auto;
     }
@@ -227,7 +228,8 @@ footer {
       width: 320px;
       height: 320px;
       border-radius: 50%;
-      opacity: 0.75;
+      mix-blend-mode: multiply;
+      opacity: 0.65;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -235,16 +237,17 @@ footer {
       text-align: center;
       color: white;
       cursor: pointer;
-      transition: transform 0.3s;
+      transition: transform 0.3s, opacity 0.3s;
     }
 
     .venn-circle:hover {
       transform: scale(1.05);
+      opacity: 0.8;
     }
 
-    /* Main circles */
-    #mech { background: #1E4D2B; left: 70px; top: 100px; }
-    #bio { background: #C8B568; left: 310px; top: 100px; color: black; }
+    /* Circles with CSU colors */
+    #mech { background: #1E4D2B; left: 60px; top: 100px; }
+    #bio { background: #C8B568; left: 320px; top: 100px; color: black; }
     #honors { background: #6B8E23; left: 190px; top: 250px; }
 
     /* Labels */
@@ -253,7 +256,7 @@ footer {
       width: 200px;
       text-align: center;
       font-size: 0.95rem;
-      color: #333;
+      color: #222;
       font-weight: 500;
     }
 
@@ -263,14 +266,14 @@ footer {
     #honors-label { left: 250px; bottom: 10px; }
 
     /* Overlap labels */
-    #mech-bio-label { left: 280px; top: 140px; color: #234D2B; font-weight: 600; }
-    #bio-honors-label { left: 330px; top: 300px; color: #8C7E2B; font-weight: 600; }
-    #mech-honors-label { left: 150px; top: 300px; color: #4F6D3A; font-weight: 600; }
+    #mech-bio-label { left: 280px; top: 140px; font-weight: 600; color: #234D2B; }
+    #bio-honors-label { left: 330px; top: 300px; font-weight: 600; color: #7C6B22; }
+    #mech-honors-label { left: 150px; top: 300px; font-weight: 600; color: #4D6A3A; }
 
-    /* Center label */
+    /* Center overlap label */
     #center-label {
       left: 280px;
-      top: 260px;
+      top: 250px;
       font-weight: 700;
       font-size: 1.05rem;
       color: #1E4D2B;
@@ -309,6 +312,7 @@ footer {
     <div class="venn-label" id="center-label">Interdisciplinary Problem-Solving</div>
   </div>
 </section>
+
 
 
 <footer>
