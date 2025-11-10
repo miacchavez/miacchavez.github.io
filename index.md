@@ -98,6 +98,64 @@ permalink: /
   margin-top: 0.3rem;
 }
 
+/* ---------- FOOTER ---------- */
+footer {
+  text-align: center;
+  color: #555;
+  margin-top: 4rem;
+  padding-top: 2rem;
+  border-top: 1px solid #eee;
+  font-weight: 500;
+}
+</style>
+
+<section class="hero">
+  <div class="hero-image">
+    <img src="/assets/images/headshot.jpg" alt="Headshot of Mia Chavez">
+  </div>
+
+  <div class="hero-text">
+    <h1>Hi, I’m <span>Mia Chavez</span>.</h1>
+    <p>
+      I’m a <strong>Biomedical and Mechanical Engineering</strong> student at
+      <strong>Colorado State University</strong>, graduating in 2027 with a Business Minor and Entrepreneurship Certificate. My passion lies in combining technical engineering, design thinking, and social impact to create human-centered innovations.
+    </p>
+
+    <p>
+      I value collaboration, curiosity, and creativity — qualities that shape my approach as a researcher, leader, and changemaker. Through hands-on experiences in labs, nonprofits, and leadership roles, I strive to design technology that empowers people and strengthens communities.
+    </p>
+
+    <div class="hero-buttons">
+      <a href="/about/" class="gold">About Me</a>
+      <a href="/experiences/">Experiences</a>
+      <a href="/skills/" class="gold">Skills</a>
+      <a href="/contact/">Contact Me</a>
+    </div>
+  </div>
+</section>
+
+<!-- ---------- IMAGE GALLERY ---------- -->
+<section>
+  <div class="gallery">
+    <figure>
+      <img src="/assets/images/lockheed.jpg" alt="Lockheed Martin Competition">
+      <figcaption>Lockheed Martin Engineering Design Competition</figcaption>
+    </figure>
+    <figure>
+      <img src="/assets/images/immaculateheart.jpg" alt="Crossover for Change in Uganda">
+      <figcaption>Empowering young women at Immaculate Heart School, Uganda (CFC)</figcaption>
+    </figure>
+    <figure>
+      <img src="/assets/images/stryker.jpg" alt="Stryker Shadow Day">
+      <figcaption>Shadowing surgeons and med reps with Stryker</figcaption>
+    </figure>
+    <figure>
+      <img src="/assets/images/or-shadow.jpg" alt="Operating Room Shadowing in Pueblo">
+      <figcaption>Observing orthopedic surgery in the OR, Pueblo, CO</figcaption>
+    </figure>
+  </div>
+</section>
+
 <!-- ---------- INTERACTIVE CSU VENN DIAGRAM ---------- -->
 <section>
   <h2 style="text-align:center; color:#1E4D2B; margin-top:4rem;">Interdisciplinary Engineering at CSU</h2>
@@ -145,7 +203,7 @@ permalink: /
     #bio { background: #C8B568; left: 400px; top: 120px; color: black; }
     #honors { background: #6B8E23; left: 240px; top: 280px; }
 
-    /* Overlap Highlights (custom blended colors) */
+    /* Overlap Highlights */
     #mech-bio { background: #9AA556; left: 270px; top: 180px; width: 280px; height: 280px; opacity: 0.5; border-radius: 50%; }
     #bio-honors { background: #B3A55C; left: 330px; top: 220px; width: 280px; height: 280px; opacity: 0.45; border-radius: 50%; }
     #mech-honors { background: #5E7945; left: 200px; top: 230px; width: 280px; height: 280px; opacity: 0.45; border-radius: 50%; }
@@ -195,17 +253,14 @@ permalink: /
   </style>
 
   <div class="venn-container">
-    <!-- Main Circles -->
     <div class="venn-circle" id="mech" title="Mechanical Engineering: Prototyping, CAD, Testing"></div>
     <div class="venn-circle" id="bio" title="Biomedical Engineering: Human-Centered Design, Medical Devices"></div>
     <div class="venn-circle" id="honors" title="Honors, Business & Liberal Arts: Leadership, Strategy, Communication"></div>
 
-    <!-- Overlapping Areas -->
     <div class="venn-circle" id="mech-bio" title="Biomechanics & Device Design"></div>
     <div class="venn-circle" id="bio-honors" title="Ethical Innovation & Healthcare Entrepreneurship"></div>
     <div class="venn-circle" id="mech-honors" title="Project Management & Technical Leadership"></div>
 
-    <!-- Labels -->
     <div class="venn-label" id="mech-label">Prototyping, CAD, and System Testing</div>
     <div class="venn-label" id="bio-label">Human-Centered Medical Design</div>
     <div class="venn-label" id="honors-label">Leadership, Strategy, and Communication</div>
@@ -218,4 +273,5 @@ permalink: /
 </section>
 
 <footer>
-  <p><strong>Mia Chavez | Biomedical & Mechanical Engineer | CSU Class of 2027</strong></p>
+  <p><strong>Mia Chavez Portfolio</strong><br>Colorado State University</p>
+</footer>
