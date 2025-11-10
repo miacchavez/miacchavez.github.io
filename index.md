@@ -174,7 +174,7 @@ footer {
       <a href="/about/" class="gold">About Me</a>
       <a href="/experiences/">Experiences</a>
       <a href="/skills/" class="gold">Skills</a>
-      <a href="/experiences/">Contact Me</a>
+      <a href="/contact/" class="gold">Contact Me</a>
     </div>
   </div>
 </section>
@@ -193,6 +193,10 @@ footer {
     <figure>
       <img src="/assets/images/stryker.jpg" alt="Stryker Shadow Day">
       <figcaption>Shadowing surgeons and med reps with Stryker</figcaption>
+    </figure>
+    <figure>
+      <img src="/assets/images/or-shadow.jpg" alt="Operating Room Shadowing in Pueblo">
+      <figcaption>Observing orthopedic surgery in the OR, Pueblo, CO</figcaption>
     </figure>
   </div>
 </section>
@@ -214,4 +218,3 @@ footer {
 <footer>
   <p><strong>Mia Chavez | Biomedical & Mechanical Engineer | CSU Class of 2027</strong></p>
 </footer>
-
