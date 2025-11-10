@@ -1,215 +1,183 @@
 ---
-layout: page
+layout: default
 title: Home
-permalink: /
 ---
 
-<link rel="stylesheet" href="/assets/css/style.css">
-
 <style>
-:root {
-  --csu-green: #1e4d2b;
-  --csu-gold: #c8b568;
+body {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
-/* ---------- MAIN LAYOUT ---------- */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 3rem;
+}
+
 .hero {
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
   gap: 2rem;
-  margin: 3rem auto;
-  max-width: 1100px;
 }
 
-.hero-image img {
-  width: 260px;
-  height: 260px;
+.hero img {
+  width: 280px;
+  height: 280px;
   object-fit: cover;
   border-radius: 50%;
-  border: 6px solid var(--csu-gold);
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  border: 5px solid #c8b568; /* CSU gold */
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
 }
 
 .hero-text {
-  flex: 1 1 500px;
+  flex: 1;
+  min-width: 320px;
 }
 
 .hero-text h1 {
-  color: var(--csu-green);
-  font-size: 2.3rem;
+  font-size: 2.2rem;
+  color: #1e4d2b; /* CSU green */
+  margin-bottom: 0.4rem;
 }
 
-.hero-text span {
-  color: var(--csu-gold);
+.hero-text h2 {
+  font-size: 1.2rem;
+  color: #333;
+  font-weight: 400;
 }
 
 .hero-text p {
+  font-size: 1rem;
   line-height: 1.6;
-  font-size: 1.05rem;
+  margin-top: 1rem;
+  color: #444;
+  max-width: 600px;
 }
 
-/* ---------- BUTTONS ---------- */
-.hero-buttons {
-  margin-top: 1.5rem;
+.buttons {
+  margin-top: 1.6rem;
 }
 
-.hero-buttons a {
-  background: var(--csu-green);
-  color: white;
-  padding: 0.7rem 1.4rem;
-  border-radius: 6px;
+.buttons a {
   text-decoration: none;
-  font-weight: 500;
+  padding: 0.6rem 1.2rem;
+  border-radius: 6px;
   margin-right: 0.6rem;
-  transition: 0.3s;
+  font-weight: 600;
+  transition: 0.2s;
 }
 
-.hero-buttons a.gold {
-  background: var(--csu-gold);
-  color: black;
+.btn-primary {
+  background-color: #1e4d2b;
+  color: #fff;
 }
 
-.hero-buttons a:hover {
-  opacity: 0.9;
-  transform: translateY(-2px);
+.btn-primary:hover {
+  background-color: #236538;
 }
 
-/* ---------- IMAGE GALLERY ---------- */
+.btn-secondary {
+  background-color: #c8b568;
+  color: #000;
+}
+
+.btn-secondary:hover {
+  background-color: #d1c06d;
+}
+
 .gallery {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 1rem;
-  margin: 3rem auto;
-  max-width: 1100px;
+  margin-top: 3rem;
 }
 
 .gallery img {
   width: 100%;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  height: 250px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
-.gallery figcaption {
+.caption {
   text-align: center;
   font-size: 0.9rem;
-  color: #555;
+  color: #444;
   margin-top: 0.3rem;
 }
 
-/* ---------- VENN DIAGRAM ---------- */
-.venn-container {
-  position: relative;
-  width: 400px;
-  height: 300px;
-  margin: 3rem auto;
-}
-
-.circle {
-  position: absolute;
-  width: 220px;
-  height: 220px;
-  border-radius: 50%;
-  opacity: 0.7;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
+.venn {
+  margin-top: 4rem;
   text-align: center;
-  font-weight: bold;
-  transition: transform 0.3s;
 }
 
-.circle:hover {
-  transform: scale(1.05);
+.venn h2 {
+  color: #1e4d2b;
+  margin-bottom: 1rem;
 }
 
-#circle1 {
-  background: var(--csu-green);
-  left: 30px;
-  top: 40px;
-}
-
-#circle2 {
-  background: var(--csu-gold);
-  left: 150px;
-  top: 40px;
-  color: black;
-}
-
-#circle3 {
-  background: #6b8e23;
-  left: 90px;
-  top: 130px;
-}
-
-/* ---------- FOOTER ---------- */
-footer {
-  text-align: center;
-  color: #777;
-  margin-top: 3rem;
-  padding-top: 2rem;
-  border-top: 1px solid #eee;
+iframe {
+  border: none;
+  width: 100%;
+  max-width: 600px;
+  height: 450px;
 }
 </style>
 
-<section class="hero">
-  <div class="hero-image">
-    <img src="/assets/images/headshot.jpg" alt="Headshot of Mia Chavez">
-  </div>
+<div class="container">
 
-  <div class="hero-text">
-    <h1>Hi, I’m <span>Mia Chavez</span>.</h1>
-    <p>
-      I’m a <strong>Biomedical and Mechanical Engineering</strong> student at
-      <strong>Colorado State University</strong>, graduating in 2027 with a Business Minor and Entrepreneurship Certificate. My passion lies in combining technical engineering, design thinking, and social impact to create human-centered innovations.
-    </p>
+  <div class="hero">
+    <img src="/assets/images/headshot.jpg" alt="Mia Chavez Headshot">
 
-    <p>
-      I value collaboration, curiosity, and creativity — qualities that shape my approach as a researcher, leader, and changemaker. Through hands-on experiences in labs, nonprofits, and leadership roles, I strive to design technology that empowers people and strengthens communities.
-    </p>
+    <div class="hero-text">
+      <h1>Hi, I’m Mia Chavez — Biomedical & Mechanical Engineer.</h1>
+      <h2>CSU Class of 2027 | Fort Collins, CO</h2>
+      <p>
+        I design innovative medical and mechanical systems that improve quality of life and expand access to healthcare technology.
+        Through hands-on research, nonprofit leadership, and interdisciplinary teamwork, I combine engineering precision with a
+        human-centered approach to solve real-world problems.
+      </p>
 
-    <div class="hero-buttons">
-      <a href="/about/" class="gold">About Me</a>
-      <a href="/experiences/">Experiences</a>
-      <a href="/skills/" class="gold">Skills</a>
+      <div class="buttons">
+        <a href="/about/" class="btn-primary">About Me</a>
+        <a href="/experiences/" class="btn-primary">Experiences</a>
+        <a href="/skills/" class="btn-primary">Skills</a>
+        <a href="/contact/" class="btn-secondary">Contact Me</a>
+      </div>
     </div>
   </div>
-</section>
 
-<!-- ---------- IMAGE GALLERY ---------- -->
-<section>
   <div class="gallery">
-    <figure>
-      <img src="/assets/images/lockheed.jpg" alt="Lockheed Martin Competition">
-      <figcaption>Lockheed Martin Engineering Design Competition</figcaption>
-    </figure>
-    <figure>
+    <div>
       <img src="/assets/images/immaculateheart.jpg" alt="Crossover for Change in Uganda">
-      <figcaption>Empowering young women at Immaculate Heart School, Uganda (CFC)</figcaption>
-    </figure>
-    <figure>
+      <p class="caption">Leading a Crossover for Change camp at Immaculate Heart Girls’ School, Uganda (June 2025)</p>
+    </div>
+
+    <div>
       <img src="/assets/images/stryker.jpg" alt="Stryker Shadow Day">
-      <figcaption>Shadowing surgeons and med reps with Stryker</figcaption>
-    </figure>
+      <p class="caption">Performing mock ACL & meniscus repairs using real surgical tools at a Stryker shadow day.</p>
+    </div>
+
+    <div>
+      <img src="/assets/images/lockheed.jpg" alt="Lockheed Martin Ethics Competition">
+      <p class="caption">Competing at the Lockheed Martin Engineering in Ethics Competition (March 2025).</p>
+    </div>
+
+    <div>
+      <img src="/assets/images/or-shadow.jpg" alt="Operating Room Shadowing in Pueblo">
+      <p class="caption">Observing orthopedic surgery and medical device use during OR shadowing in Pueblo, Colorado.</p>
+    </div>
   </div>
-</section>
 
-<!-- ---------- INTERACTIVE VENN DIAGRAM ---------- -->
-<section>
-  <h2 style="text-align:center; color:var(--csu-green);">Interdisciplinary Focus</h2>
-  <p style="text-align:center; max-width:700px; margin:0 auto;">
-    My education bridges <strong>engineering, business, and human-centered design</strong>. I thrive at the intersection of analytical thinking, creative innovation, and real-world empathy — where technical expertise meets social impact.
-  </p>
-
-  <div class="venn-container">
-    <div class="circle" id="circle1">Mechanical<br>Engineering</div>
-    <div class="circle" id="circle2">Biomedical<br>Engineering</div>
-    <div class="circle" id="circle3">Honors,<br>Business & Liberal Arts</div>
+  <div class="venn">
+    <h2>Where My Interests Intersect</h2>
+    <p>Hover over each circle to explore how my studies in Mechanical Engineering, Biomedical Engineering, and Honors/Business/Liberal Arts overlap.</p>
+    <iframe src="https://www.venngage.com/viewer/intersecting-venn-diagram-example"></iframe>
   </div>
-</section>
 
-<footer>
-  <p><strong>Mia Chavez | Biomedical & Mechanical Engineer | CSU Class of 2027</strong></p>
-</footer>
+</div>
