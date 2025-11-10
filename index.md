@@ -202,18 +202,140 @@ footer {
 </section>
 
 <!-- ---------- INTERACTIVE VENN DIAGRAM ---------- -->
+<!-- ---------- INTERACTIVE VENN DIAGRAM ---------- -->
 <section>
-  <h2 style="text-align:center; color:var(--csu-green);">Interdisciplinary Focus</h2>
-  <p style="text-align:center; max-width:700px; margin:0 auto;">
-    My education bridges <strong>engineering, business, and human-centered design</strong>. I thrive at the intersection of analytical thinking, creative innovation, and real-world empathy — where technical expertise meets social impact.
+  <h2 style="text-align:center; color:var(--csu-green); margin-top:4rem;">Interdisciplinary Focus</h2>
+  <p style="text-align:center; max-width:700px; margin:0 auto 2rem;">
+    My education bridges <strong>engineering, business, and human-centered design</strong>.
+    Hover over each circle to explore how my studies intersect to blend technical skill, creativity, and empathy.
   </p>
 
-  <div class="venn-container">
-    <div class="circle" id="circle1">Mechanical<br>Engineering</div>
-    <div class="circle" id="circle2">Biomedical<br>Engineering</div>
-    <div class="circle" id="circle3">Honors,<br>Business & Liberal Arts</div>
+  <style>
+    .venn-wrapper {
+      position: relative;
+      width: 400px;
+      height: 300px;
+      margin: 0 auto;
+    }
+
+    .circle {
+      position: absolute;
+      width: 220px;
+      height: 220px;
+      border-radius: 50%;
+      opacity: 0.7;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+      transition: transform 0.3s, opacity 0.3s;
+    }
+
+    .circle:hover {
+      transform: scale(1.05);
+      opacity: 1;
+    }
+
+    #mech { background: var(--csu-green); left: 30px; top: 40px; }
+    #bio { background: var(--csu-gold); left: 150px; top: 40px; color: black; }
+    #honors { background: #6b8e23; left: 90px; top: 130px; }
+
+    .info-box {
+      display: none;
+      background: #f9f9f9;
+      border: 1px solid #ddd;
+      border-left: 5px solid var(--csu-green);
+      padding: 1rem;
+      margin: 1rem auto;
+      max-width: 700px;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      animation: fadeIn 0.4s ease-in-out;
+    }
+
+    .info-box.active {
+      display: block;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .center-box {
+      background: #f4f4f4;
+      border-left: 5px solid var(--csu-gold);
+      padding: 1rem;
+      max-width: 700px;
+      margin: 2rem auto;
+      border-radius: 8px;
+      text-align: center;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+  </style>
+
+  <div class="venn-wrapper">
+    <div class="circle" id="mech" onclick="showInfo('mechBox')">Mechanical<br>Engineering</div>
+    <div class="circle" id="bio" onclick="showInfo('bioBox')">Biomedical<br>Engineering</div>
+    <div class="circle" id="honors" onclick="showInfo('honorsBox')">Honors,<br>Business &<br>Liberal Arts</div>
   </div>
+
+  <div class="center-box">
+    <h3>At the Intersection of All Three</h3>
+    <ul style="list-style-type:none; padding:0; margin:0;">
+      <li>• Interdisciplinary problem-solving</li>
+      <li>• Leadership through empathy</li>
+      <li>• Sustainable design for human impact</li>
+      <li>• Real-world innovation</li>
+    </ul>
+  </div>
+
+  <!-- Expanding info boxes -->
+  <div id="mechBox" class="info-box">
+    <h3 style="color:var(--csu-green);">Mechanical Engineering Skills</h3>
+    <ul>
+      <li>SolidWorks & CAD modeling</li>
+      <li>Prototyping & fabrication</li>
+      <li>Circuit design (LabVIEW, Arduino)</li>
+      <li>Materials testing & data analysis</li>
+      <li>Mechanical systems optimization</li>
+    </ul>
+  </div>
+
+  <div id="bioBox" class="info-box">
+    <h3 style="color:#a88b00;">Biomedical Engineering Skills</h3>
+    <ul>
+      <li>Medical device design & testing</li>
+      <li>Anatomy & biomechanics</li>
+      <li>Orthopedic implant research (Empirical Technologies)</li>
+      <li>Human factors & usability</li>
+      <li>Healthcare innovation & empathy-driven design</li>
+    </ul>
+  </div>
+
+  <div id="honorsBox" class="info-box">
+    <h3 style="color:#6b8e23;">Honors, Business & Liberal Arts Skills</h3>
+    <ul>
+      <li>Project management & fundraising</li>
+      <li>Communication & public speaking</li>
+      <li>Strategic planning & leadership</li>
+      <li>Ethical decision-making</li>
+      <li>Community engagement & mentorship</li>
+    </ul>
+  </div>
+
+  <script>
+    function showInfo(boxId) {
+      const boxes = document.querySelectorAll('.info-box');
+      boxes.forEach(box => box.classList.remove('active'));
+      document.getElementById(boxId).classList.add('active');
+      window.scrollTo({ top: document.getElementById(boxId).offsetTop - 80, behavior: 'smooth' });
+    }
+  </script>
 </section>
+
 
 <footer>
   <p><strong>Mia Chavez | Biomedical & Mechanical Engineer | CSU Class of 2027</strong></p>
