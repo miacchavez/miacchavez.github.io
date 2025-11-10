@@ -201,211 +201,113 @@ footer {
   </div>
 </section>
 
-<!-- ---------- INTERACTIVE VENN DIAGRAM 3.0 ---------- -->
+<!-- ---------- STATIC LABELED VENN DIAGRAM ---------- -->
 <section>
   <h2 style="text-align:center; color:var(--csu-green); margin-top:4rem;">Interdisciplinary Focus</h2>
-  <p style="text-align:center; max-width:750px; margin:0 auto 1rem;">
-    My education bridges <strong>engineering, business, and human-centered design</strong>. 
+  <p style="text-align:center; max-width:750px; margin:0 auto 2rem;">
+    Click or hover over each section of the Venn diagram to see how my studies in 
+    <strong>Mechanical Engineering</strong>, <strong>Biomedical Engineering</strong>, and 
+    <strong>Honors, Business & Liberal Arts</strong> intersect.
   </p>
 
-  <h3 style="text-align:center; color:#444; font-style:italic; margin-bottom:2rem;">
-    Click on the Venn diagram to explore my interdisciplinary skills.
-  </h3>
+  <div style="text-align:center; margin-bottom:1rem; color:#444;">
+    🖱️ <em>Click each area to learn more</em>
+  </div>
 
   <style>
-    .venn-wrapper {
+    .venn-diagram {
       position: relative;
-      width: 800px;
-      height: 600px;
+      width: 700px;
+      height: 550px;
       margin: 0 auto;
     }
 
-    .circle {
+    .venn-circle {
       position: absolute;
-      width: 400px;
-      height: 400px;
+      width: 320px;
+      height: 320px;
       border-radius: 50%;
       opacity: 0.75;
       display: flex;
       align-items: center;
       justify-content: center;
-      color: white;
       font-weight: bold;
       text-align: center;
+      color: white;
       cursor: pointer;
-      transition: transform 0.3s, opacity 0.3s, box-shadow 0.3s;
+      transition: transform 0.3s;
     }
 
-    .circle:hover {
+    .venn-circle:hover {
       transform: scale(1.05);
-      box-shadow: 0 0 20px rgba(0,0,0,0.3);
-      opacity: 0.9;
     }
 
     /* Main circles */
-    #mech { background: var(--csu-green); left: 60px; top: 100px; }
-    #bio { background: var(--csu-gold); left: 340px; top: 100px; color: black; }
-    #honors { background: #6b8e23; left: 200px; top: 250px; }
+    #mech { background: #1E4D2B; left: 70px; top: 100px; }
+    #bio { background: #C8B568; left: 310px; top: 100px; color: black; }
+    #honors { background: #6B8E23; left: 190px; top: 250px; }
 
-    /* Overlap highlights */
-    .overlap {
+    /* Labels */
+    .venn-label {
       position: absolute;
-      border-radius: 50%;
-      cursor: pointer;
-      z-index: 10;
-      opacity: 0.85;
-      transition: transform 0.3s, opacity 0.3s;
+      width: 200px;
+      text-align: center;
+      font-size: 0.95rem;
+      color: #333;
+      font-weight: 500;
     }
 
-    .overlap:hover {
-      transform: scale(1.05);
-      opacity: 1;
-    }
+    /* Single-field labels */
+    #mech-label { left: 10px; top: 60px; }
+    #bio-label { right: 0; top: 60px; }
+    #honors-label { left: 250px; bottom: 10px; }
 
-    #overlap-mech-bio {
-      left: 270px; top: 160px; width: 200px; height: 150px;
-      background: rgba(104,140,52,0.7);
-    }
+    /* Overlap labels */
+    #mech-bio-label { left: 280px; top: 140px; color: #234D2B; font-weight: 600; }
+    #bio-honors-label { left: 330px; top: 300px; color: #8C7E2B; font-weight: 600; }
+    #mech-honors-label { left: 150px; top: 300px; color: #4F6D3A; font-weight: 600; }
 
-    #overlap-bio-honors {
-      left: 340px; top: 280px; width: 200px; height: 150px;
-      background: rgba(210,190,90,0.65);
-    }
-
-    #overlap-mech-honors {
-      left: 160px; top: 280px; width: 200px; height: 150px;
-      background: rgba(100,120,60,0.7);
-    }
-
-    #overlap-center {
-      left: 270px; top: 250px; width: 220px; height: 160px;
-      background: rgba(180,165,80,0.8);
-    }
-
-    /* Info boxes */
-    .info-box {
-      display: none;
-      background: #f9f9f9;
-      border-left: 6px solid var(--csu-green);
-      padding: 1.3rem;
-      margin: 1.5rem auto;
-      max-width: 800px;
+    /* Center label */
+    #center-label {
+      left: 280px;
+      top: 260px;
+      font-weight: 700;
+      font-size: 1.05rem;
+      color: #1E4D2B;
+      background: rgba(255, 255, 255, 0.8);
+      padding: 6px 12px;
       border-radius: 8px;
-      box-shadow: 0 3px 8px rgba(0,0,0,0.1);
-      animation: fadeIn 0.4s ease-in-out;
-    }
-
-    .info-box.active {
-      display: block;
-    }
-
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(15px); }
-      to { opacity: 1; transform: translateY(0); }
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
     }
 
     @media (max-width: 768px) {
-      .venn-wrapper { width: 100%; height: 400px; }
-      .circle { width: 250px; height: 250px; font-size: 0.9rem; }
+      .venn-diagram {
+        width: 95%;
+        height: 450px;
+      }
+      .venn-circle {
+        width: 240px;
+        height: 240px;
+        font-size: 0.8rem;
+      }
     }
   </style>
 
-  <div class="venn-wrapper">
-    <!-- Main circles -->
-    <div class="circle" id="mech" onclick="showInfo('mechBox')">Mechanical<br>Engineering</div>
-    <div class="circle" id="bio" onclick="showInfo('bioBox')">Biomedical<br>Engineering</div>
-    <div class="circle" id="honors" onclick="showInfo('honorsBox')">Honors,<br>Business &<br>Liberal Arts</div>
+  <div class="venn-diagram">
+    <div class="venn-circle" id="mech" title="Mechanical Engineering: Prototyping, CAD, and Materials Analysis"></div>
+    <div class="venn-circle" id="bio" title="Biomedical Engineering: Human-Centered Design, Medical Devices"></div>
+    <div class="venn-circle" id="honors" title="Honors, Business & Liberal Arts: Leadership, Strategy, Communication"></div>
 
-    <!-- Colored overlaps -->
-    <div class="overlap" id="overlap-mech-bio" onclick="showInfo('mechBioBox')"></div>
-    <div class="overlap" id="overlap-bio-honors" onclick="showInfo('bioHonorsBox')"></div>
-    <div class="overlap" id="overlap-mech-honors" onclick="showInfo('mechHonorsBox')"></div>
-    <div class="overlap" id="overlap-center" onclick="showInfo('centerBox')"></div>
+    <!-- Labels -->
+    <div class="venn-label" id="mech-label">Prototyping, CAD, and Materials Analysis</div>
+    <div class="venn-label" id="bio-label">Human-Centered Design, Medical Devices</div>
+    <div class="venn-label" id="honors-label">Leadership, Strategy, and Communication</div>
+
+    <div class="venn-label" id="mech-bio-label">Biomechanics & Device Design</div>
+    <div class="venn-label" id="bio-honors-label">Ethical Innovation & Healthcare Entrepreneurship</div>
+    <div class="venn-label" id="mech-honors-label">Project Management & Technical Leadership</div>
+    <div class="venn-label" id="center-label">Interdisciplinary Problem-Solving</div>
   </div>
-
-  <!-- Info Boxes -->
-  <div id="mechBox" class="info-box">
-    <h3 style="color:var(--csu-green);">Mechanical Engineering</h3>
-    <ul>
-      <li>SolidWorks & CAD modeling</li>
-      <li>Prototyping & fabrication</li>
-      <li>Circuit design (LabVIEW, Arduino)</li>
-      <li>Materials testing & data analysis</li>
-      <li>Mechanical systems optimization</li>
-    </ul>
-  </div>
-
-  <div id="bioBox" class="info-box">
-    <h3 style="color:#b59800;">Biomedical Engineering</h3>
-    <ul>
-      <li>Medical device design & testing</li>
-      <li>Anatomy & biomechanics</li>
-      <li>Orthopedic implant research (Empirical Technologies)</li>
-      <li>Human factors & usability</li>
-      <li>Healthcare innovation & empathy-driven design</li>
-    </ul>
-  </div>
-
-  <div id="honorsBox" class="info-box">
-    <h3 style="color:#6b8e23;">Honors, Business & Liberal Arts</h3>
-    <ul>
-      <li>Project management & fundraising</li>
-      <li>Communication & public speaking</li>
-      <li>Strategic planning & leadership</li>
-      <li>Ethical decision-making</li>
-      <li>Community engagement & mentorship</li>
-    </ul>
-  </div>
-
-  <!-- Overlap boxes -->
-  <div id="mechBioBox" class="info-box">
-    <h3 style="color:var(--csu-green);">Mechanical + Biomedical</h3>
-    <ul>
-      <li>Biomechanics modeling</li>
-      <li>CAD design for prosthetics</li>
-      <li>Testing & validation of medical tools</li>
-      <li>Reliability engineering for human use</li>
-    </ul>
-  </div>
-
-  <div id="bioHonorsBox" class="info-box">
-    <h3 style="color:#b5a200;">Biomedical + Business</h3>
-    <ul>
-      <li>Human-centered innovation</li>
-      <li>Medical entrepreneurship</li>
-      <li>Ethical product development</li>
-      <li>Social impact design</li>
-    </ul>
-  </div>
-
-  <div id="mechHonorsBox" class="info-box">
-    <h3 style="color:#4d6b3b;">Mechanical + Business</h3>
-    <ul>
-      <li>Engineering project management</li>
-      <li>Technical communication</li>
-      <li>Product development strategy</li>
-      <li>Team coordination</li>
-    </ul>
-  </div>
-
-  <div id="centerBox" class="info-box">
-    <h3 style="color:var(--csu-green);">Intersection of All Three</h3>
-    <ul>
-      <li>Interdisciplinary problem-solving</li>
-      <li>Leadership through empathy</li>
-      <li>Sustainable design for human impact</li>
-      <li>Real-world innovation</li>
-    </ul>
-  </div>
-
-  <script>
-    function showInfo(boxId) {
-      const boxes = document.querySelectorAll('.info-box');
-      boxes.forEach(box => box.classList.remove('active'));
-      document.getElementById(boxId).classList.add('active');
-      window.scrollTo({ top: document.getElementById(boxId).offsetTop - 100, behavior: 'smooth' });
-    }
-  </script>
 </section>
 
 
