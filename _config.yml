@@ -30,3 +30,9 @@ sass:
 # Build settings
 plugins:
   - jekyll-feed
+
+  show_excerpts: false
+minima:
+  social_links: []
+  footer: false
+
