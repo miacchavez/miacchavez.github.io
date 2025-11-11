@@ -15,25 +15,69 @@ permalink: /
 /* ---------- MAIN LAYOUT ---------- */
 .hero {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 2rem;
   margin: 3rem auto;
-  max-width: 1100px;
+  max-width: 1200px;
+  padding: 0 3%;
 }
 
-.hero-image img {
+/* ---------- IMAGE ROW (HEADSHOT + CFC IMAGE) ---------- */
+.hero-images-horizontal {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 2.5rem;
+  width: 100%;
+}
+
+.hero-images-horizontal figure {
+  margin: 0;
+  text-align: center;
+}
+
+/* Headshot - gold border, left-aligned */
+.headshot img {
   width: 260px;
   height: 260px;
   object-fit: cover;
   border-radius: 50%;
   border: 6px solid var(--csu-gold);
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
 }
 
+/* CFC Image - rectangular, green border, right-aligned */
+.cfc-image img {
+  width: 300px;
+  height: auto;
+  border-radius: 14px;
+  border: 4px solid var(--csu-green);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
+}
+
+.cfc-image figcaption {
+  font-size: 0.9rem;
+  color: #333;
+  max-width: 300px;
+  margin-top: 0.4rem;
+  line-height: 1.4;
+  text-align: center;
+}
+
+/* Caption highlight for CFC name */
+.cfc-highlight {
+  color: var(--csu-green);
+  border-bottom: 2px solid var(--csu-gold);
+  padding-bottom: 2px;
+}
+
+/* ---------- TEXT SECTION ---------- */
 .hero-text {
   flex: 1 1 500px;
+  text-align: center;
 }
 
 .hero-text h1 {
@@ -48,6 +92,8 @@ permalink: /
 .hero-text p {
   line-height: 1.6;
   font-size: 1.05rem;
+  max-width: 800px;
+  margin: 0 auto 1rem;
 }
 
 /* ---------- BUTTONS ---------- */
@@ -75,56 +121,25 @@ permalink: /
   opacity: 0.9;
   transform: translateY(-2px);
 }
-
-/* ---------- IMAGE GALLERY ---------- */
-.gallery {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 1rem;
-  margin: 3rem auto;
-  max-width: 1100px;
-}
-
-.gallery img {
-  width: 100%;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
-}
-
-.gallery figcaption {
-  text-align: center;
-  font-size: 0.9rem;
-  color: #555;
-  margin-top: 0.3rem;
-}
-
-/* ---------- FOOTER ---------- */
-footer {
-  text-align: center;
-  color: #555;
-  margin-top: 4rem;
-  padding-top: 2rem;
-  border-top: 1px solid #eee;
-  font-weight: 500;
-}
 </style>
 
 <section class="hero">
-  <div class="hero-left">
-    <div class="hero-images">
-      <figure class="headshot">
-        <img src="/assets/images/headshot.jpg" alt="Headshot of Mia Chavez">
-      </figure>
-      <figure class="cfc-image">
-        <img src="/assets/images/cfc.png" alt="Mia Chavez presenting with Crossover for Change in Uganda">
-        <figcaption>
-          Sharing interdisciplinary insights on engineering, leadership, and education with students in Uganda through
-          <strong class="cfc-highlight">Crossover for Change</strong>.
-        </figcaption>
-      </figure>
-    </div>
+  <!-- HEADSHOT + CFC IMAGE ROW -->
+  <div class="hero-images-horizontal">
+    <figure class="headshot">
+      <img src="/assets/images/headshot.jpg" alt="Headshot of Mia Chavez">
+    </figure>
+
+    <figure class="cfc-image">
+      <img src="/assets/images/cfc.png" alt="Mia Chavez presenting with Crossover for Change in Uganda">
+      <figcaption>
+        Sharing interdisciplinary insights on engineering, leadership, and education with students in Uganda through
+        <strong class="cfc-highlight">Crossover for Change</strong>.
+      </figcaption>
+    </figure>
   </div>
 
+  <!-- INTRO TEXT + BUTTONS -->
   <div class="hero-text">
     <h1>Hi, I’m <span>Mia Chavez</span>.</h1>
     <p>
@@ -144,7 +159,6 @@ footer {
     </div>
   </div>
 </section>
-
 
 <!-- ---------- IMAGE GALLERY ---------- -->
 <section>
