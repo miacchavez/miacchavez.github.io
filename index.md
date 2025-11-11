@@ -20,12 +20,12 @@ permalink: /
   justify-content: center;
   gap: 2rem;
   margin: 3rem auto;
-  max-width: 1100px;
+  max-width: 1300px;
 }
 
 .hero-image img {
-  width: 260px;
-  height: 260px;
+  width: 400px;
+  height: 400px;
   object-fit: cover;
   border-radius: 50%;
   border: 6px solid var(--csu-gold);
@@ -33,7 +33,7 @@ permalink: /
 }
 
 .hero-text {
-  flex: 1 1 500px;
+  flex: 1 1 600px;
 }
 
 .hero-text h1 {
@@ -61,7 +61,7 @@ permalink: /
   padding: 0.7rem 1.4rem;
   border-radius: 6px;
   text-decoration: none;
-  font-weight: 500;
+  font-weight: 600;
   margin-right: 0.6rem;
   transition: 0.3s;
 }
@@ -82,7 +82,7 @@ permalink: /
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 1rem;
   margin: 3rem auto;
-  max-width: 1100px;
+  max-width: 1300px;
 }
 
 .gallery img {
@@ -167,8 +167,8 @@ footer {
   <style>
     /* ===== VENN LAYOUT WRAPPER ===== */
     .venn-section {
-      max-width: 1200px;
-      margin: 0 auto 4rem;
+      max-width: 1400px;
+      margin: 0 auto 3rem;
       padding: 0 1.5rem;
     }
 
@@ -274,15 +274,15 @@ footer {
     /* ===== VENN DIAGRAM ITSELF ===== */
     .venn-diagram {
       position: relative;
-      width: 360px;
-      height: 360px;
+      width: 500px;
+      height: 500px;
       margin: 0 auto;
     }
 
     .vd-circle {
       position: absolute;
-      width: 230px;
-      height: 230px;
+      width: 500px;
+      height: 500px;
       border-radius: 50%;
       display: flex;
       align-items: center;
