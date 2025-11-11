@@ -252,6 +252,16 @@ permalink: /
 </section>
 
 <style>
+<!-- ---------- INTERDISCIPLINARY IMAGES (CLEAN, NO CAPTIONS OR BORDERS) ---------- -->
+<section class="interdisciplinary-images">
+  <div class="interdisciplinary-container">
+    <img src="/assets/images/1.png" alt="Interdisciplinary Venn Diagram">
+    <img src="/assets/images/2.png" alt="Interdisciplinary Skills and Applications">
+    <img src="/assets/images/3.png" alt="Interdisciplinary Problem-Solving">
+  </div>
+</section>
+
+<style>
 /* ---------- INTERDISCIPLINARY IMAGES SECTION ---------- */
 .interdisciplinary-images {
   margin: 4rem auto 6rem;
@@ -274,5 +284,7 @@ permalink: /
   border: none;
   border-radius: 0;
   box-shadow: none;
+  margin: 0 auto;
+  display: block;
 }
 </style>
