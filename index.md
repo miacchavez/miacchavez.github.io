@@ -224,27 +224,6 @@ permalink: /
 <!-- ---------- INTERDISCIPLINARY IMAGES SECTION ---------- -->
 <section class="interdisciplinary-images">
   <div class="interdisciplinary-container">
-    <figure>
-      <img src="/assets/images/1.png" alt="Interdisciplinary Venn Diagram showing integration of disciplines">
-      <figcaption>Where Disciplines Meet: Creating Meaningful Impact Through Integration</figcaption>
-    </figure>
-
-    <figure>
-      <img src="/assets/images/2.png" alt="Interdisciplinary skills and applications at CSU">
-      <figcaption>Honors, Engineering, and Design — Building bridges between technical precision and human-centered impact</figcaption>
-    </figure>
-
-    <figure>
-      <img src="/assets/images/3.png" alt="Interdisciplinary problem-solving principles">
-      <figcaption>Interdisciplinary Problem-Solving: Connecting creativity, ethics, and adaptability across disciplines</figcaption>
-    </figure>
-  </div>
-</section>
-
-<style>
-<!-- ---------- INTERDISCIPLINARY IMAGES (CLEAN, FULL SIZE, NO BORDERS) ---------- -->
-<section class="interdisciplinary-images">
-  <div class="interdisciplinary-container">
     <img src="/assets/images/1.png" alt="Interdisciplinary Venn Diagram showing integration of disciplines">
     <img src="/assets/images/2.png" alt="Interdisciplinary skills and applications at CSU">
     <img src="/assets/images/3.png" alt="Interdisciplinary problem-solving principles">
@@ -252,17 +231,7 @@ permalink: /
 </section>
 
 <style>
-<!-- ---------- INTERDISCIPLINARY IMAGES (CLEAN, NO CAPTIONS OR BORDERS) ---------- -->
-<section class="interdisciplinary-images">
-  <div class="interdisciplinary-container">
-    <img src="/assets/images/1.png" alt="Interdisciplinary Venn Diagram">
-    <img src="/assets/images/2.png" alt="Interdisciplinary Skills and Applications">
-    <img src="/assets/images/3.png" alt="Interdisciplinary Problem-Solving">
-  </div>
-</section>
-
-<style>
-/* ---------- INTERDISCIPLINARY IMAGES SECTION ---------- */
+/* ---------- INTERDISCIPLINARY IMAGES (NO BORDERS, NO CAPTIONS, CUSTOM SPACING) ---------- */
 .interdisciplinary-images {
   margin: 4rem auto 6rem;
   max-width: 1200px;
@@ -274,7 +243,7 @@ permalink: /
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 3rem;
+  gap: 3rem; /* space between first and second image */
 }
 
 .interdisciplinary-container img {
@@ -287,13 +256,17 @@ permalink: /
   margin: 0 auto;
   display: block;
 }
-</style>
-</section>
 
-<style>
+/* Remove space between 2nd and 3rd image */
+.interdisciplinary-container img:nth-child(3) {
+  margin-top: -3rem;
+}
+
+/* Ensure no captions or automatic text appear */
 .interdisciplinary-container img + br,
 .interdisciplinary-container img + small,
 .interdisciplinary-container img + figcaption {
   display: none !important;
 }
 </style>
+
