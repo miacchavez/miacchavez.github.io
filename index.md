@@ -110,8 +110,19 @@ footer {
 </style>
 
 <section class="hero">
-  <div class="hero-image">
-    <img src="/assets/images/headshot.jpg" alt="Headshot of Mia Chavez">
+  <div class="hero-left">
+    <div class="hero-images">
+      <figure class="headshot">
+        <img src="/assets/images/headshot.jpg" alt="Headshot of Mia Chavez">
+      </figure>
+      <figure class="cfc-image">
+        <img src="/assets/images/cfc.png" alt="Mia Chavez presenting with Crossover for Change in Uganda">
+        <figcaption>
+          Sharing interdisciplinary insights on engineering, leadership, and education with students in Uganda through
+          <strong class="cfc-highlight">Crossover for Change</strong>.
+        </figcaption>
+      </figure>
+    </div>
   </div>
 
   <div class="hero-text">
@@ -133,6 +144,7 @@ footer {
     </div>
   </div>
 </section>
+
 
 <!-- ---------- IMAGE GALLERY ---------- -->
 <section>
