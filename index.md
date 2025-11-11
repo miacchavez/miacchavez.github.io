@@ -161,6 +161,45 @@ permalink: /
 </section>
 
 <!-- ---------- IMAGE GALLERY ---------- -->
+<style>
+/* ---------- IMAGE GALLERY (2x2 GRID) ---------- */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two images per row */
+  gap: 1.5rem;
+  justify-items: center;
+  align-items: start;
+  margin: 3rem auto;
+  max-width: 1000px;
+}
+
+/* Make it mobile-friendly (1 per row below 768px) */
+@media (max-width: 768px) {
+  .gallery {
+    grid-template-columns: 1fr;
+  }
+}
+
+.gallery figure {
+  text-align: center;
+  margin: 0;
+}
+
+.gallery img {
+  width: 100%;
+  max-width: 450px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+.gallery figcaption {
+  font-size: 0.9rem;
+  color: #555;
+  margin-top: 0.4rem;
+  line-height: 1.3;
+}
+</style>
+
 <section>
   <div class="gallery">
     <figure>
@@ -181,6 +220,7 @@ permalink: /
     </figure>
   </div>
 </section>
+
 
 <!-- ---------- CSU 3-CIRCLE VENN SECTION ---------- -->
 <section class="venn-section">
