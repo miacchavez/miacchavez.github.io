@@ -6,6 +6,26 @@ permalink: /
 
 <link rel="stylesheet" href="/assets/css/style.css">
 
+/* ----- EXPAND PAGE WIDTH ----- */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+main, .page-content, .venn-section, .hero {
+  max-width: 92%;   /* previously 1100px or 1200px */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Optional: make sure the header/footer align with it too */
+header, footer {
+  max-width: 92%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
 <style>
 :root {
   --csu-green: #1e4d2b;
