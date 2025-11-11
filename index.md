@@ -242,10 +242,20 @@ permalink: /
 </section>
 
 <style>
+<!-- ---------- INTERDISCIPLINARY IMAGES (CLEAN, FULL SIZE, NO BORDERS) ---------- -->
+<section class="interdisciplinary-images">
+  <div class="interdisciplinary-container">
+    <img src="/assets/images/1.png" alt="Interdisciplinary Venn Diagram showing integration of disciplines">
+    <img src="/assets/images/2.png" alt="Interdisciplinary skills and applications at CSU">
+    <img src="/assets/images/3.png" alt="Interdisciplinary problem-solving principles">
+  </div>
+</section>
+
+<style>
 /* ---------- INTERDISCIPLINARY IMAGES SECTION ---------- */
 .interdisciplinary-images {
   margin: 4rem auto 6rem;
-  max-width: 1100px;
+  max-width: 1200px;
   text-align: center;
   padding: 0 2rem;
 }
@@ -257,28 +267,12 @@ permalink: /
   gap: 3rem;
 }
 
-.interdisciplinary-container figure {
-  margin: 0;
-  text-align: center;
-}
-
 .interdisciplinary-container img {
   width: 100%;
-  max-width: 900px;
+  max-width: 950px;
   height: auto;
-  border: 4px solid #1E4D2B; /* CSU Green border */
-  border-radius: 12px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.18);
-}
-
-.interdisciplinary-container figcaption {
-  margin-top: 0.6rem;
-  font-size: 1rem;
-  color: #333;
-  font-style: italic;
-  max-width: 800px;
-  margin-left: auto;
-  margin-right: auto;
-  line-height: 1.4;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
 }
 </style>
