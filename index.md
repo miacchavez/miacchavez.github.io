@@ -155,7 +155,3 @@ footer {
     </figure>
   </div>
 </section>
-
-<footer>
-  <p><strong>Mia Chavez Portfolio</strong><br>Colorado State University</p>
-</footer>
