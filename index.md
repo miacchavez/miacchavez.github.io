@@ -288,3 +288,12 @@ permalink: /
   display: block;
 }
 </style>
+</section>
+
+<style>
+.interdisciplinary-container img + br,
+.interdisciplinary-container img + small,
+.interdisciplinary-container img + figcaption {
+  display: none !important;
+}
+</style>
