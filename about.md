@@ -20,51 +20,45 @@ permalink: /about/
   line-height: 1.7;
 }
 
-/* ---------- HEADER (HEADSHOT + CFC IMAGE) ---------- */
+/* ---------- HEADER (HEADSHOT + INTRO TEXT) ---------- */
 .about-hero {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  align-items: center;
   gap: 2.5rem;
-  align-items: flex-start;
   margin-bottom: 2rem;
 }
 
-.about-hero-images {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 1.2rem;
+.about-headshot {
+  flex: 0 0 auto;
 }
 
 .about-headshot img {
-  width: 250px;
-  height: 250px;
+  width: 260px;
+  height: 260px;
   object-fit: cover;
   border-radius: 50%;
   border: 6px solid var(--csu-gold);
   box-shadow: 0 4px 15px rgba(0,0,0,0.25);
 }
 
-.about-cfc img {
-  width: 320px;
-  height: auto;
-  border-radius: 14px;
-  border: 4px solid var(--csu-green);
-  box-shadow: 0 4px 15px rgba(0,0,0,0.25);
-}
-
-.about-hero-text {
-  flex: 1 1 380px;
+.about-intro {
+  flex: 1 1 auto;
   min-width: 280px;
 }
 
-.about-hero-text h1 {
+.about-intro h1 {
   color: var(--csu-green);
   font-size: 2.2rem;
   margin-bottom: 0.75rem;
 }
 
+.about-intro p {
+  font-size: 1.02rem;
+  margin-bottom: 1rem;
+}
+
+/* ---------- QUOTE ---------- */
 .about-quote {
   margin: 1.5rem auto 2rem;
   padding: 0.9rem 1.4rem;
@@ -79,19 +73,24 @@ permalink: /about/
 
 /* ---------- SECTION HEADERS ---------- */
 .about-section {
-  margin-top: 3rem;
+  margin-top: 3.5rem;
 }
 
 .about-section h2 {
   color: var(--csu-gold);
-  font-size: 1.7rem;
-  margin-bottom: 0.7rem;
+  font-size: 1.8rem;
+  margin-bottom: 0.8rem;
 }
 
-/* ---------- SINGLE IMAGE SECTIONS ---------- */
+.about-section p {
+  font-size: 1.04rem;
+  margin-bottom: 1rem;
+}
+
+/* ---------- IMAGES ---------- */
 .about-image-full {
   text-align: center;
-  margin-top: 1.5rem;
+  margin-top: 1.8rem;
 }
 
 .about-image-full img {
@@ -119,31 +118,21 @@ permalink: /about/
 
 .education-card h3 {
   color: var(--csu-green);
-  font-size: 1.2rem;
-  margin: 0.6rem 0 0.3rem;
-}
-
-/* ---------- LARGE IMAGE SECTIONS ---------- */
-.about-gallery {
-  display: flex;
-  justify-content: center;
-  gap: 1.5rem;
-  flex-wrap: wrap;
-  margin-top: 2rem;
-}
-
-.about-gallery img {
-  width: 100%;
-  max-width: 950px;
-  border-radius: 16px;
-  box-shadow: 0 6px 14px rgba(0,0,0,0.15);
+  font-size: 1.25rem;
+  margin: 0.6rem 0 0.4rem;
 }
 
 /* ---------- RESPONSIVE ---------- */
 @media (max-width: 768px) {
   .about-hero {
     flex-direction: column;
-    align-items: center;
+    text-align: left;
+  }
+  .about-intro h1 {
+    font-size: 1.8rem;
+  }
+  .about-quote {
+    font-size: 0.9rem;
   }
 }
 </style>
@@ -152,26 +141,22 @@ permalink: /about/
 
   <!-- HEADER -->
   <section class="about-hero">
-    <div class="about-hero-images">
-      <figure class="about-headshot">
-        <img src="/assets/images/headshot.jpg" alt="Headshot of Mia Chavez">
-      </figure>
-      <figure class="about-cfc">
-        <img src="/assets/images/cfc_uganda.jpg" alt="Mia presenting with Crossover for Change in Uganda">
-      </figure>
+    <div class="about-headshot">
+      <img src="/assets/images/headshot.jpg" alt="Headshot of Mia Chavez">
     </div>
-
-    <div class="about-hero-text">
-      <h1>Hi, I’m Mia.</h1>
+    <div class="about-intro">
+      <h1>Get to know me…</h1>
       <p>
-        I’m a <strong>Biomedical and Mechanical Engineering</strong> student at 
-        <strong>Colorado State University</strong>, graduating in May 2027 with a Minor in Business Administration 
-        and an Entrepreneurship Certificate. I’m passionate about designing solutions that sit at the intersection 
-        of engineering, human connection, and social impact.
+        I’m <strong>Mia Chavez</strong> — a Biomedical and Mechanical Engineering student at 
+        <strong>Colorado State University</strong> with a Business Minor and Entrepreneurship Certificate. 
+        My passion lies in designing technology that strengthens human connection and creates equitable access 
+        to opportunity. I approach engineering not just as a technical pursuit, but as a way to listen, 
+        collaborate, and serve.
       </p>
       <p>
-        Whether I’m developing medical devices, leading nonprofit initiatives, or mentoring others, I aim to create 
-        work that blends precision, empathy, and purpose.
+        Whether I’m calibrating sensors, developing medical prototypes, or leading community programs, I’m drawn 
+        to the space where structure meets empathy — where engineering becomes a tool for understanding and 
+        improving lives.
       </p>
     </div>
   </section>
@@ -180,13 +165,21 @@ permalink: /about/
     “Engineering with empathy. Leading with purpose.”
   </div>
 
-  <!-- MY JOURNEY -->
+  <!-- MY FAMILY & ROOTS -->
   <section class="about-section">
-    <h2>My Journey</h2>
+    <h2>My Family & Roots</h2>
     <p>
-      I grew up in Colorado Springs as one of eight kids in a close-knit, chaotic, and loving family. Those experiences 
-      taught me to adapt quickly, collaborate with others, and lead with empathy. My family has been the foundation for 
-      how I approach teamwork, service, and creativity today.
+      I grew up in Colorado Springs as one of eight kids — a beautiful, chaotic, and character-building 
+      experience that shaped who I am today. My parents, <strong>Jeff and Rachel</strong>, have always modeled 
+      what it means to work hard while caring deeply for others. My siblings — <strong>Andrew, Matt, Abby, 
+      Josh, Lizzy, Julia, and Grace</strong> — have been my greatest teachers in patience, teamwork, and humor. 
+      With that many voices in one house, life was never quiet — but it was always full.
+    </p>
+    <p>
+      Our home was a mix of <em>controlled chaos</em> — color-coded calendars on the fridge, basketball games in 
+      the driveway, group dinners where stories collided. Growing up in that environment taught me how to thrive 
+      under pressure, mediate conflict, and find focus amid noise. Those lessons show up daily in my work — in labs, 
+      team projects, and leadership roles — as I navigate complex systems with calm and creativity.
     </p>
     <div class="about-image-full">
       <img src="/assets/images/family.jpg" alt="Mia with her family">
@@ -197,24 +190,55 @@ permalink: /about/
   <section class="about-section">
     <h2>Educational Journey</h2>
     <p>
-      My education reflects a shift from memorization to application — learning not just what to think, but how to think. 
-      These two schools helped shape both my intellect and my values.
+      My education has been a journey of transformation — from mastering the fundamentals to applying them in ways 
+      that make an impact. Each school I attended built on the last, shaping how I think, communicate, and serve.
     </p>
+
     <div class="education-split">
       <div class="education-card">
         <img src="/assets/images/vanguard_school.jpg" alt="The Vanguard School">
-        <h3>The Vanguard School</h3>
+        <h3>The Vanguard School (K–8)</h3>
         <p>
-          A foundation built on discipline, structure, and academic excellence that fueled my curiosity and drive for precision.
+          Vanguard provided me with a classical education rooted in critical thinking, memorization, and logic. 
+          The structured environment and content-rich curriculum established a foundation of discipline, clarity, 
+          and academic confidence. It’s where I learned how to study rigorously, articulate ideas effectively, and 
+          value integrity as much as intelligence. These early lessons in structure and diligence remain the 
+          backbone of how I approach engineering challenges today.
         </p>
       </div>
+
       <div class="education-card">
         <img src="/assets/images/css_school.jpg" alt="The Colorado Springs School">
-        <h3>The Colorado Springs School</h3>
+        <h3>The Colorado Springs School (9–12)</h3>
         <p>
-          A space where I grew into a creative thinker, community leader, and advocate for real-world learning through service.
+          At CSS, I earned the <strong>Innovator Merit Scholarship</strong> — an opportunity that transformed how I 
+          viewed education. Moving from Vanguard’s classical foundation into CSS’s experiential model allowed me 
+          to expand beyond memorization and immerse myself in real-world problem-solving. Through outdoor education, 
+          field research, and interdisciplinary projects, I learned how creativity, teamwork, and reflection could 
+          drive innovation. CSS taught me how to learn by doing — to connect technical skill with empathy, and 
+          intellect with impact.
         </p>
       </div>
+    </div>
+  </section>
+
+  <!-- CFC IMPACT SECTION -->
+  <section class="about-section">
+    <h2>Impact & Leadership</h2>
+    <p>
+      In 2020, I co-founded <strong>Crossover for Change</strong>, a nonprofit that empowers girls in Uganda through 
+      basketball, education, and mentorship. What began as a simple idea — combining athletics and academics to 
+      promote confidence — grew into an international initiative that now provides leadership camps, technology 
+      access, and scholarships for students across several schools.
+    </p>
+    <p>
+      As Co-Founder and Board Treasurer, I oversee finances, partnerships, and programming while collaborating with 
+      educators in Uganda and the U.S. to ensure sustainability. Through this work, I’ve learned that leadership 
+      isn’t about control — it’s about connection. It’s about bringing together people, ideas, and passion to 
+      create something bigger than any one person could build alone.
+    </p>
+    <div class="about-image-full">
+      <img src="/assets/images/cfc_uganda.jpg" alt="Mia presenting with Crossover for Change in Uganda">
     </div>
   </section>
 
@@ -222,11 +246,17 @@ permalink: /about/
   <section class="about-section">
     <h2>What Drives Me</h2>
     <p>
-      I believe engineering is most powerful when it serves people. My goal is to design accessible, human-centered 
-      technologies that improve health, mobility, and equity. This mindset inspires both my work in biomedical engineering 
-      and my leadership with Crossover for Change.
+      I’m drawn to the intersection of <strong>engineering, empathy, and impact</strong>. My goal is to design 
+      solutions that are not only innovative but also inclusive — medical devices, prosthetics, and tools that 
+      improve access to healthcare and quality of life. I love analyzing complex systems, understanding how 
+      components interact, and reimagining them with human needs at the center.
     </p>
-    <div class="about-gallery">
+    <p>
+      To me, engineering is about people. It’s a language of connection — translating challenges into 
+      opportunities and data into dignity. Whether in a lab or a nonprofit boardroom, I’m most alive when I’m 
+      collaborating to create something that helps others thrive.
+    </p>
+    <div class="about-image-full">
       <img src="/assets/images/engineering_lab.jpg" alt="Mia working in the engineering lab">
     </div>
   </section>
@@ -235,10 +265,17 @@ permalink: /about/
   <section class="about-section">
     <h2>Beyond the Classroom</h2>
     <p>
-      On the court and in leadership roles, I’ve learned lessons in communication, resilience, and trust that extend 
-      far beyond sports. As President of CSU Women’s Club Basketball, I build community, foster confidence, and help others grow.
+      As President of <strong>CSU Women’s Club Basketball</strong>, I lead three teams, coordinate tournaments, 
+      and mentor younger players. Basketball has been my constant — the balance between the technical and the 
+      emotional. On the court, I’ve learned how to communicate clearly, respond quickly, and lead with empathy. 
+      Off the court, those same lessons guide how I lead projects, manage time, and support others.
     </p>
-    <div class="about-gallery">
+    <p>
+      Sports have shown me that leadership isn’t about hierarchy — it’s about presence, humility, and teamwork. 
+      The resilience I’ve built through athletics strengthens every other part of my life, from my engineering 
+      labs to my nonprofit work.
+    </p>
+    <div class="about-image-full">
       <img src="/assets/images/basketball.jpg" alt="Mia playing basketball">
     </div>
   </section>
