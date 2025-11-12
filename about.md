@@ -37,10 +37,12 @@ permalink: /about/
     </p>
 
     <div class="hero-buttons">
-      <a href="/experiences/">Experiences</a>
-      <a href="/skills/" class="gold">Skills</a>
-      <a href="/contact/">Contact Me</a>
+      <a href="#roots">My Roots</a>
+      <a href="#education" class="gold">My Educational Journey</a>
+      <a href="#beyond">Beyond the Classroom</a>
     </div>
+
+
   </div>
 </section>
 
@@ -130,7 +132,7 @@ permalink: /about/
 }
 </style>
 <!-- ---------- MY ROOTS SECTION (TEXT + CENTER IMAGE + FAMILY GALLERY) ---------- -->
-<section class="roots-section">
+<section id="roots" class="roots-section">
   <div class="roots-container">
     <div class="roots-text">
       <h2>My Roots</h2>
@@ -282,7 +284,7 @@ permalink: /about/
 </style>
 
 <!-- ---------- MY EDUCATIONAL JOURNEY SECTION ---------- -->
-<section class="education-section">
+<section id="education" class="education-section">
   <div class="education-container">
     <h2>My Educational Journey</h2>
     <p class="intro">
@@ -444,7 +446,7 @@ permalink: /about/
 }
 </style>
 <!-- ---------- BEYOND THE CLASSROOM SECTION ---------- -->
-<section class="beyond-classroom">
+<section id="beyond" class="beyond-classroom">
   <div class="beyond-container">
     <h2>Beyond the Classroom</h2>
     <p class="intro">
