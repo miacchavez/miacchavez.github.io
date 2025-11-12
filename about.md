@@ -352,7 +352,7 @@ permalink: /about/
       <p class="takeaways">
         <strong>Key Takeaways:</strong> Interdisciplinary innovation, ethical and human-centered design, teamwork, and community-driven leadership.
       </p>
-      <img src="/assets/images/engineering_lab.jpg" alt="Engineering lab at Colorado State University" class="education-photo">
+      <img src="/assets/images/engineering_lab.png" alt="Engineering lab at Colorado State University" class="education-photo">
     </div>
   </div>
 </section>
