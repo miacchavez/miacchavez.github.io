@@ -7,12 +7,24 @@ permalink: /about/
 <link rel="stylesheet" href="/assets/css/style.css">
 
 <!-- ---------- ABOUT HERO SECTION ---------- -->
-<section class="hero about-hero">
-  <div class="hero-image">
+<section class="about-hero">
+  <!-- LEFT COLUMN: HEADSHOT -->
+  <div class="hero-left">
     <img src="/assets/images/headshot.jpg" alt="Headshot of Mia Chavez">
   </div>
 
-<div class="hero-text">
+  <!-- RIGHT COLUMN: VERTICAL BUTTONS -->
+  <div class="hero-right">
+    <div class="hero-buttons vertical">
+      <a href="#roots">My Roots</a>
+      <a href="#education" class="gold">My Educational Journey</a>
+      <a href="#beyond">Beyond the Classroom</a>
+    </div>
+  </div>
+</section>
+
+<!-- INTRO TEXT BELOW -->
+<section class="about-intro">
   <h1>Get to know me...</h1>
   <p>
     I’m <strong>Mia Chavez</strong> — a Biomedical and Mechanical Engineering student at 
@@ -35,52 +47,36 @@ permalink: /about/
     technology, collaboration, and creativity to design solutions that make a tangible difference 
     in people’s lives.
   </p>
-</div>
-
-<!-- New vertical button section -->
-<div class="hero-buttons vertical">
-  <a href="#roots">My Roots</a>
-  <a href="#education" class="gold">My Educational Journey</a>
-  <a href="#beyond">Beyond the Classroom</a>
-</div>
-
 </section>
 
 <style>
-/* ---------- ABOUT HERO SECTION ---------- */
+/* ---------- ABOUT HERO (TWO COLUMN) ---------- */
 .about-hero {
   display: flex;
+  justify-content: center;
   align-items: flex-start;
-  justify-content: space-between;
-  gap: 3rem;
-  flex-wrap: wrap;
-  padding: 4rem 2rem;
+  gap: 5rem;
   max-width: 1200px;
-  margin: 0 auto;
+  margin: 4rem auto 2rem;
+  flex-wrap: wrap;
 }
 
-.about-hero .hero-image img {
-  width: 260px;
-  height: 260px;
-  object-fit: cover;
+/* Left column - headshot */
+.hero-left img {
+  width: 280px;
+  height: 280px;
   border-radius: 50%;
   border: 6px solid #c8b568; /* CSU gold */
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
+  object-fit: cover;
 }
 
-.about-hero .hero-text {
-  flex: 1 1 450px;
-  max-width: 600px;
-  text-align: left;
-}
-
-/* ---------- VERTICAL BUTTONS ---------- */
-.hero-buttons.vertical {
+/* Right column - vertical buttons */
+.hero-right .hero-buttons.vertical {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 1.2rem;
   align-items: flex-start;
-  justify-content: flex-start;
 }
 
 .hero-buttons.vertical a {
@@ -88,7 +84,7 @@ permalink: /about/
   color: white;
   font-weight: 600;
   text-decoration: none;
-  padding: 0.8rem 2.5rem;
+  padding: 0.9rem 2rem;
   border-radius: 10px;
   font-size: 1rem;
   transition: 0.3s ease;
@@ -106,7 +102,27 @@ permalink: /about/
   transform: translateY(-2px);
 }
 
-/* ---------- RESPONSIVE ---------- */
+/* Text below columns */
+.about-intro {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: left;
+}
+
+.about-intro h1 {
+  color: #1e4d2b;
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+}
+
+.about-intro p {
+  line-height: 1.8;
+  margin-bottom: 1.4rem;
+  color: #333;
+}
+
+/* Responsive adjustments */
 @media (max-width: 768px) {
   .about-hero {
     flex-direction: column;
@@ -119,6 +135,7 @@ permalink: /about/
   }
 }
 </style>
+
 
 <!-- ---------- MY ROOTS SECTION (TEXT + CENTER IMAGE + FAMILY GALLERY) ---------- -->
 <section id="roots" class="roots-section">
