@@ -160,6 +160,56 @@ permalink: /
   </div>
 </section>
 
+
+<!-- ---------- INTERDISCIPLINARY IMAGES SECTION ---------- -->
+<section class="interdisciplinary-images">
+  <div class="interdisciplinary-container">
+    <img src="/assets/images/1.png" alt="Interdisciplinary Venn Diagram showing integration of disciplines">
+    <img src="/assets/images/2.png" alt="Interdisciplinary skills and applications at CSU">
+    <img src="/assets/images/3.png" alt="Interdisciplinary problem-solving principles">
+  </div>
+</section>
+
+<style>
+/* ---------- INTERDISCIPLINARY IMAGES (NO BORDERS, NO CAPTIONS, CUSTOM SPACING) ---------- */
+.interdisciplinary-images {
+  margin: 4rem auto 6rem;
+  max-width: 1200px;
+  text-align: center;
+  padding: 0 2rem;
+}
+
+.interdisciplinary-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem; /* space between first and second image */
+}
+
+.interdisciplinary-container img {
+  width: 100%;
+  max-width: 950px;
+  height: auto;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  margin: 0 auto;
+  display: block;
+}
+
+/* Remove space between 2nd and 3rd image */
+.interdisciplinary-container img:nth-child(3) {
+  margin-top: -3rem;
+}
+
+/* Ensure no captions or automatic text appear */
+.interdisciplinary-container img + br,
+.interdisciplinary-container img + small,
+.interdisciplinary-container img + figcaption {
+  display: none !important;
+}
+</style>
+
 <!-- ---------- IMAGE GALLERY ---------- -->
 <style>
 /* ---------- IMAGE GALLERY (2x2 GRID) ---------- */
@@ -220,53 +270,3 @@ permalink: /
     </figure>
   </div>
 </section>
-
-<!-- ---------- INTERDISCIPLINARY IMAGES SECTION ---------- -->
-<section class="interdisciplinary-images">
-  <div class="interdisciplinary-container">
-    <img src="/assets/images/1.png" alt="Interdisciplinary Venn Diagram showing integration of disciplines">
-    <img src="/assets/images/2.png" alt="Interdisciplinary skills and applications at CSU">
-    <img src="/assets/images/3.png" alt="Interdisciplinary problem-solving principles">
-  </div>
-</section>
-
-<style>
-/* ---------- INTERDISCIPLINARY IMAGES (NO BORDERS, NO CAPTIONS, CUSTOM SPACING) ---------- */
-.interdisciplinary-images {
-  margin: 4rem auto 6rem;
-  max-width: 1200px;
-  text-align: center;
-  padding: 0 2rem;
-}
-
-.interdisciplinary-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 3rem; /* space between first and second image */
-}
-
-.interdisciplinary-container img {
-  width: 100%;
-  max-width: 950px;
-  height: auto;
-  border: none;
-  border-radius: 0;
-  box-shadow: none;
-  margin: 0 auto;
-  display: block;
-}
-
-/* Remove space between 2nd and 3rd image */
-.interdisciplinary-container img:nth-child(3) {
-  margin-top: -3rem;
-}
-
-/* Ensure no captions or automatic text appear */
-.interdisciplinary-container img + br,
-.interdisciplinary-container img + small,
-.interdisciplinary-container img + figcaption {
-  display: none !important;
-}
-</style>
-
