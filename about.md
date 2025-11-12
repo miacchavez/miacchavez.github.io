@@ -12,38 +12,38 @@ permalink: /about/
     <img src="/assets/images/headshot.jpg" alt="Headshot of Mia Chavez">
   </div>
 
-  <div class="hero-text">
-    <h1>Get to know me...</h1>
-    <p>
-      I’m <strong>Mia Chavez</strong> — a Biomedical and Mechanical Engineering student at 
-      <strong>Colorado State University</strong> pursuing a Business Minor and Entrepreneurship Certificate. 
-      My studies combine creativity, precision, and purpose, reflecting my belief that innovation 
-      should serve people as much as progress.
-    </p>
+<div class="hero-text">
+  <h1>Get to know me...</h1>
+  <p>
+    I’m <strong>Mia Chavez</strong> — a Biomedical and Mechanical Engineering student at 
+    <strong>Colorado State University</strong> pursuing a Business Minor and Entrepreneurship Certificate. 
+    My studies combine creativity, precision, and purpose, reflecting my belief that innovation 
+    should serve people as much as progress.
+  </p>
 
-    <p>
-      I’m currently an <strong>Honors Ambassador</strong> for the CSU Honors Program, a 
-      <strong>Manager at NOCO Sports Center</strong> in Windsor, and the <strong>Treasurer and Co-Founder 
-      of Crossover for Change</strong>, a nonprofit that empowers young women in Uganda through 
-      basketball, education, and mentorship. Each of these roles challenges me to lead with empathy, 
-      stay organized under pressure, and communicate across diverse teams.
-    </p>
+  <p>
+    I’m currently an <strong>Honors Ambassador</strong> for the CSU Honors Program, a 
+    <strong>Manager at NOCO Sports Center</strong> in Windsor, and the <strong>Treasurer and Co-Founder 
+    of Crossover for Change</strong>, a nonprofit that empowers young women in Uganda through 
+    basketball, education, and mentorship. Each of these roles challenges me to lead with empathy, 
+    stay organized under pressure, and communicate across diverse teams.
+  </p>
 
-    <p>
-      Through engineering, leadership, and service, I’ve learned that every system — whether mechanical 
-      or human — depends on connection. My goal is to keep building those connections through 
-      technology, collaboration, and creativity to design solutions that make a tangible difference 
-      in people’s lives.
-    </p>
+  <p>
+    Through engineering, leadership, and service, I’ve learned that every system — whether mechanical 
+    or human — depends on connection. My goal is to keep building those connections through 
+    technology, collaboration, and creativity to design solutions that make a tangible difference 
+    in people’s lives.
+  </p>
+</div>
 
-    <div class="hero-buttons">
-      <a href="#roots">My Roots</a>
-      <a href="#education" class="gold">My Educational Journey</a>
-      <a href="#beyond">Beyond the Classroom</a>
-    </div>
+<!-- New vertical button section -->
+<div class="hero-buttons vertical">
+  <a href="#roots">My Roots</a>
+  <a href="#education" class="gold">My Educational Journey</a>
+  <a href="#beyond">Beyond the Classroom</a>
+</div>
 
-
-  </div>
 </section>
 
 <style>
