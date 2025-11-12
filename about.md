@@ -281,3 +281,165 @@ permalink: /about/
 }
 </style>
 
+<!-- ---------- MY EDUCATIONAL JOURNEY SECTION ---------- -->
+<section class="education-section">
+  <div class="education-container">
+    <h2>My Educational Journey</h2>
+    <p class="intro">
+      My academic path has been one of steady growth — from classical rigor to creative exploration and, finally, to interdisciplinary innovation. 
+      Each stage shaped how I learn, lead, and approach challenges, blending discipline with curiosity and purpose.
+    </p>
+
+    <!-- Vanguard School -->
+    <div class="education-block">
+      <h3>The Vanguard School (K–8)</h3>
+      <p>
+        My journey began at <strong>The Vanguard School</strong>, where I spent nine formative years immersed in a rigorous classical education. 
+        The curriculum emphasized structure, memorization, logic, and rhetoric — teaching me not only how to retain information, 
+        but how to think critically and articulate ideas clearly. From daily recitations to Latin roots and Socratic discussions, 
+        Vanguard instilled in me the discipline to study deeply and the confidence to participate fully.
+      </p>
+      <p>
+        These years built my academic foundation and taught me perseverance, focus, and attention to detail — skills that continue to guide me 
+        in the lab, on the court, and in leadership.
+      </p>
+      <p class="takeaways">
+        <strong>Key Takeaways:</strong> Structured thinking, strong academic discipline, logical reasoning, and intellectual curiosity.
+      </p>
+      <img src="/assets/images/vanguard_school.jpg" alt="The Vanguard School campus in Colorado Springs" class="education-photo">
+    </div>
+
+    <div class="timeline-divider"></div>
+
+    <!-- Colorado Springs School -->
+    <div class="education-block">
+      <h3>The Colorado Springs School (9–12)</h3>
+      <p>
+        In high school, I attended <strong>The Colorado Springs School</strong> as an <strong>Innovator Merit Scholar</strong>, where I shifted from memorization 
+        to exploration. CSS encouraged independent inquiry, creativity, and leadership — blending classroom learning with outdoor education, 
+        community projects, and global engagement.
+      </p>
+      <p>
+        I found my voice as a leader, an athlete, and a learner who valued perspective over perfection. 
+        Through interdisciplinary projects and real-world problem-solving, I discovered how collaboration and empathy 
+        can transform education into experience. CSS gave me the confidence to ask “why,” to take risks, and to value the process as much as the result.
+      </p>
+      <p class="takeaways">
+        <strong>Key Takeaways:</strong> Leadership through experience, creative and analytical balance, global awareness, and curiosity-driven learning.
+      </p>
+      <img src="/assets/images/css_school.jpg" alt="The Colorado Springs School campus" class="education-photo">
+    </div>
+
+    <div class="timeline-divider"></div>
+
+    <!-- Colorado State University -->
+    <div class="education-block">
+      <h3>Colorado State University (Undergraduate – Present)</h3>
+      <p>
+        Today, at <strong>Colorado State University</strong>, I’m pursuing dual degrees in <strong>Biomedical and Mechanical Engineering</strong>, 
+        alongside a <strong>Business Administration Minor</strong> and <strong>Entrepreneurship Certificate</strong>. CSU has become the place where 
+        my ideas come alive — where I can merge the precision of engineering with the empathy of design and the strategy of business.
+      </p>
+      <p>
+        Beyond academics, I’ve built communities that reflect my values. As an <strong>Honors Ambassador</strong>, I support other students navigating 
+        academic and personal growth; as <strong>Treasurer of Crossover for Change</strong>, I lead initiatives empowering girls through education in Uganda; 
+        and as a <strong>Manager at NOCO Sports Center</strong>, I apply leadership and communication skills in a fast-paced, team-centered environment.
+      </p>
+      <p>
+        CSU has taught me that engineering isn’t just about innovation — it’s about impact. 
+        Every design choice, equation, and collaboration can create ripple effects that change lives.
+      </p>
+      <p class="takeaways">
+        <strong>Key Takeaways:</strong> Interdisciplinary innovation, ethical and human-centered design, teamwork, and community-driven leadership.
+      </p>
+      <img src="/assets/images/engineering_lab.jpg" alt="Engineering lab at Colorado State University" class="education-photo">
+    </div>
+  </div>
+</section>
+
+<style>
+/* ---------- EDUCATIONAL JOURNEY STYLING ---------- */
+.education-section {
+  margin: 6rem auto;
+  padding: 2rem;
+  max-width: 1200px;
+  background: linear-gradient(to bottom, rgba(200,181,104,0.08), rgba(255,255,255,0.9));
+  border-radius: 20px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+}
+
+.education-container {
+  text-align: left;
+  color: #333;
+  max-width: 950px;
+  margin: 0 auto;
+}
+
+.education-container h2 {
+  color: #1e4d2b;
+  font-size: 2rem;
+  border-bottom: 3px solid #c8b568;
+  display: inline-block;
+  margin-bottom: 1.5rem;
+}
+
+.education-container .intro {
+  font-size: 1.1rem;
+  margin-bottom: 2.5rem;
+  line-height: 1.7;
+  color: #444;
+}
+
+.education-block {
+  margin-bottom: 3rem;
+}
+
+.education-block h3 {
+  color: #1e4d2b;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.education-block p {
+  line-height: 1.75;
+  font-size: 1.05rem;
+  margin-bottom: 1rem;
+}
+
+.education-block .takeaways {
+  color: #1e4d2b;
+  font-weight: 600;
+}
+
+.education-photo {
+  width: 100%;
+  max-width: 900px;
+  height: auto;
+  border-radius: 16px;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.18);
+  margin-top: 1rem;
+  margin-bottom: 2.5rem;
+  display: block;
+}
+
+.timeline-divider {
+  height: 3px;
+  width: 80px;
+  background: #c8b568;
+  margin: 2rem auto 3rem;
+  border-radius: 2px;
+}
+
+/* ---------- RESPONSIVE DESIGN ---------- */
+@media (max-width: 900px) {
+  .education-container {
+    text-align: center;
+  }
+  .education-photo {
+    max-width: 95%;
+  }
+  .timeline-divider {
+    width: 60px;
+  }
+}
+</style>
