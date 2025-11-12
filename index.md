@@ -132,10 +132,13 @@ permalink: /
 
     <figure class="cfc-image">
       <img src="/assets/images/cfc.png" alt="Mia Chavez presenting with Crossover for Change in Uganda">
-      <figcaption>
-        Sharing interdisciplinary insights on engineering, leadership, and education with students in Uganda through
-        <strong class="cfc-highlight">Crossover for Change</strong>.
-      </figcaption>
+     <figcaption>
+       Sharing interdisciplinary insights on engineering, leadership, and education with students in Uganda through
+       <a href="https://crossoverforchange.org" target="_blank" rel="noopener noreferrer" class="cfc-link"> 
+         Crossover for Change 
+       </a>.
+     </figcaption>
+
     </figure>
   </div>
 
@@ -144,7 +147,7 @@ permalink: /
     <h1>Hi, I’m <span>Mia Chavez</span>.</h1>
     <p>
       I’m a <strong>Biomedical and Mechanical Engineering</strong> student at
-      <strong>Colorado State University</strong>, graduating in 2027 with a Business Minor and Entrepreneurship Certificate. My passion lies in combining technical engineering, design thinking, and social impact to create human-centered innovations.
+      <strong>Colorado State University</strong>, graduating in 2027 with a Business Administration Minor and Entrepreneurship Certificate in the Scott Scholars and Honors Programs. My passion lies in combining technical engineering, design thinking, and social impact to create human-centered innovations.
     </p>
 
     <p>
@@ -270,3 +273,14 @@ permalink: /
     </figure>
   </div>
 </section>
+.cfc-link {
+  color: var(--csu-green);
+  font-weight: 600;
+  text-decoration: underline;
+  transition: color 0.3s ease;
+}
+
+.cfc-link:hover {
+  color: var(--csu-gold);
+}
+
