@@ -8,120 +8,133 @@ permalink: /contact/
 
 <!-- ---------- CONTACT SECTION ---------- -->
 <section class="contact-section">
-  <h1>Let’s Connect</h1>
-  <p class="tagline">
-    Always open to new opportunities, collaborations, and conversations that spark innovation and impact.
-  </p>
+  <div class="overlay"></div>
+  <div class="contact-content">
+    <h1>Let’s Connect and Build Something Meaningful</h1>
+    <p>
+      I’d love to hear from you — whether it’s about engineering, leadership, nonprofit work, or collaboration opportunities.
+    </p>
 
-  <p class="intro">
-    Let’s connect and build something meaningful together. Whether you’d like to collaborate, ask questions, or learn more about my work — I’d love to hear from you.
-  </p>
+    <div class="contact-info">
+      <p><strong>Email:</strong> <a href="mailto:miacchavez10@gmail.com">miacchavez10@gmail.com</a></p>
+      <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/mia-c-chavez" target="_blank">linkedin.com/in/mia-c-chavez</a></p>
+      <p><strong>Phone:</strong> <a href="tel:7199302125">(719) 930-2125</a></p>
+    </div>
 
-  <div class="contact-info">
-    <p><strong>Email:</strong> <a href="mailto:miacchavez10@gmail.com">miacchavez10@gmail.com</a></p>
-    <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/mia-c-chavez" target="_blank">www.linkedin.com/in/mia-c-chavez</a></p>
-    <p><strong>Phone:</strong> <a href="tel:+17199302125">(719) 930-2125</a></p>
-  </div>
-
-  <div class="contact-buttons">
-    <a href="mailto:miacchavez10@gmail.com" class="gold">Email Me</a>
-    <a href="https://www.linkedin.com/in/mia-c-chavez" target="_blank">Visit LinkedIn</a>
+    <div class="hero-buttons">
+      <a href="/about/" class="gold">About Me</a>
+      <a href="/skills/">Skills</a>
+      <a href="/experiences/" class="gold">Experiences</a>
+    </div>
   </div>
 </section>
 
 <style>
 /* ---------- CONTACT SECTION ---------- */
 .contact-section {
-  max-width: 800px;
-  margin: 6rem auto;
-  padding: 3rem 2rem;
+  position: relative;
+  background: url("/assets/images/connecting.jpg") center center / cover no-repeat;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 2rem;
   text-align: center;
-  background: linear-gradient(to right, rgba(200,181,104,0.07), rgba(255,255,255,0.9));
-  border-radius: 20px;
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  color: white;
+  overflow: hidden;
 }
 
-.contact-section h1 {
-  color: #1e4d2b; /* CSU green */
+/* Semi-transparent overlay for readability */
+.contact-section .overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(30, 77, 43, 0.7); /* CSU green overlay, 70% opacity */
+  z-index: 1;
+}
+
+/* Content styling */
+.contact-content {
+  position: relative;
+  z-index: 2;
+  max-width: 700px;
+  background: rgba(255, 255, 255, 0.08);
+  padding: 3rem 2rem;
+  border-radius: 16px;
+  backdrop-filter: blur(6px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+}
+
+/* Text */
+.contact-content h1 {
   font-size: 2.3rem;
-  margin-bottom: 0.5rem;
+  color: #c8b568;
+  margin-bottom: 1rem;
 }
 
-.contact-section .tagline {
-  color: #444;
-  font-size: 1.1rem;
-  font-style: italic;
-  margin-bottom: 1.8rem;
-}
-
-.contact-section .intro {
+.contact-content p {
   font-size: 1.1rem;
   line-height: 1.7;
-  color: #333;
-  margin-bottom: 2rem;
+  margin-bottom: 1.2rem;
+  color: #f0f0f0;
 }
 
+/* Contact info */
 .contact-info p {
+  margin: 0.5rem 0;
   font-size: 1.05rem;
-  color: #1e4d2b;
-  margin: 0.6rem 0;
 }
 
 .contact-info a {
-  color: #1e4d2b;
+  color: #c8b568;
   text-decoration: none;
   font-weight: 500;
-  transition: color 0.3s ease;
 }
 
 .contact-info a:hover {
-  color: #c8b568; /* CSU gold */
+  text-decoration: underline;
 }
 
-/* ---------- CONTACT BUTTONS ---------- */
-.contact-buttons {
-  margin-top: 2.5rem;
+/* Buttons (match homepage) */
+.hero-buttons {
+  margin-top: 2rem;
   display: flex;
-  justify-content: center;
-  gap: 1.2rem;
   flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
 }
 
-.contact-buttons a {
+.hero-buttons a {
   background-color: #1e4d2b;
   color: white;
   font-weight: 600;
   text-decoration: none;
-  padding: 0.9rem 2rem;
+  padding: 0.7rem 1.8rem;
   border-radius: 8px;
-  font-size: 1rem;
   transition: 0.3s ease;
 }
 
-.contact-buttons a.gold {
+.hero-buttons a.gold {
   background-color: #c8b568;
   color: black;
 }
 
-.contact-buttons a:hover {
+.hero-buttons a:hover {
   opacity: 0.9;
   transform: translateY(-2px);
 }
 
 /* ---------- RESPONSIVE ---------- */
 @media (max-width: 768px) {
-  .contact-section {
+  .contact-content {
     padding: 2rem 1.5rem;
   }
 
-  .contact-buttons {
-    flex-direction: column;
-    align-items: center;
+  .contact-content h1 {
+    font-size: 2rem;
   }
 
-  .contact-buttons a {
-    width: 80%;
-    max-width: 300px;
+  .contact-info p {
+    font-size: 1rem;
   }
 }
 </style>
