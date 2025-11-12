@@ -443,3 +443,151 @@ permalink: /about/
   }
 }
 </style>
+<!-- ---------- BEYOND THE CLASSROOM SECTION ---------- -->
+<section class="beyond-classroom">
+  <div class="beyond-container">
+    <h2>Beyond the Classroom</h2>
+    <p class="intro">
+      My education has extended far past textbooks and lectures. Whether through athletics, mentorship, or service work,
+      I’ve learned the importance of teamwork, empathy, and perseverance. Each experience outside the classroom has 
+      strengthened my ability to lead, adapt, and connect with others.
+    </p>
+
+    <!-- ATHLETICS & TEAMWORK -->
+    <div class="beyond-block reverse">
+      <div class="beyond-text">
+        <h3>Athletics & Teamwork</h3>
+        <p>
+          Basketball has always been a constant in my life — a place where I’ve learned resilience, communication, and leadership. 
+          As <strong>President of the CSU Women’s Club Basketball Team</strong>, I’ve worked to build a program that values growth, inclusion, and collaboration. 
+          From organizing tournaments to mentoring younger players, basketball has taught me to lead by example and empower others through shared effort and trust.
+        </p>
+        <p>
+          Sports have a unique power to connect people across backgrounds, languages, and cultures — uniting us through a shared love of the game. 
+          It’s this universality that reminds me how teamwork, dedication, and respect can bridge divides and create a sense of belonging anywhere in the world.
+        </p>
+      </div>
+      <div class="beyond-image">
+        <img src="/assets/images/basketball.jpg" alt="Mia Chavez playing basketball">
+      </div>
+    </div>
+
+    <!-- SERVICE & MENTORSHIP -->
+    <div class="beyond-block">
+      <div class="beyond-image">
+        <img src="/assets/images/cfc_uganda.jpg" alt="Mia Chavez working with Crossover for Change in Uganda">
+      </div>
+      <div class="beyond-text">
+        <h3>Service & Mentorship</h3>
+        <p>
+          Through <strong>Crossover for Change</strong>, the nonprofit I co-founded, I’ve worked with young women in Uganda to promote education, mentorship, and leadership through sports. 
+          Establishing a means for these girls to develop confidence, a sense of empowerment, and a connection with their communities is critical to reversing the barriers they face. 
+          Sports are known for building leadership, self-esteem, and teamwork — making basketball an ideal tool for this mission.
+        </p>
+        <p>
+          Our programs focus on designing experiences that meet girls where they are — customizing lessons, fostering character development, and encouraging them to stay in school. 
+          The impact has been life-changing for all of us. Mentorship, to me, is not about instruction but about inspiration — showing others what’s possible when opportunity meets belief.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+/* ---------- BEYOND THE CLASSROOM STYLING ---------- */
+.beyond-classroom {
+  margin: 6rem auto;
+  padding: 3rem 2rem;
+  max-width: 1200px;
+  background: linear-gradient(to right, rgba(30,77,43,0.05), rgba(200,181,104,0.08));
+  border-radius: 20px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+}
+
+.beyond-container {
+  color: #333;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.beyond-container h2 {
+  color: #1e4d2b;
+  font-size: 2rem;
+  border-bottom: 3px solid #c8b568;
+  display: inline-block;
+  margin-bottom: 1.5rem;
+}
+
+.beyond-container .intro {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 3rem;
+  color: #444;
+}
+
+.beyond-block {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3rem;
+  margin-bottom: 4rem;
+  flex-wrap: wrap;
+}
+
+.beyond-block.reverse {
+  flex-direction: row-reverse;
+}
+
+.beyond-text {
+  flex: 1 1 500px;
+}
+
+.beyond-text h3 {
+  color: #1e4d2b;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.beyond-text p {
+  line-height: 1.75;
+  font-size: 1.05rem;
+  margin-bottom: 1rem;
+}
+
+.beyond-image {
+  flex: 1 1 420px;
+  display: flex;
+  justify-content: center;
+}
+
+.beyond-image img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  border-radius: 16px;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.18);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.beyond-image img:hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 22px rgba(0,0,0,0.3);
+}
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width: 900px) {
+  .beyond-block {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .beyond-block.reverse {
+    flex-direction: column;
+  }
+
+  .beyond-image img {
+    max-width: 90%;
+  }
+}
+</style>
+
