@@ -1,3 +1,11 @@
+---
+layout: page
+title: About Me
+permalink: /about/
+---
+
+<link rel="stylesheet" href="/assets/css/style.css">
+
 <!-- ---------- ABOUT HERO SECTION ---------- -->
 <section class="hero about-hero">
   <div class="hero-image">
@@ -9,22 +17,21 @@
     <p>
       I’m <strong>Mia Chavez</strong> — a Biomedical and Mechanical Engineering student at 
       <strong>Colorado State University</strong> with a Business Minor and Entrepreneurship Certificate. 
-      I’m deeply interested in the intersection of engineering, empathy, and impact — how design and 
-      problem-solving can improve people’s lives in meaningful, sustainable ways.
+      My interests sit at the intersection of technology, human connection, and social impact. 
+      I’m passionate about using engineering not just to design new systems, but to design opportunities.
     </p>
 
     <p>
-      My journey has been shaped by curiosity and connection. Whether I’m working in a lab, leading a 
-      nonprofit project, or collaborating with a team, I strive to approach challenges with both technical 
-      precision and human understanding. Engineering, to me, is not just about building things — it’s about 
-      building possibilities for others.
+      My curiosity and drive have led me through research, nonprofit work, and leadership roles that 
+      challenged me to think beyond the technical side of engineering. I value collaboration, creativity, 
+      and integrity — and I’ve learned that innovation happens when people from different backgrounds 
+      and ideas come together around a shared purpose.
     </p>
 
     <p>
-      Outside of academics, I find balance through basketball, mentorship, and travel. I’m passionate about 
-      using innovation to make education, healthcare, and opportunity more accessible — especially in 
-      underrepresented communities. These experiences have helped me grow into a thinker, leader, and learner 
-      who values people as much as progress.
+      Outside of the lab and classroom, I lead <strong>Crossover for Change</strong>, a nonprofit that 
+      empowers young women in Uganda through basketball, education, and mentorship. I also serve as 
+      President of CSU Women’s Club Basketball — balancing structure, teamwork, and joy in every role I take on.
     </p>
 
     <div class="hero-buttons">
