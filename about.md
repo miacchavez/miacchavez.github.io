@@ -47,11 +47,11 @@ permalink: /about/
 </section>
 
 <style>
-/* ---------- ABOUT HERO SECTION STYLING ---------- */
+/* ---------- ABOUT HERO SECTION ---------- */
 .about-hero {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items: flex-start;
+  justify-content: space-between;
   gap: 3rem;
   flex-wrap: wrap;
   padding: 4rem 2rem;
@@ -69,48 +69,39 @@ permalink: /about/
 }
 
 .about-hero .hero-text {
-  flex: 1 1 480px;
-  max-width: 620px;
+  flex: 1 1 450px;
+  max-width: 600px;
   text-align: left;
 }
 
-.about-hero h1 {
-  color: #1e4d2b; /* CSU green */
-  font-size: 2.2rem;
-  margin-bottom: 1rem;
-}
-
-.about-hero p {
-  margin-bottom: 1rem;
-  line-height: 1.7;
-  color: #333;
-}
-
-/* ---------- BUTTON STYLING (MATCHES HOMEPAGE) ---------- */
-.hero-buttons {
-  margin-top: 1.5rem;
+/* ---------- VERTICAL BUTTONS ---------- */
+.hero-buttons.vertical {
   display: flex;
+  flex-direction: column;
   gap: 1rem;
-  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: flex-start;
 }
 
-.hero-buttons a {
+.hero-buttons.vertical a {
   background-color: #1e4d2b; /* CSU green */
   color: white;
   font-weight: 600;
   text-decoration: none;
-  padding: 0.7rem 2rem;
-  border-radius: 8px;
+  padding: 0.8rem 2.5rem;
+  border-radius: 10px;
   font-size: 1rem;
   transition: 0.3s ease;
+  width: 250px;
+  text-align: center;
 }
 
-.hero-buttons a.gold {
+.hero-buttons.vertical a.gold {
   background-color: #c8b568; /* CSU gold */
   color: black;
 }
 
-.hero-buttons a:hover {
+.hero-buttons.vertical a:hover {
   opacity: 0.9;
   transform: translateY(-2px);
 }
@@ -119,18 +110,16 @@ permalink: /about/
 @media (max-width: 768px) {
   .about-hero {
     flex-direction: column;
+    align-items: center;
     text-align: center;
   }
 
-  .about-hero .hero-text {
-    text-align: center;
-  }
-
-  .hero-buttons {
-    justify-content: center;
+  .hero-buttons.vertical {
+    align-items: center;
   }
 }
 </style>
+
 <!-- ---------- MY ROOTS SECTION (TEXT + CENTER IMAGE + FAMILY GALLERY) ---------- -->
 <section id="roots" class="roots-section">
   <div class="roots-container">
