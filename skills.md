@@ -10,14 +10,14 @@ permalink: /skills/
 <section class="skills-intro">
   <h1>Skills & Expertise</h1>
   <p>
-    Through my studies, leadership, and hands-on experiences, I’ve developed a diverse skill set that bridges engineering, innovation, and human connection. Each of these areas reflects how I approach challenges — with creativity, precision, and purpose.
+    My engineering, leadership, and nonprofit experiences have shaped a versatile skill set — balancing technical precision, creativity, and human-centered innovation. These skills reflect how I approach challenges and create meaningful impact through engineering, collaboration, and service.
   </p>
 </section>
 
 <section class="skills-grid">
-  <!-- Technical & Engineering Skills -->
+  <!-- Technical & Engineering -->
   <div class="skill-card">
-    <h2>🧠 Technical & Engineering</h2>
+    <h2>Technical & Engineering</h2>
     <ul>
       <li>SolidWorks Certified (3D modeling, assemblies, and design)</li>
       <li>HAAS CNC mill and lathe operation</li>
@@ -30,11 +30,11 @@ permalink: /skills/
     </ul>
   </div>
 
-  <!-- Research & Analytical Skills -->
-  <div class="skill-card">
-    <h2>💡 Research & Analytical</h2>
+  <!-- Research & Analytical -->
+  <div class="skill-card gold-bg">
+    <h2>Research & Analytical</h2>
     <ul>
-      <li>Independent researcher in both engineering and social impact studies</li>
+      <li>Independent researcher in engineering and social impact studies</li>
       <li>Empirical knee implant testing and design improvement research</li>
       <li>Quantitative and qualitative data analysis</li>
       <li>Technical writing, reporting, and synthesis of findings</li>
@@ -42,34 +42,34 @@ permalink: /skills/
     </ul>
   </div>
 
-  <!-- Clinical & Biomedical Insight -->
+  <!-- Clinical & Biomedical -->
   <div class="skill-card">
-    <h2>🩺 Clinical & Biomedical</h2>
+    <h2>Clinical & Biomedical</h2>
     <ul>
       <li>Clinical rotations in orthopedics, cardiology, trauma, and radiology</li>
-      <li>Familiar with surgical devices for ACL, meniscus, and rotator cuff repair</li>
-      <li>Understanding of patient care, surgical workflow, and innovation opportunities</li>
-      <li>Experience observing multidisciplinary clinical teams</li>
+      <li>Experience with surgical devices for ACL, meniscus, and rotator cuff repair</li>
+      <li>Understanding of surgical workflow and patient-centered innovation</li>
+      <li>Experience with multidisciplinary clinical teams</li>
       <li>Knowledge of medical ethics, safety, and usability testing</li>
     </ul>
   </div>
 
   <!-- Leadership & Communication -->
-  <div class="skill-card">
-    <h2>🧩 Leadership & Communication</h2>
+  <div class="skill-card gold-bg">
+    <h2>Leadership & Communication</h2>
     <ul>
-      <li>President, CSU Honors Student Association — team management and outreach</li>
-      <li>President, CSU Women’s Club Basketball — coaching and conflict resolution</li>
-      <li>Treasurer & Co-Founder, Crossover for Change — nonprofit leadership</li>
+      <li>President, CSU Honors Student Association — team leadership & outreach</li>
+      <li>President, CSU Women’s Club Basketball — coaching & conflict resolution</li>
+      <li>Treasurer & Co-Founder, Crossover for Change — nonprofit strategy</li>
       <li>Honors Ambassador — mentorship, recruitment, and public speaking</li>
-      <li>Skilled in travel coordination, event logistics, and team development</li>
-      <li>Strong background in mentorship, coaching, and interpersonal communication</li>
+      <li>Skilled in mentorship, coaching, and team development</li>
+      <li>Strong background in travel coordination and event logistics</li>
     </ul>
   </div>
 
   <!-- Innovation & Business -->
   <div class="skill-card">
-    <h2>🚀 Innovation, Business & Design</h2>
+    <h2>Innovation, Business & Design</h2>
     <ul>
       <li>Business Administration minor and Entrepreneurship Certificate</li>
       <li>Project management and creative direction</li>
@@ -82,7 +82,7 @@ permalink: /skills/
 </section>
 
 <style>
-/* ---------- SKILLS PAGE STYLING ---------- */
+/* ---------- SKILLS INTRO ---------- */
 .skills-intro {
   text-align: center;
   max-width: 900px;
@@ -105,8 +105,8 @@ permalink: /skills/
 /* ---------- GRID LAYOUT ---------- */
 .skills-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 1.8rem;
+  grid-template-columns: repeat(auto-fit, minmax(460px, 1fr));
+  gap: 2rem;
   max-width: 1200px;
   margin: 3rem auto;
   padding: 0 2rem;
@@ -116,15 +116,19 @@ permalink: /skills/
 .skill-card {
   background-color: #ffffff;
   border: 2px solid #c8b568;
-  border-radius: 14px;
-  padding: 1.8rem;
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.08);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-card.gold-bg {
+  background-color: rgba(200, 181, 104, 0.08);
 }
 
 .skill-card:hover {
   transform: translateY(-6px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
 }
 
 .skill-card h2 {
@@ -143,16 +147,16 @@ permalink: /skills/
 .skill-card li {
   margin-bottom: 0.6rem;
   font-size: 1rem;
-  line-height: 1.5;
+  line-height: 1.6;
   color: #333;
   position: relative;
 }
 
 .skill-card li::before {
-  content: "•";
+  content: "›";
   color: #c8b568;
   font-weight: bold;
-  margin-right: 0.5rem;
+  margin-right: 0.6rem;
 }
 
 /* ---------- RESPONSIVE ---------- */
@@ -162,6 +166,9 @@ permalink: /skills/
   }
   .skill-card {
     padding: 1.5rem;
+  }
+  .skills-grid {
+    grid-template-columns: 1fr;
   }
 }
 </style>
