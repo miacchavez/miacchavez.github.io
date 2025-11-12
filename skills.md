@@ -6,169 +6,171 @@ permalink: /skills/
 
 <link rel="stylesheet" href="/assets/css/style.css">
 
-<!-- ---------- SKILLS PAGE ---------- -->
-<section class="skills-intro">
-  <h1>Skills & Expertise</h1>
-  <p>
-    My engineering, leadership, and nonprofit experiences have shaped a versatile skill set — balancing technical precision, creativity, and human-centered innovation. These skills reflect how I approach challenges and create meaningful impact through engineering, collaboration, and service.
-  </p>
-</section>
+<section class="skills-section">
+  <h1>Explore My Skills Below</h1>
 
-<section class="skills-grid">
-  <!-- Technical & Engineering -->
-  <div class="skill-card">
-    <h2>Technical & Engineering</h2>
-    <ul>
-      <li>SolidWorks Certified (3D modeling, assemblies, and design)</li>
-      <li>HAAS CNC mill and lathe operation</li>
-      <li>Manual machining: lathe, mill, belt grinder, and laser cutter</li>
-      <li>Engraver operation and precision manufacturing</li>
-      <li>Circuit design, prototyping, and rapid testing</li>
-      <li>Data analysis and simulation (Excel, MATLAB)</li>
-      <li>Materials testing, calibration, and system optimization</li>
-      <li>Medical device design and evaluation</li>
-    </ul>
-  </div>
+  <div class="accordion">
 
-  <!-- Research & Analytical -->
-  <div class="skill-card gold-bg">
-    <h2>Research & Analytical</h2>
-    <ul>
-      <li>Independent researcher in engineering and social impact studies</li>
-      <li>Empirical knee implant testing and design improvement research</li>
-      <li>Quantitative and qualitative data analysis</li>
-      <li>Technical writing, reporting, and synthesis of findings</li>
-      <li>Statistical reasoning and experimental design</li>
-    </ul>
-  </div>
+    <!-- Engineering & Technical Skills -->
+    <div class="accordion-item">
+      <button class="accordion-header">Engineering & Technical Skills</button>
+      <div class="accordion-content">
+        <p>
+          Hands-on experience designing, testing, and fabricating mechanical and biomedical systems, guided by safety, precision, and creativity.
+        </p>
+        <ul>
+          <li>SolidWorks Certified; proficient in 3D modeling & simulation</li>
+          <li>HAAS CNC Mill & Lathe Certified; capable on manual mill, lathe, belt grinder, laser, and engraver</li>
+          <li>Medical device design and evaluation</li>
+          <li>Circuit design, soldering, and prototyping</li>
+          <li>Data analysis, MATLAB, and LabVIEW</li>
+        </ul>
+      </div>
+    </div>
 
-  <!-- Clinical & Biomedical -->
-  <div class="skill-card">
-    <h2>Clinical & Biomedical</h2>
-    <ul>
-      <li>Clinical rotations in orthopedics, cardiology, trauma, and radiology</li>
-      <li>Experience with surgical devices for ACL, meniscus, and rotator cuff repair</li>
-      <li>Understanding of surgical workflow and patient-centered innovation</li>
-      <li>Experience with multidisciplinary clinical teams</li>
-      <li>Knowledge of medical ethics, safety, and usability testing</li>
-    </ul>
-  </div>
+    <!-- Research, Leadership & Communication -->
+    <div class="accordion-item">
+      <button class="accordion-header">Research, Leadership & Communication</button>
+      <div class="accordion-content">
+        <p>
+          Proven ability to lead teams, communicate across disciplines, and foster mentorship through research, service, and athletics.
+        </p>
+        <ul>
+          <li>Public speaking and presentation skills</li>
+          <li>Mentorship, coaching, and student engagement</li>
+          <li>Conflict resolution and collaboration under pressure</li>
+          <li>Travel and event coordination</li>
+          <li>Independent research and analytical writing</li>
+        </ul>
+      </div>
+    </div>
 
-  <!-- Leadership & Communication -->
-  <div class="skill-card gold-bg">
-    <h2>Leadership & Communication</h2>
-    <ul>
-      <li>President, CSU Honors Student Association — team leadership & outreach</li>
-      <li>President, CSU Women’s Club Basketball — coaching & conflict resolution</li>
-      <li>Treasurer & Co-Founder, Crossover for Change — nonprofit strategy</li>
-      <li>Honors Ambassador — mentorship, recruitment, and public speaking</li>
-      <li>Skilled in mentorship, coaching, and team development</li>
-      <li>Strong background in travel coordination and event logistics</li>
-    </ul>
-  </div>
-
-  <!-- Innovation & Business -->
-  <div class="skill-card">
-    <h2>Innovation, Business & Design</h2>
-    <ul>
-      <li>Business Administration minor and Entrepreneurship Certificate</li>
-      <li>Project management and creative direction</li>
-      <li>Graphic design for digital media and branding</li>
-      <li>Entrepreneurship and ethical innovation strategy</li>
-      <li>Experience merging engineering precision with human-centered design</li>
-      <li>Developing cross-disciplinary solutions that drive meaningful impact</li>
-    </ul>
+    <!-- Innovation, Business & Design Thinking -->
+    <div class="accordion-item">
+      <button class="accordion-header">Innovation, Business & Design Thinking</button>
+      <div class="accordion-content">
+        <p>
+          Entrepreneurial mindset with a focus on creative problem-solving, strategic planning, and user-centered design across technical and social contexts.
+        </p>
+        <ul>
+          <li>Entrepreneurship and project development</li>
+          <li>Graphic design and visual storytelling</li>
+          <li>Marketing, outreach, and stakeholder communication</li>
+          <li>Program development and systems innovation</li>
+          <li>Leadership in nonprofit and organizational management</li>
+        </ul>
+      </div>
+    </div>
   </div>
 </section>
 
 <style>
-/* ---------- SKILLS INTRO ---------- */
-.skills-intro {
-  text-align: center;
+/* ---------- SKILLS SECTION ---------- */
+.skills-section {
   max-width: 900px;
-  margin: 3rem auto;
-  padding: 0 2rem;
-}
-
-.skills-intro h1 {
-  color: #1e4d2b;
-  font-size: 2.3rem;
-  margin-bottom: 1rem;
-}
-
-.skills-intro p {
-  color: #333;
-  line-height: 1.7;
-  font-size: 1.05rem;
-}
-
-/* ---------- GRID LAYOUT ---------- */
-.skills-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(460px, 1fr));
-  gap: 2rem;
-  max-width: 1200px;
-  margin: 3rem auto;
-  padding: 0 2rem;
-}
-
-/* ---------- SKILL CARDS ---------- */
-.skill-card {
-  background-color: #ffffff;
-  border: 2px solid #c8b568;
-  border-radius: 16px;
+  margin: 4rem auto;
   padding: 2rem;
-  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.08);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
 }
 
-.skill-card.gold-bg {
-  background-color: rgba(200, 181, 104, 0.08);
-}
-
-.skill-card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
-}
-
-.skill-card h2 {
+.skills-section h1 {
   color: #1e4d2b;
-  border-bottom: 2px solid #c8b568;
-  padding-bottom: 0.5rem;
-  margin-bottom: 1rem;
-  font-size: 1.3rem;
+  font-size: 2.2rem;
+  margin-bottom: 2rem;
 }
 
-.skill-card ul {
-  list-style: none;
-  padding-left: 0;
+/* ---------- ACCORDION ---------- */
+.accordion {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
-.skill-card li {
-  margin-bottom: 0.6rem;
-  font-size: 1rem;
+.accordion-item {
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.accordion-header {
+  background-color: #1e4d2b;
+  color: white;
+  cursor: pointer;
+  padding: 1rem 1.2rem;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: left;
+  font-size: 1.1rem;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.accordion-header:hover {
+  background-color: #2a633b;
+}
+
+.accordion-header.active {
+  background-color: #c8b568;
+  color: black;
+}
+
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  background: #fffdf7;
+  padding: 0 1.5rem;
+  text-align: left;
   line-height: 1.6;
-  color: #333;
-  position: relative;
+  transition: max-height 0.5s ease, padding 0.3s ease;
 }
 
-.skill-card li::before {
-  content: "›";
-  color: #c8b568;
-  font-weight: bold;
-  margin-right: 0.6rem;
+.accordion-content p {
+  margin: 1rem 0 0.5rem;
+  color: #333;
+}
+
+.accordion-content ul {
+  margin: 0 0 1rem 1.2rem;
+}
+
+.accordion-content li {
+  margin-bottom: 0.5rem;
 }
 
 /* ---------- RESPONSIVE ---------- */
 @media (max-width: 768px) {
-  .skills-intro h1 {
-    font-size: 2rem;
+  .skills-section {
+    padding: 1rem;
   }
-  .skill-card {
-    padding: 1.5rem;
-  }
-  .skills-grid {
-    grid-template-columns: 1fr;
+  .accordion-header {
+    font-size: 1rem;
   }
 }
 </style>
+
+<script>
+document.querySelectorAll(".accordion-header").forEach(button => {
+  button.addEventListener("click", () => {
+    const accordion = button.parentElement.parentElement;
+    const openItem = accordion.querySelector(".accordion-header.active");
+
+    if (openItem && openItem !== button) {
+      openItem.classList.remove("active");
+      openItem.nextElementSibling.style.maxHeight = null;
+      openItem.nextElementSibling.style.padding = "0 1.5rem";
+    }
+
+    button.classList.toggle("active");
+    const content = button.nextElementSibling;
+
+    if (button.classList.contains("active")) {
+      content.style.maxHeight = content.scrollHeight + "px";
+      content.style.padding = "1rem 1.5rem";
+    } else {
+      content.style.maxHeight = null;
+      content.style.padding = "0 1.5rem";
+    }
+  });
+});
+</script>
