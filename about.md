@@ -129,100 +129,76 @@ permalink: /about/
   }
 }
 </style>
-<!-- ---------- MY ROOTS SECTION (TEXT LEFT, IMAGE RIGHT, COMBINED CONTENT) ---------- -->
-<section class="roots-section">
-  <div class="roots-container reverse-layout">
-    <div class="roots-text">
-      <h2>My Roots</h2>
-      <p>
-        “Wow, really?” is typical for me to hear when people ask, “How many siblings do you have?”
-        My response: seven. Yes, really. It’s chaotic at times — but it’s a kind of organized chaos
-        that taught me teamwork, patience, and adaptability early on. Traveling cross-country in a
-        14-passenger bus with eight kids meant constant motion, laughter, and improvisation. Whether
-        it was carsickness, forgotten snacks, or emergency rest stops, I learned quickly how to stay
-        calm under pressure, problem-solve, and keep a sense of humor along the way.
-      </p>
-
-      <p>
-        My parents, <strong>Denise and David Chavez</strong>, built a home full of energy, laughter,
-        and faith. As the fourth of eight siblings — <strong>David</strong>, <strong>Joey</strong>,
-        <strong>Matthew</strong>, <strong>Hope</strong>, <strong>Faith</strong>,
-        <strong>Micah</strong>, and <strong>Sabrina</strong> — I grew up surrounded by different
-        personalities and perspectives. That environment taught me how to communicate, mediate,
-        and connect with people who don’t always see things the same way.
-      </p>
-
-      <p>
-        My life has always been a balance of movement and meaning — academics, leadership,
-        basketball, and family. The “controlled chaos” of growing up Chavez shaped me into someone
-        who thrives in collaboration and values empathy as much as efficiency. It’s where I learned
-        that leadership isn’t about control — it’s about care, listening, and showing up when others
-        need you most.
-      </p>
-
-      <p>
-        My family is the foundation of everything I do. They’ve taught me how to listen before
-        acting, how to step up when needed, and how to balance ambition with humility. I see echoes
-        of those lessons every day — in engineering teams, nonprofit meetings, or basketball
-        practices — where the same patience, adaptability, and humor I learned at home help me bring
-        people together and get things done.
-      </p>
-    </div>
-
-    <div class="roots-image">
-      <img src="/assets/images/family.jpg" alt="The Chavez family">
-    </div>
-  </div>
-</section>
-
 <style>
-/* ---------- MY ROOTS SECTION (REVERSE LAYOUT) ---------- */
+/* ---------- MY ROOTS SECTION (TEXT LEFT, IMAGE RIGHT, ENHANCED VISUAL BALANCE) ---------- */
 .roots-section {
-  margin: 5rem auto;
-  padding: 0 2rem;
+  margin: 6rem auto;
+  padding: 2rem 2rem;
   max-width: 1200px;
+  background: linear-gradient(to right, rgba(200,181,104,0.07), rgba(255,255,255,0.7));
+  border-radius: 20px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
 }
 
 .roots-container {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   gap: 3rem;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
 }
 
 .reverse-layout {
   flex-direction: row-reverse;
 }
 
-.roots-image img {
-  width: 360px;
-  height: auto;
-  border-radius: 16px;
-  border: 5px solid #1e4d2b; /* CSU green */
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+/* --- IMAGE STYLING --- */
+.roots-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
 }
 
+.roots-image img {
+  width: 95%;
+  max-width: 420px;
+  height: auto;
+  border-radius: 18px;
+  border: 6px solid #1e4d2b; /* CSU green */
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.25);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.roots-image img:hover {
+  transform: scale(1.03);
+  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.3);
+}
+
+/* --- TEXT STYLING --- */
 .roots-text {
-  flex: 1 1 500px;
-  max-width: 650px;
+  flex: 1;
+  max-width: 580px;
   color: #333;
 }
 
 .roots-text h2 {
   color: #1e4d2b;
-  margin-bottom: 0.8rem;
-  font-size: 1.8rem;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  border-bottom: 3px solid #c8b568;
+  display: inline-block;
+  padding-bottom: 0.3rem;
 }
 
 .roots-text p {
-  line-height: 1.7;
-  margin-bottom: 1rem;
-  font-size: 1.05rem;
+  line-height: 1.8;
+  font-size: 1.08rem;
+  margin-bottom: 1.2rem;
 }
 
-@media (max-width: 768px) {
-  .reverse-layout {
+/* --- RESPONSIVE DESIGN --- */
+@media (max-width: 900px) {
+  .roots-container {
     flex-direction: column;
     text-align: center;
   }
@@ -231,6 +207,16 @@ permalink: /about/
     width: 85%;
     margin-top: 1.5rem;
   }
+
+  .roots-text h2 {
+    font-size: 1.7rem;
+  }
+
+  .roots-text p {
+    font-size: 1rem;
+  }
 }
+</style>
+
 </style>
 
