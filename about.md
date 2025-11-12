@@ -175,25 +175,17 @@ permalink: /about/
     </div>
   </div>
 
-  <!-- ---------- FAMILY IMAGE GALLERY ---------- -->
-  <div class="family-gallery">
-    <div class="row">
-      <img src="/assets/images/family7.jpg" alt="Family photo 7">
-      <img src="/assets/images/family8.jpg" alt="Family photo 8">
-    </div>
-    <div class="row">
-      <img src="/assets/images/family4.jpg" alt="Family photo 4">
-      <img src="/assets/images/family5.jpg" alt="Family photo 5">
-    </div>
-    <div class="row">
-      <img src="/assets/images/family1.jpg" alt="Family photo 1">
-      <img src="/assets/images/family2.jpg" alt="Family photo 2">
-    </div>
-    <div class="row">
-      <img src="/assets/images/family6.jpg" alt="Family photo 6">
-      <img src="/assets/images/family9.jpg" alt="Family photo 9">
-    </div>
-  </div>
+<!-- ---------- FAMILY IMAGE GALLERY ---------- -->
+<div class="family-gallery">
+  <img src="/assets/images/family7.jpg" alt="Family photo 7">
+  <img src="/assets/images/family8.jpg" alt="Family photo 8">
+  <img src="/assets/images/family4.jpg" alt="Family photo 4">
+  <img src="/assets/images/family5.jpg" alt="Family photo 5">
+  <img src="/assets/images/family1.jpg" alt="Family photo 1">
+  <img src="/assets/images/family2.jpg" alt="Family photo 2">
+  <img src="/assets/images/family6.jpg" alt="Family photo 6">
+  <img src="/assets/images/family9.jpg" alt="Family photo 9">
+</div>
 </section>
 
 <style>
@@ -243,25 +235,21 @@ permalink: /about/
   box-shadow: 0 8px 18px rgba(0, 0, 0, 0.25);
 }
 
-/* ---------- FAMILY GALLERY ---------- */
+/* ---------- FAMILY GALLERY (TWO IMAGES PER ROW) ---------- */
 .family-gallery {
   margin-top: 3rem;
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   gap: 1.8rem;
-  align-items: center;
-}
-
-.family-gallery .row {
-  display: flex;
-  justify-content: center;
-  gap: 1.8rem;
-  flex-wrap: wrap;
+  justify-items: center;
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .family-gallery img {
   width: 100%;
-  max-width: 500px;
+  max-width: 520px;
   height: auto;
   border-radius: 12px;
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
@@ -283,8 +271,8 @@ permalink: /about/
     width: 90%;
   }
 
-  .family-gallery .row {
-    gap: 1.2rem;
+  .family-gallery {
+    grid-template-columns: 1fr;
   }
 
   .family-gallery img {
@@ -293,8 +281,3 @@ permalink: /about/
 }
 </style>
 
-  .roots-text p {
-    font-size: 1rem;
-  }
-}
-</style>
