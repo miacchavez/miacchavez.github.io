@@ -129,7 +129,7 @@ permalink: /about/
   }
 }
 </style>
-<!-- ---------- MY ROOTS SECTION (TEXT LEFT, IMAGE RIGHT, FINAL VERSION) ---------- -->
+<!-- ---------- MY ROOTS SECTION (TEXT + CENTER IMAGE + FAMILY GALLERY) ---------- -->
 <section class="roots-section">
   <div class="roots-container">
     <div class="roots-text">
@@ -137,12 +137,16 @@ permalink: /about/
 
       <p>
         “Wow, really?” is typical for me to hear when people ask, “How many siblings do you have?”
-        My response: seven. Yes, really. It’s chaotic at times — but it’s a kind of organized chaos
+        My response: seven. Yes, really. It’s chaotic at times — but it’s the kind of organized chaos
         that taught me teamwork, patience, and adaptability early on. Traveling cross-country in a
         14-passenger bus with eight kids meant constant motion, laughter, and improvisation. Whether
         it was carsickness, forgotten snacks, or emergency rest stops, I learned quickly how to stay
         calm under pressure, problem-solve, and keep a sense of humor along the way.
       </p>
+
+      <div class="center-family-photo">
+        <img src="/assets/images/family.jpg" alt="The Chavez family together">
+      </div>
 
       <p>
         My parents, <strong>Denise and David Chavez</strong>, built a home full of energy, laughter,
@@ -169,96 +173,125 @@ permalink: /about/
         people together and get things done.
       </p>
     </div>
+  </div>
 
-    <div class="roots-image">
-      <figure>
-        <img src="/assets/images/family.jpg" alt="The Chavez family">
-        <figcaption style="font-size:0.9rem;color:#555;margin-top:0.5rem;">
-          The Chavez family — where teamwork, laughter, and creativity began.
-        </figcaption>
-      </figure>
+  <!-- ---------- FAMILY IMAGE GALLERY ---------- -->
+  <div class="family-gallery">
+    <div class="row">
+      <img src="/assets/images/family7.jpg" alt="Family photo 7">
+      <img src="/assets/images/family8.jpg" alt="Family photo 8">
+    </div>
+    <div class="row">
+      <img src="/assets/images/family4.jpg" alt="Family photo 4">
+      <img src="/assets/images/family5.jpg" alt="Family photo 5">
+    </div>
+    <div class="row">
+      <img src="/assets/images/family1.jpg" alt="Family photo 1">
+      <img src="/assets/images/family2.jpg" alt="Family photo 2">
+    </div>
+    <div class="row">
+      <img src="/assets/images/family6.jpg" alt="Family photo 6">
+      <img src="/assets/images/family9.jpg" alt="Family photo 9">
     </div>
   </div>
 </section>
 
 <style>
-/* ---------- MY ROOTS SECTION (TEXT LEFT, IMAGE RIGHT, ENHANCED VISUAL BALANCE) ---------- */
+/* ---------- MY ROOTS SECTION ---------- */
 .roots-section {
   margin: 6rem auto;
-  padding: 2rem 2rem;
+  padding: 2rem;
   max-width: 1200px;
   background: linear-gradient(to right, rgba(200,181,104,0.07), rgba(255,255,255,0.7));
   border-radius: 20px;
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
 }
 
-.roots-container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 3rem;
-  flex-wrap: nowrap;
-}
-
-/* --- IMAGE STYLING --- */
-.roots-image {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-}
-
-.roots-image img {
-  width: 95%;
-  max-width: 420px;
-  height: auto;
-  border-radius: 18px;
-  border: 6px solid #1e4d2b; /* CSU green */
-  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.25);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.roots-image img:hover {
-  transform: scale(1.03);
-  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.3);
-}
-
-/* --- TEXT STYLING --- */
 .roots-text {
-  flex: 1;
-  max-width: 580px;
   color: #333;
+  max-width: 850px;
+  margin: 0 auto;
+  text-align: left;
 }
 
 .roots-text h2 {
   color: #1e4d2b;
   font-size: 2rem;
-  margin-bottom: 1rem;
   border-bottom: 3px solid #c8b568;
   display: inline-block;
-  padding-bottom: 0.3rem;
+  margin-bottom: 1.2rem;
 }
 
 .roots-text p {
   line-height: 1.8;
   font-size: 1.08rem;
-  margin-bottom: 1.2rem;
+  margin-bottom: 1.5rem;
 }
 
-/* --- RESPONSIVE DESIGN --- */
+/* ---------- CENTER FAMILY PHOTO ---------- */
+.center-family-photo {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.center-family-photo img {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  border-radius: 16px;
+  border: 6px solid #1e4d2b;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.25);
+}
+
+/* ---------- FAMILY GALLERY ---------- */
+.family-gallery {
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+  align-items: center;
+}
+
+.family-gallery .row {
+  display: flex;
+  justify-content: center;
+  gap: 1.8rem;
+  flex-wrap: wrap;
+}
+
+.family-gallery img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.family-gallery img:hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.3);
+}
+
+/* ---------- RESPONSIVE ---------- */
 @media (max-width: 900px) {
-  .roots-container {
-    flex-direction: column;
+  .roots-text {
     text-align: center;
   }
 
-  .roots-image img {
-    width: 85%;
-    margin-top: 1.5rem;
+  .center-family-photo img {
+    width: 90%;
   }
 
-  .roots-text h2 {
-    font-size: 1.7rem;
+  .family-gallery .row {
+    gap: 1.2rem;
   }
+
+  .family-gallery img {
+    max-width: 90%;
+  }
+}
+</style>
 
   .roots-text p {
     font-size: 1rem;
