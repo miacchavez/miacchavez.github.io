@@ -57,6 +57,29 @@ permalink: /experiences/
   letter-spacing: 0.3px;
 }
 
+.pdf-link {
+  margin-top: 1.5rem;
+}
+
+.pdf-link a {
+  display: inline-block;
+  padding: 0.7rem 1.4rem;
+  border-radius: 8px;
+  background-color: var(--csu-green);
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.25s ease;
+}
+
+.pdf-link a:hover {
+  background-color: var(--csu-gold);
+  color: #000;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  transform: translateY(-1px);
+}
+
+  
 /* ---------- BUTTONS ---------- */
 .experience-buttons {
   margin-top: 2rem;
@@ -239,5 +262,60 @@ html {
   </ul>
 
   <p class="summary"><strong>Summary:</strong> These rotations deepened my understanding of how device usability, workflow design, and human factors shape real-world clinical impact. They reinforced my interest in creating medical technologies driven by safety, efficiency, and human-centered engineering.</p>
+</section>
+
+<!-- 🚀 ======================= LOCKHEED MARTIN EIEC ======================= -->
+<section id="lockheed" class="experience-section">
+  <h3>Lockheed Martin Ethics in Engineering Case Competition (2025)</h3>
+
+  <p class="experience-intro">
+    Representing Colorado State University with my teammate, D’Andre Rogers, I competed in the
+    Lockheed Martin Ethics in Engineering Case Competition. We analyzed a complex case about
+    <strong>HotShotAI</strong>—a fictional company integrating artificial intelligence into wildfire
+    response—and were challenged to balance safety, profit, and public trust while making
+    recommendations under real-time pressure. 
+  </p>
+
+  <!-- Banner Image -->
+  <figure class="experience-banner">
+    <img src="/assets/images/lockheed.jpg" alt="Lockheed Martin Ethics Case Competition banquet">
+  </figure>
+
+  <h4>Case Focus: HotShotAI &amp; Wildfire Response</h4>
+  <ul class="experience-list">
+    <li>Evaluated how AI systems should prioritize limited resources during high-risk wildfire events.</li>
+    <li>Identified stakeholder tensions between government agencies, local communities, firefighters, and investors.</li>
+    <li>Developed recommendations that centered safety, transparency, and long-term credibility over short-term gain.</li>
+    <li>Presented our reasoning to judges in a role-play format that simulated a real executive meeting.</li>
+  </ul>
+
+  <h4>What I Practiced &amp; Learned</h4>
+  <ul class="experience-list">
+    <li>Communicating technical and ethical trade-offs clearly under time pressure and judge questioning.</li>
+    <li>Strategic planning—deciding which arguments to emphasize and how to divide speaking roles with my teammate.</li>
+    <li>Translating abstract ethical frameworks into concrete engineering and business decisions.</li>
+    <li>Reflecting on other teams’ strategies to identify how future CSU teams can compete even more effectively. :contentReference[oaicite:1]{index=1}</li>
+  </ul>
+
+  <h4>Professional Development &amp; Networking</h4>
+  <ul class="experience-list">
+    <li>Toured key sites in Washington, D.C., connecting policy, national security, and engineering ethics. :contentReference[oaicite:2]{index=2}</li>
+    <li>Joined a call with NASA astronaut Sunita “Suni” Williams, learning about reliability and decision-making when lives are on the line. :contentReference[oaicite:3]{index=3}</li>
+    <li>Received resume feedback, recruiting tips, and career advice directly from Lockheed engineers and hiring managers.</li>
+    <li>Built a national network of engineering students and strengthened my professional confidence. :contentReference[oaicite:4]{index=4}</li>
+  </ul>
+
+  <p class="summary">
+    <strong>Summary:</strong> This competition stretched me to think critically under pressure, apply ethical frameworks to
+    real engineering decisions, and communicate clearly in a high-stakes environment. It revealed how integrity,
+    transparency, and engineering innovation are deeply connected in industry—and confirmed that I want to work on
+    technologies where safety and human impact matter as much as performance.
+  </p>
+
+  <p class="pdf-link">
+    <a href="/assets/docs/EIEC.pdf" target="_blank" rel="noopener noreferrer">
+      View full reflection &amp; case summary (PDF)
+    </a>
+  </p>
 </section>
 
