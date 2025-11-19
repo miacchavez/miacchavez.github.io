@@ -15,25 +15,31 @@ permalink: /experiences/
 
   <div class="experience-buttons alt-color">
     <a href="#engineering-experience">Engineering Experience</a>
-    <a href="#engineering-projects">Engineering Projects</a>
-    <a href="#business">Business & Nonprofit</a>
-    <a href="#athletics">Athletic Experience</a>
+    <a href="#engineering-projects-research">Engineering Projects & Research</a>
+    <a href="#business-nonprofit">Business & Nonprofit Work</a>
+    <a href="#leadership">Leadership</a>
+    <a href="#athletics">Athletics & Coaching</a>
     <a href="#service">Service Industry</a>
-    <a href="#leadership">Research & Leadership</a>
-    <a href="#honors">Honors & Recognition</a>
+    <a href="#awards">Awards & Honors</a>
   </div>
 </section>
 
 <style>
+:root {
+  --csu-green: #1e4d2b;
+  --csu-gold: #c8b568;
+}
+
+/* ---------- HERO SECTION ---------- */
 .experience-hero {
   text-align: center;
   margin: 4rem auto 2rem;
   max-width: 900px;
 }
 .experience-hero h1 {
-  color: #1e4d2b;
+  color: var(--csu-green);
   font-size: 2.5rem;
-  border-bottom: 3px solid #c8b568;
+  border-bottom: 3px solid var(--csu-gold);
   display: inline-block;
   padding-bottom: 0.5rem;
 }
@@ -43,7 +49,7 @@ permalink: /experiences/
   color: #444;
 }
 
-/* ----- EXPERIENCE BUTTONS ----- */
+/* ---------- BUTTONS ---------- */
 .experience-buttons {
   margin-top: 2rem;
   display: flex;
@@ -52,35 +58,33 @@ permalink: /experiences/
   gap: 1rem;
 }
 
-/* Alternating button colors */
 .experience-buttons.alt-color a {
   padding: 0.8rem 1.4rem;
   border-radius: 10px;
   text-decoration: none;
   font-weight: 600;
-  color: white;
   transition: 0.3s ease;
   border: 2px solid transparent;
 }
 
-/* Alternate Green and Gold Colors */
+/* Alternating green and gold */
 .experience-buttons.alt-color a:nth-child(odd) {
-  background-color: #1e4d2b;   /* Deep CSU Green */
+  background-color: var(--csu-green);
+  color: white;
 }
-
 .experience-buttons.alt-color a:nth-child(even) {
-  background-color: #c8b568;   /* Gold */
+  background-color: var(--csu-gold);
   color: black;
 }
 
-/* Hover Styling */
+/* Hover Effects */
 .experience-buttons.alt-color a:hover {
   transform: translateY(-2px);
   border-color: #00000025;
   box-shadow: 0 4px 10px rgba(0,0,0,0.15);
 }
 
-/* ---------- SECTION STYLES ---------- */
+/* ---------- SECTION STYLING (used for all subsections) ---------- */
 .experience-section {
   margin: 4rem auto;
   max-width: 1000px;
@@ -89,9 +93,9 @@ permalink: /experiences/
   color: #333;
 }
 .experience-section h2 {
-  color: #1e4d2b;
+  color: var(--csu-green);
   font-size: 2rem;
-  border-bottom: 3px solid #c8b568;
+  border-bottom: 3px solid var(--csu-gold);
   display: inline-block;
   margin-bottom: 1rem;
 }
@@ -101,7 +105,7 @@ permalink: /experiences/
   margin-bottom: 1.5rem;
 }
 .experience-section h3 {
-  color: #1e4d2b;
+  color: var(--csu-green);
   margin-top: 1.5rem;
   font-size: 1.25rem;
 }
@@ -111,8 +115,10 @@ permalink: /experiences/
   margin-bottom: 0.5rem;
 }
 .experience-section p strong {
-  color: #1e4d2b;
+  color: var(--csu-green);
 }
+
+/* Smooth Scroll */
 html {
   scroll-behavior: smooth;
 }
