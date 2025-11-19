@@ -217,21 +217,21 @@ html {
     Through this program, I completed rotations at <strong>Poudre Valley Hospital (PVH)</strong>, <strong>Medical Center of the Rockies (MCR)</strong>, and the <strong>CSU Veterinary Teaching Hospital</strong> — exploring how devices, human factors, and workflow design influence patient safety and care.
   </p>
 
-  <h4>📌 Surgical & Procedure Observations</h4>
+  <h4> Surgical & Procedure Observations</h4>
   <ul>
     <li>Orthopedic trauma, thoracic surgery, vascular, and robotic-assisted procedures</li>
     <li>Observed surgeon–nurse–rep dynamics and device setup workflows</li>
     <li>Studied error prevention strategies and sterile field design</li>
   </ul>
 
-  <h4>💡 Medical Device & Imaging Exposure</h4>
+  <h4> Medical Device & Imaging Exposure</h4>
   <ul>
     <li>Interventional radiology, cardiovascular imaging, and catheter-based procedures</li>
     <li>Learned the physics and human factors behind imaging interpretation</li>
     <li>Studied trade-offs in device selection based on patient anatomy and risk</li>
   </ul>
 
-  <h4>🐾 Veterinary Medicine Rotations</h4>
+  <h4> Veterinary Medicine Rotations</h4>
   <ul>
     <li>Orthopedic, emergency, and interventional procedures for small animals</li>
     <li>Compared constraints in human vs. veterinary device needs</li>
