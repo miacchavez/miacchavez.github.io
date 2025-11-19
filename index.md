@@ -273,6 +273,7 @@ permalink: /
     </figure>
   </div>
 </section>
+<style>
 .cfc-link {
   color: var(--csu-green);
   font-weight: 600;
@@ -283,4 +284,4 @@ permalink: /
 .cfc-link:hover {
   color: var(--csu-gold);
 }
-
+</style>
