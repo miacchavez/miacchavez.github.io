@@ -135,8 +135,7 @@ permalink: /experiences/
 /* ---------- IMAGE STYLING FOR EXPERIENCES ---------- */
 .experience-banner img {
   width: 100%;
-  max-height: 380px;
-  object-fit: cover;
+  height: auto; /* natural proportions */
   border-radius: 12px;
   border: 3px solid var(--csu-green);
   box-shadow: 0 4px 10px rgba(0,0,0,0.15);
