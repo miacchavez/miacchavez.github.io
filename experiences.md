@@ -84,7 +84,7 @@ permalink: /experiences/
   box-shadow: 0 4px 10px rgba(0,0,0,0.15);
 }
 
-/* ---------- SECTION STYLING (used for all subsections) ---------- */
+/* ---------- SECTION STYLING ---------- */
 .experience-section {
   margin: 4rem auto;
   max-width: 1000px;
@@ -109,60 +109,21 @@ permalink: /experiences/
   margin-top: 1.5rem;
   font-size: 1.25rem;
 }
+.experience-section h4 {
+  margin-top: 1.8rem;
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: var(--csu-gold);
+}
 .experience-section ul {
   list-style-type: disc;
   margin-left: 1.5rem;
   margin-bottom: 0.5rem;
 }
-.experience-section p strong {
+.summary strong {
   color: var(--csu-green);
 }
 
-/* Smooth Scroll */
-html {
-  scroll-behavior: smooth;
-}
-</style>
-
-<!-- ---------- STRYKER INDUSTRY DAY & CADAVER LAB ---------- -->
-<section id="stryker" class="experience-section">
-  <h2>Engineering Experience</h2>
-  <p class="tagline"><em>Learning from regulated industry, clinical environments, and real medical systems.</em></p>
-
-  <h3>Stryker Industry Day & Cadaver Lab Shadowing (2024)</h3>
-  <p class="experience-intro">
-    I attended Stryker’s Sports Medicine Industry Day, an immersive mentorship and training experience focused on how engineering, business strategy, and clinical needs intersect in the medical device industry. I shadowed a project management mentor, explored product development workflows, and learned how engineering roles support the commercialization of surgical tools.
-  </p>
-
-  <!-- Banner Image -->
-  <figure class="experience-banner">
-    <img src="/assets/images/strykerfullgroup.jpg" alt="Stryker Industry Day group photo">
-  </figure>
-
-  <ul>
-    <li>Shadowed a project management mentor to understand cross-functional decision-making across design, testing, marketing, and clinical use.</li>
-    <li>Participated in networking and mock career development sessions including technical resume building, LinkedIn review, and interview strategy.</li>
-    <li>Learned how diverse engineering roles (R&D, test engineering, quality, regulatory) contribute to surgeon success and patient outcomes.</li>
-  </ul>
-
-  <h4>Hands-On Cadaver Lab: ACL, Meniscus & Rotator Cuff Repair</h4>
-  <p>
-    In the cadaver lab, I used real Stryker surgical instruments to assist in ACL reconstruction, meniscus repair, and rotator cuff procedures. Having undergone ACL and meniscus reconstruction on both knees, this experience was especially meaningful. Although I once planned to become an orthopedic surgeon, it reinforced that I can still contribute to surgical impact through engineering design.
-  </p>
-
-  <figure class="experience-subimage">
-    <img src="/assets/images/stryker.png" alt="Stryker sports medicine tools and cadaver lab instruments">
-  </figure>
-
-  <ul>
-    <li>Used surgical instrumentation for ACL, meniscus, and rotator cuff repair on cadaver tissue.</li>
-    <li>Evaluated tool ergonomics and workflow from a surgeon’s perspective to understand design requirements.</li>
-    <li>Observed how surgical feedback informs design iteration for improved usability and outcomes.</li>
-    <li>Connected engineering with patient recovery, especially for athletic injuries.</li>
-  </ul>
-
-  <p><strong>Summary:</strong> Strengthened my interest in designing surgical tools that support athletes, surgeons, and patient recovery through usability and engineering innovation.</p>
-</section>
 /* ---------- IMAGE STYLING FOR EXPERIENCES ---------- */
 .experience-banner img {
   width: 100%;
@@ -183,3 +144,52 @@ html {
   border: 3px solid var(--csu-gold);
   box-shadow: 0 4px 10px rgba(0,0,0,0.15);
 }
+
+/* Smooth Scroll */
+html {
+  scroll-behavior: smooth;
+}
+</style>
+
+<!-- ===================================================================== -->
+<!-- ======================== ENGINEERING EXPERIENCE ===================== -->
+<!-- ===================================================================== -->
+
+<section id="engineering-experience" class="experience-section">
+  <h2>Engineering Experience</h2>
+  <p class="tagline"><em>Learning from regulated industry, clinical environments, and real medical systems.</em></p>
+
+  <!-- 🏥 STRYKER -->
+  <h3>Stryker Industry Day & Cadaver Lab Shadowing (2024)</h3>
+  <p class="experience-intro">
+    I attended Stryker’s Sports Medicine Industry Day, an immersive mentorship and training experience focused on how engineering, business strategy, and clinical needs intersect in the medical device industry. I shadowed a project management mentor, explored product development workflows, and learned how engineering roles support the commercialization of surgical tools.
+  </p>
+
+  <figure class="experience-banner">
+    <img src="/assets/images/strykerfullgroup.jpg" alt="Stryker Industry Day group photo">
+  </figure>
+
+  <ul>
+    <li>Shadowed a project management mentor to understand cross-functional decision-making across design, testing, marketing, and clinical use.</li>
+    <li>Participated in mock career development sessions including resume building, LinkedIn review, and interview strategy.</li>
+    <li>Explored how engineering teams collaborate with surgeons to develop tools that support patient outcomes.</li>
+  </ul>
+
+  <h4>Hands-On Cadaver Lab: ACL, Meniscus & Rotator Cuff Repair</h4>
+  <p>
+    In the cadaver lab, I used real orthopedic surgical instruments to assist in ACL reconstruction, meniscus repair, and rotator cuff procedures. As someone who has undergone double ACL and meniscus surgery, working with the same tools used in my own operations was a full-circle moment. Though I shifted away from pre-med, the experience showed how engineering directly supports surgical impact.
+  </p>
+
+  <figure class="experience-subimage">
+    <img src="/assets/images/stryker.jpg" alt="Stryker sports medicine tools and cadaver lab instruments">
+  </figure>
+
+  <ul>
+    <li>Assisted in orthopedic procedures using industry-standard instruments.</li>
+    <li>Evaluated ergonomic design considerations for surgeons in high-stress environments.</li>
+    <li>Observed how surgical feedback drives iteration for safety, usability, and efficiency.</li>
+    <li>Connected device usability with long-term patient recovery and athletic performance.</li>
+  </ul>
+
+  <p class="summary"><strong>Summary:</strong> Strengthened my interest in designing orthopedic tools that support athletes, surgeons, and patient recovery through usability-focused engineering.</p>
+</section>
