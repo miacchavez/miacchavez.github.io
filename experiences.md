@@ -273,7 +273,7 @@ html {
     Lockheed Martin Ethics in Engineering Case Competition. We analyzed a complex case about
     <strong>HotShotAI</strong>—a fictional company integrating artificial intelligence into wildfire
     response—and were challenged to balance safety, profit, and public trust while making
-    recommendations under real-time pressure. 
+    recommendations under real-time pressure.
   </p>
 
   <!-- Banner Image -->
@@ -294,15 +294,15 @@ html {
     <li>Communicating technical and ethical trade-offs clearly under time pressure and judge questioning.</li>
     <li>Strategic planning—deciding which arguments to emphasize and how to divide speaking roles with my teammate.</li>
     <li>Translating abstract ethical frameworks into concrete engineering and business decisions.</li>
-    <li>Reflecting on other teams’ strategies to identify how future CSU teams can compete even more effectively. :contentReference[oaicite:1]{index=1}</li>
+    <li>Reflecting on other teams’ strategies to strengthen CSU’s competitiveness in future years.</li>
   </ul>
 
   <h4>Professional Development &amp; Networking</h4>
   <ul class="experience-list">
-    <li>Toured key sites in Washington, D.C., connecting policy, national security, and engineering ethics. :contentReference[oaicite:2]{index=2}</li>
-    <li>Joined a call with NASA astronaut Sunita “Suni” Williams, learning about reliability and decision-making when lives are on the line. :contentReference[oaicite:3]{index=3}</li>
+    <li>Toured key sites in Washington, D.C., connecting policy, national security, and engineering ethics.</li>
+    <li>Joined a call with NASA astronaut Sunita “Suni” Williams, discussing reliability and ethical decision-making when lives are on the line.</li>
     <li>Received resume feedback, recruiting tips, and career advice directly from Lockheed engineers and hiring managers.</li>
-    <li>Built a national network of engineering students and strengthened my professional confidence. :contentReference[oaicite:4]{index=4}</li>
+    <li>Built a national network of engineering students and strengthened my professional confidence.</li>
   </ul>
 
   <p class="summary">
@@ -314,8 +314,7 @@ html {
 
   <p class="pdf-link">
     <a href="/assets/docs/EIEC.pdf" target="_blank" rel="noopener noreferrer">
-      View full case work (PDF)
+      View full reflection &amp; case summary (PDF)
     </a>
   </p>
 </section>
-
