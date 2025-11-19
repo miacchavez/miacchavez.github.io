@@ -48,6 +48,14 @@ permalink: /experiences/
   font-size: 1.1rem;
   color: #444;
 }
+/* Subheader Enhancement (Clinical section) */
+.experience-section h4 {
+  margin-top: 1.8rem;
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--csu-gold);
+  letter-spacing: 0.3px;
+}
 
 /* ---------- BUTTONS ---------- */
 .experience-buttons {
@@ -193,3 +201,44 @@ html {
 
   <p class="summary"><strong>Summary:</strong> Strengthened my interest in designing orthopedic tools that support athletes, surgeons, and patient recovery through usability-focused engineering.</p>
 </section>
+
+<!-- 🏥 ======================= CLINICAL ROTATIONS ======================= -->
+<section id="clinical-rotations" class="experience-section">
+  <h3>Clinical Rotations — BIOM 480: Clinical Experience for Bio-Innovation (2025)</h3>
+  <p class="experience-intro">
+    Before this immersion course, I shadowed <strong>Dr. Eric Richter</strong> and <strong>Christin Hungerford</strong> (medical device representative), where I observed orthopedic trauma workflows and how surgeons collaborate with industry to improve patient outcomes. That experience sparked my interest in clinical innovation — leading me to pursue BIOM 480, a selective course that connects engineering students with medical environments to identify unmet clinical needs and opportunities for device development.
+  </p>
+
+  <!-- Banner Image -->
+  <figure class="experience-banner">
+    <img src="/assets/images/or-shadow.jpg" alt="Observing orthopedic surgery and clinical workflows">
+  </figure>
+
+  <p>
+    Through this program, I completed rotations at <strong>Poudre Valley Hospital (PVH)</strong>, <strong>Medical Center of the Rockies (MCR)</strong>, and the <strong>CSU Veterinary Teaching Hospital</strong> — exploring how devices, human factors, and workflow design influence patient safety and care.
+  </p>
+
+  <h4>📌 Surgical & Procedure Observations</h4>
+  <ul>
+    <li>Orthopedic trauma, thoracic surgery, vascular, and robotic-assisted procedures</li>
+    <li>Observed surgeon–nurse–rep dynamics and device setup workflows</li>
+    <li>Studied error prevention strategies and sterile field design</li>
+  </ul>
+
+  <h4>💡 Medical Device & Imaging Exposure</h4>
+  <ul>
+    <li>Interventional radiology, cardiovascular imaging, and catheter-based procedures</li>
+    <li>Learned the physics and human factors behind imaging interpretation</li>
+    <li>Studied trade-offs in device selection based on patient anatomy and risk</li>
+  </ul>
+
+  <h4>🐾 Veterinary Medicine Rotations</h4>
+  <ul>
+    <li>Orthopedic, emergency, and interventional procedures for small animals</li>
+    <li>Compared constraints in human vs. veterinary device needs</li>
+    <li>Explored opportunities for cross-species medical innovation</li>
+  </ul>
+
+  <p class="summary"><strong>Summary:</strong> These rotations deepened my understanding of how device usability, workflow design, and human factors shape real-world clinical impact. They reinforced my interest in creating medical technologies driven by safety, efficiency, and human-centered engineering.</p>
+</section>
+
