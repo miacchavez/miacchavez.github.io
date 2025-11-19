@@ -123,3 +123,63 @@ html {
   scroll-behavior: smooth;
 }
 </style>
+
+<!-- ---------- STRYKER INDUSTRY DAY & CADAVER LAB ---------- -->
+<section id="stryker" class="experience-section">
+  <h2>Engineering Experience</h2>
+  <p class="tagline"><em>Learning from regulated industry, clinical environments, and real medical systems.</em></p>
+
+  <h3>Stryker Industry Day & Cadaver Lab Shadowing (2024)</h3>
+  <p class="experience-intro">
+    I attended Stryker’s Sports Medicine Industry Day, an immersive mentorship and training experience focused on how engineering, business strategy, and clinical needs intersect in the medical device industry. I shadowed a project management mentor, explored product development workflows, and learned how engineering roles support the commercialization of surgical tools.
+  </p>
+
+  <!-- Banner Image -->
+  <figure class="experience-banner">
+    <img src="/assets/images/strykerfullgroup.jpg" alt="Stryker Industry Day group photo">
+  </figure>
+
+  <ul>
+    <li>Shadowed a project management mentor to understand cross-functional decision-making across design, testing, marketing, and clinical use.</li>
+    <li>Participated in networking and mock career development sessions including technical resume building, LinkedIn review, and interview strategy.</li>
+    <li>Learned how diverse engineering roles (R&D, test engineering, quality, regulatory) contribute to surgeon success and patient outcomes.</li>
+  </ul>
+
+  <h4>Hands-On Cadaver Lab: ACL, Meniscus & Rotator Cuff Repair</h4>
+  <p>
+    In the cadaver lab, I used real Stryker surgical instruments to assist in ACL reconstruction, meniscus repair, and rotator cuff procedures. Having undergone ACL and meniscus reconstruction on both knees, this experience was especially meaningful. Although I once planned to become an orthopedic surgeon, it reinforced that I can still contribute to surgical impact through engineering design.
+  </p>
+
+  <figure class="experience-subimage">
+    <img src="/assets/images/stryker.png" alt="Stryker sports medicine tools and cadaver lab instruments">
+  </figure>
+
+  <ul>
+    <li>Used surgical instrumentation for ACL, meniscus, and rotator cuff repair on cadaver tissue.</li>
+    <li>Evaluated tool ergonomics and workflow from a surgeon’s perspective to understand design requirements.</li>
+    <li>Observed how surgical feedback informs design iteration for improved usability and outcomes.</li>
+    <li>Connected engineering with patient recovery, especially for athletic injuries.</li>
+  </ul>
+
+  <p><strong>Summary:</strong> Strengthened my interest in designing surgical tools that support athletes, surgeons, and patient recovery through usability and engineering innovation.</p>
+</section>
+/* ---------- IMAGE STYLING FOR EXPERIENCES ---------- */
+.experience-banner img {
+  width: 100%;
+  max-height: 380px;
+  object-fit: cover;
+  border-radius: 12px;
+  border: 3px solid var(--csu-green);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  margin: 1.5rem 0;
+}
+
+.experience-subimage img {
+  width: 100%;
+  max-width: 650px;
+  display: block;
+  margin: 1.2rem auto;
+  border-radius: 12px;
+  border: 3px solid var(--csu-gold);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
