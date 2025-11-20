@@ -435,7 +435,7 @@ html {
 
   <div class="accordion">
     <button>
-      🏥 Stryker Industry Day & Cadaver Lab Shadowing (2024)
+      Stryker Industry Day & Cadaver Lab Shadowing (2024)
       <span class="arrow">▶</span>
     </button>
     <div class="accordion-content">
