@@ -14,14 +14,83 @@ permalink: /experiences/
   </p>
 
   <div class="experience-buttons alt-color">
-    <a href="#engineering-experience">Engineering Experience</a>
-    <a href="#engineering-projects-research">Engineering Projects & Research</a>
-    <a href="#business-nonprofit">Business & Nonprofit Work</a>
-    <a href="#leadership">Leadership</a>
-    <a href="#athletics">Athletics & Coaching</a>
-    <a href="#service">Service Industry</a>
-    <a href="#awards">Awards & Honors</a>
+
+  <!-- Engineering Experience Dropdown -->
+  <div class="dropdown">
+    <button class="dropbtn">Engineering Experience ▾</button>
+    <div class="dropdown-content">
+      <a href="#engineering-experience">Stryker Industry Day & Cadaver Lab</a>
+      <a href="#clinical-rotations">Clinical Rotations at UCHealth</a>
+      <a href="#lockheed">Lockheed Martin Ethics in Engineering Case Competition</a>
+      <a href="#empirical">Engineering Capstone: Empirical Technologies Corp.</a>
+    </div>
   </div>
+
+  <!-- Engineering Projects & Research Dropdown -->
+  <div class="dropdown">
+    <button class="dropbtn">Engineering Projects & Research ▾</button>
+    <div class="dropdown-content">
+      <a href="#led-battery-tester">LED Battery Tester Project</a>
+      <a href="#turtle-feeder">Turtle Feeder Mechanical System</a>
+      <a href="#mri-case">MRI-Safe Protective Case Proposal</a>
+      <a href="#extremity-normothermia">Extremity Normothermia Support Proposal</a>
+      <a href="#spur-research">Scott Undergraduate Research – CSU Spur</a>
+    </div>
+  </div>
+
+  <!-- Business & Nonprofit Work Dropdown -->
+  <div class="dropdown">
+    <button class="dropbtn">Business & Nonprofit Work ▾</button>
+    <div class="dropdown-content">
+      <a href="#cfc-cofounder">Crossover for Change – Co-Founder</a>
+      <a href="#pro-sports-mvp">Pro Sports MVP – Intern</a>
+      <a href="#noco-supervisor">NoCo Sports Center – Supervisor</a>
+    </div>
+  </div>
+
+  <!-- Leadership Dropdown -->
+  <div class="dropdown">
+    <button class="dropbtn">Leadership ▾</button>
+    <div class="dropdown-content">
+      <a href="#hsa-president">CSU Honors Student Association – President</a>
+      <a href="#honors-ambassador">CSU Honors Ambassador</a>
+      <a href="#bio-la">CSU Biology Learning Assistant</a>
+      <a href="#wcb-president">CSU Women’s Club Basketball – President</a>
+    </div>
+  </div>
+
+  <!-- Athletics & Coaching Dropdown -->
+  <div class="dropdown">
+    <button class="dropbtn">Athletics &amp; Coaching ▾</button>
+    <div class="dropdown-content">
+      <a href="#wcb-coach-player">CSU Women’s Club Basketball – Coach/Player</a>
+      <a href="#crusaders-coach">Youth Coaching – Colorado Springs Crusaders</a>
+      <a href="#css-camps">Basketball Camps – The Colorado Springs School</a>
+    </div>
+  </div>
+
+  <!-- Service Industry Dropdown -->
+  <div class="dropdown">
+    <button class="dropbtn">Service Industry ▾</button>
+    <div class="dropdown-content">
+      <a href="#broadmoor">The Broadmoor – Server/Food Runner</a>
+      <a href="#skyline-nails">Skyline Nails &amp; Spa – Receptionist</a>
+    </div>
+  </div>
+
+  <!-- Awards & Honors Dropdown -->
+  <div class="dropdown">
+    <button class="dropbtn">Awards &amp; Honors ▾</button>
+    <div class="dropdown-content">
+      <a href="#scott-scholarship">CSU Walter Scott Jr. Undergraduate Scholarship</a>
+      <a href="#gazette-brightest">Gazette Charities Best &amp; Brightest</a>
+      <a href="#innovator-merit">CSS Innovator Merit Scholarship</a>
+      <a href="#faculty-cup">CSS Faculty Cup Award</a>
+    </div>
+  </div>
+
+  </div>
+
 </section>
 
 <style>
@@ -48,7 +117,103 @@ permalink: /experiences/
   font-size: 1.1rem;
   color: #444;
 }
-/* other existing styles... */
+/* ---------- DROPDOWN MENUS FOR CATEGORY BUTTONS ---------- */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropbtn {
+  border: none;
+  cursor: pointer;
+  padding: 0.8rem 1.4rem;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: 0.3s ease;
+  border: 2px solid transparent;
+}
+
+/* Alternate green and gold by position */
+.experience-buttons.alt-color .dropdown:nth-child(odd) .dropbtn {
+  background-color: var(--csu-green);
+  color: white;
+}
+.experience-buttons.alt-color .dropdown:nth-child(even) .dropbtn {
+  background-color: var(--csu-gold);
+  color: black;
+}
+
+/* Hover effects for dropdown buttons */
+.dropdown:hover .dropbtn {
+  transform: translateY(-2px);
+  border-color: #00000025;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+/* Dropdown content panel */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 260px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  border-radius: 10px;
+  z-index: 50;
+  overflow: hidden;
+}
+
+/* Links inside dropdown */
+.dropdown-content a {
+  color: var(--csu-green);
+  padding: 0.6rem 1rem;
+  text-decoration: none;
+  display: block;
+  font-weight: 500;
+  border-bottom: 1px solid #eee;
+  background-color: white;
+}
+
+.dropdown-content a:last-child {
+  border-bottom: none;
+}
+
+/* Hover on dropdown items */
+.dropdown-content a:hover {
+  background-color: var(--csu-gold);
+  color: black;
+}
+
+/* Show dropdown on hover or focus (better for keyboard/mobiles) */
+.dropdown:hover .dropdown-content,
+.dropdown:focus-within .dropdown-content {
+  display: block;
+}
+
+/* Small screens: stack dropdowns nicely */
+@media (max-width: 768px) {
+  .experience-buttons {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .dropdown {
+    width: 100%;
+  }
+
+  .dropbtn {
+    width: 100%;
+    text-align: center;
+  }
+
+  .dropdown-content {
+    position: static;
+    box-shadow: none;
+    border-radius: 0 0 10px 10px;
+    border: 1px solid #ddd;
+    border-top: none;
+  }
+}
 
 /* ----- FIX BANNER IMAGES FROM GETTING CUT OFF ----- */
 .experience-banner img {
