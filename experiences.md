@@ -525,7 +525,7 @@ html {
     <img src="/assets/images/strykerfullgroup.jpg" alt="Stryker Industry Day group photo">
     <figcaption class="card-title">
       <button class="expand-btn">
-         Stryker Industry Day & Cadaver Lab Shadowing (2024)
+         Stryker Industry Day & Cadaver Lab (2024)
         <span class="arrow">▶</span>
       </button>
     </figcaption>
@@ -554,47 +554,6 @@ html {
       <li>Connected device usability with long-term patient recovery and athletic performance.</li>
     </ul>
     <p class="summary"><strong>Summary:</strong> Strengthened my interest in designing orthopedic tools that support athletes, surgeons, and patient recovery through usability-focused engineering.</p>
-  </div>
-</section>
-
-<!--  CLINICAL ROTATIONS EXPERIENCE CARD -->
-<section id="clinical-rotations" class="experience-card">
-
-  <figure class="card-image">
-    <img src="/assets/images/or-shadow.jpg" alt="Observing orthopedic surgery and clinical workflows">
-    <figcaption class="card-title">
-      <button class="expand-btn">
-         Clinical Rotations — BIOM 480: Clinical Experience for Bio-Innovation (2025)
-        <span class="arrow">▶</span>
-      </button>
-    </figcaption>
-  </figure>
-  <div class="card-content">
-    <p>
-      Before this immersion course, I shadowed <strong>Dr. Eric Richter</strong> and <strong>Christin Hungerford</strong> (medical device representative), where I observed orthopedic trauma workflows and how surgeons collaborate with industry to improve patient outcomes. That experience sparked my interest in clinical innovation — leading me to pursue BIOM 480, a selective course that connects engineering students with medical environments to identify unmet clinical needs and opportunities for device development.
-    </p>
-    <p>
-      Through this program, I completed rotations at <strong>Poudre Valley Hospital (PVH)</strong>, <strong>Medical Center of the Rockies (MCR)</strong>, and the <strong>CSU Veterinary Teaching Hospital</strong> — exploring how devices, human factors, and workflow design influence patient safety and care.
-    </p>
-    <h4>Surgical & Procedure Observations</h4>
-    <ul>
-      <li>Orthopedic trauma, thoracic surgery, vascular, and robotic-assisted procedures</li>
-      <li>Observed surgeon–nurse–rep dynamics and device setup workflows</li>
-      <li>Studied error prevention strategies and sterile field design</li>
-    </ul>
-    <h4>Medical Device & Imaging Exposure</h4>
-    <ul>
-      <li>Interventional radiology, cardiovascular imaging, and catheter-based procedures</li>
-      <li>Learned the physics and human factors behind imaging interpretation</li>
-      <li>Studied trade-offs in device selection based on patient anatomy and risk</li>
-    </ul>
-    <h4>Veterinary Medicine Rotations</h4>
-    <ul>
-      <li>Orthopedic, emergency, and interventional procedures for small animals</li>
-      <li>Compared constraints in human vs. veterinary device needs</li>
-      <li>Explored opportunities for cross-species medical innovation</li>
-    </ul>
-    <p class="summary"><strong>Summary:</strong> These rotations deepened my understanding of how device usability, workflow design, and human factors shape real-world clinical impact. They reinforced my interest in creating medical technologies driven by safety, efficiency, and human-centered engineering.</p>
   </div>
 </section>
 
@@ -646,6 +605,46 @@ html {
   </div> <!-- closes card-content -->
 </section>
 
+<!--  CLINICAL ROTATIONS EXPERIENCE CARD -->
+<section id="clinical-rotations" class="experience-card">
+
+  <figure class="card-image">
+    <img src="/assets/images/or-shadow.jpg" alt="Observing orthopedic surgery and clinical workflows">
+    <figcaption class="card-title">
+      <button class="expand-btn">
+         Clinical Rotations — BIOM 480: Clinical Experience for Bio-Innovation (2025)
+        <span class="arrow">▶</span>
+      </button>
+    </figcaption>
+  </figure>
+  <div class="card-content">
+    <p>
+      Before this immersion course, I shadowed <strong>Dr. Eric Richter</strong> and <strong>Christin Hungerford</strong> (medical device representative), where I observed orthopedic trauma workflows and how surgeons collaborate with industry to improve patient outcomes. That experience sparked my interest in clinical innovation — leading me to pursue BIOM 480, a selective course that connects engineering students with medical environments to identify unmet clinical needs and opportunities for device development.
+    </p>
+    <p>
+      Through this program, I completed rotations at <strong>Poudre Valley Hospital (PVH)</strong>, <strong>Medical Center of the Rockies (MCR)</strong>, and the <strong>CSU Veterinary Teaching Hospital</strong> — exploring how devices, human factors, and workflow design influence patient safety and care.
+    </p>
+    <h4>Surgical & Procedure Observations</h4>
+    <ul>
+      <li>Orthopedic trauma, thoracic surgery, vascular, and robotic-assisted procedures</li>
+      <li>Observed surgeon–nurse–rep dynamics and device setup workflows</li>
+      <li>Studied error prevention strategies and sterile field design</li>
+    </ul>
+    <h4>Medical Device & Imaging Exposure</h4>
+    <ul>
+      <li>Interventional radiology, cardiovascular imaging, and catheter-based procedures</li>
+      <li>Learned the physics and human factors behind imaging interpretation</li>
+      <li>Studied trade-offs in device selection based on patient anatomy and risk</li>
+    </ul>
+    <h4>Veterinary Medicine Rotations</h4>
+    <ul>
+      <li>Orthopedic, emergency, and interventional procedures for small animals</li>
+      <li>Compared constraints in human vs. veterinary device needs</li>
+      <li>Explored opportunities for cross-species medical innovation</li>
+    </ul>
+    <p class="summary"><strong>Summary:</strong> These rotations deepened my understanding of how device usability, workflow design, and human factors shape real-world clinical impact. They reinforced my interest in creating medical technologies driven by safety, efficiency, and human-centered engineering.</p>
+  </div>
+</section>
 
 <!-- EMPIRICAL TECHNOLOGIES CORP. EXPERIENCE CARD -->
 <section id="empirical" class="experience-card">
