@@ -48,6 +48,20 @@ permalink: /experiences/
   font-size: 1.1rem;
   color: #444;
 }
+/* other existing styles... */
+
+/* ----- FIX BANNER IMAGES FROM GETTING CUT OFF ----- */
+.experience-banner img {
+  width: 100%;
+  height: auto !important;
+  max-height: none !important;
+  object-fit: contain !important;
+  border-radius: 12px;
+  border: 3px solid var(--csu-green);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  margin: 1.5rem 0;
+}
+
 /* Subheader Enhancement (Clinical section) */
 .experience-section h4 {
   margin-top: 1.8rem;
@@ -178,6 +192,32 @@ permalink: /experiences/
 /* Smooth Scroll */
 html {
   scroll-behavior: smooth;
+}
+/* other existing styles... */
+
+/* ----- FIX BANNER IMAGES FROM GETTING CUT OFF ----- */
+.experience-banner img {
+  width: 100%;
+  height: auto !important;
+  max-height: none !important;
+  object-fit: contain !important;
+  border-radius: 12px;
+  border: 3px solid var(--csu-green);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  margin: 1.5rem 0;
+}
+
+/* ----- FIX SUB-IMAGE SIZING (SECOND IMAGE IN A SECTION) ----- */
+.experience-subimage img {
+  width: 100%;
+  max-width: 650px;
+  height: auto !important;
+  object-fit: contain;
+  display: block;
+  margin: 1.2rem auto;
+  border-radius: 12px;
+  border: 3px solid var(--csu-gold);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
 }
 </style>
 
@@ -318,3 +358,62 @@ html {
     </a>
   </p>
 </section>
+
+<!-- 🧪 ================= EMPIRICAL TECHNOLOGIES CORP ================= -->
+<section id="empirical" class="experience-section">
+  <h3>Engineering Capstone: Implant Testing &amp; Biomechanics at Empirical Technologies Corp. (2022)</h3>
+
+  <p class="experience-intro">
+    For my senior Capstone, I spent fifty hours shadowing engineers at Empirical Technologies Corp., a contract
+    testing lab for orthopedic and other biomedical implants. I entered with three guiding questions: 
+    how biomedical engineers design testing methods, how products are improved based on test results, and what
+    academic paths lead to this kind of work. Over two weeks of lab observation and independent research, I saw
+    how mechanical testing, standards, and engineering judgment come together to support safer implants.
+  </p>
+
+  <!-- Banner Image -->
+  <figure class="experience-banner">
+    <img src="/assets/images/engineering_lab.png" alt="Mechanical testing lab at Empirical Technologies Corp.">
+  </figure>
+
+  <h4>Testing Orthopedic Implants</h4>
+  <ul class="experience-list">
+    <li>Observed how engineers design test setups to meet ASTM and ISO standards for joint and spinal implants.</li>
+    <li>Watched the full workflow for fatigue and static testing: building fixtures, aligning samples, setting software parameters, and documenting results.</li>
+    <li>Helped with test support tasks including taking photos, retrieving hardware, labeling samples, and organizing post-test components.</li>
+    <li>Learned how test data is returned to clients as design feedback, showing where and how an implant fails under load so designers can iterate.</li>
+  </ul>
+
+  <h4>Example Project: Spinal Implant Testing</h4>
+  <p>
+    One memorable project involved three spinal implant designs undergoing saline soak and then mechanical testing
+    to mimic conditions in the body. After different soak durations, each design was tested in both horizontal and
+    vertical configurations to determine failure loads. Once I understood the procedure, I was trusted to help set up
+    the fixtures, run the test software, record forces at failure, and organize broken implants into labeled bags.
+    This experience gave me a concrete picture of day-to-day engineering work in a regulated testing lab.
+  </p>
+
+  <h4>Engineering Paths &amp; Career Insight</h4>
+  <ul class="experience-list">
+    <li>Spoke with three engineers whose degrees spanned mechanical, electrical, and biomedical engineering.</li>
+    <li>Found it especially encouraging that one engineer held the same CSU biomedical–mechanical dual degree I am now pursuing.</li>
+    <li>Confirmed that it is possible to do meaningful medical device work close to home while staying connected to patients through technology.</li>
+  </ul>
+
+  <h4>Independent Research &amp; Reflection</h4>
+  <p>
+    Because part of my Capstone coincided with AP exams and then COVID, I spent additional time independently 
+    researching the history of knee implants and their testing. That background, together with my coursework in 
+    physics and calculus, helped me understand the terminology, forces, and design trade-offs I observed in the lab.
+    I was struck by how heavily the work relies on software, data analysis, and documentation in addition to physical
+    testing. Overall, the experience confirmed that I want a career where I can use engineering tools to meet human
+    needs, solve problems, and advance medical technology.
+  </p>
+
+  <p class="summary">
+    <strong>Summary:</strong> This Capstone showed me how biomechanics, standards, and data-driven testing protect
+    patients and inform better implant design. It strengthened my interest in biomedical and mechanical engineering
+    as a way to bridge the operating room and the test lab through careful experimentation and communication.
+  </p>
+</section>
+
