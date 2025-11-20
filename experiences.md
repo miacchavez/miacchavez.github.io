@@ -386,6 +386,45 @@ html {
 }
 </style>
 
+<style>
+/* ----- ACCORDION WRAPPER ----- */
+.accordion {
+  border-bottom: 1px solid #ddd;
+  margin: 2rem 0;
+}
+
+/* ----- ACCORDION BUTTON ----- */
+.accordion button {
+  width: 100%;
+  text-align: left;
+  padding: 1rem 0.6rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--csu-green);
+  transition: color .3s ease;
+}
+
+.accordion button:hover {
+  color: var(--csu-gold);
+}
+
+.accordion button .arrow {
+  float: right;
+  transition: transform .3s ease;
+  font-weight: 400;
+  color: #777;
+}
+
+/* ----- CONTENT INSIDE ACCORDION ----- */
+.accordion-content {
+  display: none;
+  padding: 0.5rem 0 1.4rem;
+}
+</style>
+
 <!-- ===================================================================== -->
 <!-- ======================== ENGINEERING EXPERIENCE ===================== -->
 <!-- ===================================================================== -->
@@ -394,9 +433,13 @@ html {
   <h2>Engineering Experience</h2>
   <p class="tagline"><em>Learning from regulated industry, clinical environments, and real medical systems.</em></p>
 
-  <!-- 🏥 STRYKER -->
-  <h3>Stryker Industry Day & Cadaver Lab Shadowing (2024)</h3>
-  <p class="experience-intro">
+  <div class="accordion">
+    <button>
+      🏥 Stryker Industry Day & Cadaver Lab Shadowing (2024)
+      <span class="arrow">▶</span>
+    </button>
+    <div class="accordion-content">
+      <p class="experience-intro">
     I attended Stryker’s Sports Medicine Industry Day, an immersive mentorship and training experience focused on how engineering, business strategy, and clinical needs intersect in the medical device industry. I shadowed a project management mentor, explored product development workflows, and learned how engineering roles support the commercialization of surgical tools.
   </p>
 
@@ -425,8 +468,9 @@ html {
     <li>Observed how surgical feedback drives iteration for safety, usability, and efficiency.</li>
     <li>Connected device usability with long-term patient recovery and athletic performance.</li>
   </ul>
-
   <p class="summary"><strong>Summary:</strong> Strengthened my interest in designing orthopedic tools that support athletes, surgeons, and patient recovery through usability-focused engineering.</p>
+    </div> <!-- closes accordion-content -->
+  </div> <!-- closes accordion -->
 </section>
 
 <!-- 🏥 ======================= CLINICAL ROTATIONS ======================= -->
@@ -581,4 +625,18 @@ html {
     as a way to bridge the operating room and the test lab through careful experimentation and communication.
   </p>
 </section>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  document.querySelectorAll(".accordion button").forEach(btn => {
+    btn.addEventListener("click", () => {
+      const content = btn.nextElementSibling;
+      const arrow = btn.querySelector(".arrow");
+      const isOpen = content.style.display === "block";
+
+      content.style.display = isOpen ? "none" : "block";
+      arrow.style.transform = isOpen ? "rotate(0deg)" : "rotate(90deg)";
+    });
+  });
+});
+</script>
 
