@@ -391,6 +391,17 @@ html {
 </style>
 
 <style>
+/* ---------- FEATURED EXPERIENCE BANNER ---------- */
+.experience-featured img {
+  width: 100%;
+  max-height: 270px;
+  object-fit: contain;
+  border-bottom: 4px solid var(--csu-green);
+  display: block;
+  margin: 0 auto 2rem;
+  padding: 0 1rem;
+  background: white;
+}
 /* ----- ACCORDION WRAPPER ----- */
 .accordion {
   border-bottom: 1px solid #ddd;
