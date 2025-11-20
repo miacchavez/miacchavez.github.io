@@ -473,10 +473,14 @@ html {
   </div> <!-- closes accordion -->
 </section>
 
-<!-- 🏥 ======================= CLINICAL ROTATIONS ======================= -->
+<!-- ======================= CLINICAL ROTATIONS ======================= -->
 <section id="clinical-rotations" class="experience-section">
-  <h3>Clinical Rotations — BIOM 480: Clinical Experience for Bio-Innovation (2025)</h3>
-  <p class="experience-intro">
+  <div class="accordion">
+  <button>
+    🏥 Clinical Rotations — BIOM 480: Clinical Experience for Bio-Innovation (2025)
+    <span class="arrow">▶</span>
+  </button>
+  <div class="accordion-content">
     Before this immersion course, I shadowed <strong>Dr. Eric Richter</strong> and <strong>Christin Hungerford</strong> (medical device representative), where I observed orthopedic trauma workflows and how surgeons collaborate with industry to improve patient outcomes. That experience sparked my interest in clinical innovation — leading me to pursue BIOM 480, a selective course that connects engineering students with medical environments to identify unmet clinical needs and opportunities for device development.
   </p>
 
@@ -509,14 +513,20 @@ html {
     <li>Compared constraints in human vs. veterinary device needs</li>
     <li>Explored opportunities for cross-species medical innovation</li>
   </ul>
-
   <p class="summary"><strong>Summary:</strong> These rotations deepened my understanding of how device usability, workflow design, and human factors shape real-world clinical impact. They reinforced my interest in creating medical technologies driven by safety, efficiency, and human-centered engineering.</p>
+    </div> <!-- closes accordion-content -->
+  </div> <!-- closes accordion -->
 </section>
 
-<!-- 🚀 ======================= LOCKHEED MARTIN EIEC ======================= -->
+<!-- ======================= LOCKHEED MARTIN EIEC ======================= -->
 <section id="lockheed" class="experience-section">
-  <h3>Lockheed Martin Ethics in Engineering Case Competition (2025)</h3>
-
+  <div class="accordion">
+    <button>
+      Lockheed Martin Ethics in Engineering Case Competition (2025)
+      <span class="arrow">▶</span>
+    </button>
+  <div class="accordion-content">
+    
   <p class="experience-intro">
     Representing Colorado State University with my teammate, D’Andre Rogers, I competed in the
     Lockheed Martin Ethics in Engineering Case Competition. We analyzed a complex case about
@@ -560,17 +570,19 @@ html {
     transparency, and engineering innovation are deeply connected in industry—and confirmed that I want to work on
     technologies where safety and human impact matter as much as performance.
   </p>
-
-  <p class="pdf-link">
-    <a href="/assets/docs/EIEC.pdf" target="_blank" rel="noopener noreferrer">
-      View Full Case Study Work
-    </a>
-  </p>
+  <p class="summary"><strong>Summary:</strong> These rotations deepened my understanding of how device usability, workflow design, and human factors shape real-world clinical impact. They reinforced my interest in creating medical technologies driven by safety, efficiency, and human-centered engineering.</p>
+    </div> <!-- closes accordion-content -->
+  </div> <!-- closes accordion -->
 </section>
 
-<!-- 🧪 ================= EMPIRICAL TECHNOLOGIES CORP ================= -->
+<!-- ================= EMPIRICAL TECHNOLOGIES CORP ================= -->
 <section id="empirical" class="experience-section">
-  <h3>Engineering Capstone: Implant Testing &amp; Biomechanics at Empirical Technologies Corp. (2022)</h3>
+  <div class="accordion">
+    <button>
+      Engineering Capstone: Implant Testing &amp; Biomechanics at Empirical Technologies Corp. (2022)
+      <span class="arrow">▶</span>
+    </button>
+  <div class="accordion-content">
 
   <p class="experience-intro">
     For my senior Capstone, I spent fifty hours shadowing engineers at Empirical Technologies Corp., a contract
@@ -620,10 +632,12 @@ html {
   </p>
 
   <p class="summary">
-    <strong>Summary:</strong> This Capstone showed me how biomechanics, standards, and data-driven testing protect
-    patients and inform better implant design. It strengthened my interest in biomedical and mechanical engineering
-    as a way to bridge the operating room and the test lab through careful experimentation and communication.
+  <strong>Summary:</strong> This Capstone showed me how biomechanics, standards, and data-driven testing protect
+  patients and inform better implant design. It strengthened my interest in biomedical and mechanical engineering
+  as a way to bridge the operating room and the test lab through careful experimentation and communication.
   </p>
+    </div> <!-- closes accordion-content -->
+    </div> <!-- closes accordion -->
 </section>
 <script>
 document.addEventListener("DOMContentLoaded", () => {
