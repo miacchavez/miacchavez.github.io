@@ -498,14 +498,14 @@ html {
   <h2>Engineering Experience</h2>
   <p class="tagline"><em>Learning from regulated industry, clinical environments, and real medical systems.</em></p>
 
-<!-- 🏥 STRYKER EXPERIENCE CARD -->
+<!-- STRYKER EXPERIENCE CARD -->
 <section id="stryker" class="experience-card">
 
   <figure class="card-image">
     <img src="/assets/images/strykerfullgroup.jpg" alt="Stryker Industry Day group photo">
     <figcaption class="card-title">
       <button class="expand-btn">
-         🏥 Stryker Industry Day & Cadaver Lab Shadowing (2024)
+         Stryker Industry Day & Cadaver Lab Shadowing (2024)
         <span class="arrow">▶</span>
       </button>
     </figcaption>
@@ -537,184 +537,101 @@ html {
   </div>
 </section>
 
-<!-- ======================= CLINICAL ROTATIONS ======================= -->
-<section id="clinical-rotations" class="experience-section">
-  <div class="accordion">
-  <button>
-    Clinical Rotations — BIOM 480: Clinical Experience for Bio-Innovation (2025)
-    <span class="arrow">▶</span>
-  </button>
-  <div class="accordion-content">
-    Before this immersion course, I shadowed <strong>Dr. Eric Richter</strong> and <strong>Christin Hungerford</strong> (medical device representative), where I observed orthopedic trauma workflows and how surgeons collaborate with industry to improve patient outcomes. That experience sparked my interest in clinical innovation — leading me to pursue BIOM 480, a selective course that connects engineering students with medical environments to identify unmet clinical needs and opportunities for device development.
-  </p>
+<!--  CLINICAL ROTATIONS EXPERIENCE CARD -->
+<section id="clinical-rotations" class="experience-card">
 
-  <!-- Banner Image -->
-  <figure class="experience-banner">
+  <figure class="card-image">
     <img src="/assets/images/or-shadow.jpg" alt="Observing orthopedic surgery and clinical workflows">
+    <figcaption class="card-title">
+      <button class="expand-btn">
+         Clinical Rotations — BIOM 480: Clinical Experience for Bio-Innovation (2025)
+        <span class="arrow">▶</span>
+      </button>
+    </figcaption>
   </figure>
-
-  <p>
-    Through this program, I completed rotations at <strong>Poudre Valley Hospital (PVH)</strong>, <strong>Medical Center of the Rockies (MCR)</strong>, and the <strong>CSU Veterinary Teaching Hospital</strong> — exploring how devices, human factors, and workflow design influence patient safety and care.
-  </p>
-
-  <h4> Surgical & Procedure Observations</h4>
-  <ul>
-    <li>Orthopedic trauma, thoracic surgery, vascular, and robotic-assisted procedures</li>
-    <li>Observed surgeon–nurse–rep dynamics and device setup workflows</li>
-    <li>Studied error prevention strategies and sterile field design</li>
-  </ul>
-
-  <h4> Medical Device & Imaging Exposure</h4>
-  <ul>
-    <li>Interventional radiology, cardiovascular imaging, and catheter-based procedures</li>
-    <li>Learned the physics and human factors behind imaging interpretation</li>
-    <li>Studied trade-offs in device selection based on patient anatomy and risk</li>
-  </ul>
-
-  <h4> Veterinary Medicine Rotations</h4>
-  <ul>
-    <li>Orthopedic, emergency, and interventional procedures for small animals</li>
-    <li>Compared constraints in human vs. veterinary device needs</li>
-    <li>Explored opportunities for cross-species medical innovation</li>
-  </ul>
-  <p class="summary"><strong>Summary:</strong> These rotations deepened my understanding of how device usability, workflow design, and human factors shape real-world clinical impact. They reinforced my interest in creating medical technologies driven by safety, efficiency, and human-centered engineering.</p>
-    </div> <!-- closes accordion-content -->
-  </div> <!-- closes accordion -->
+  <div class="card-content">
+    <p>
+      Before this immersion course, I shadowed <strong>Dr. Eric Richter</strong> and <strong>Christin Hungerford</strong> (medical device representative), where I observed orthopedic trauma workflows and how surgeons collaborate with industry to improve patient outcomes. That experience sparked my interest in clinical innovation — leading me to pursue BIOM 480, a selective course that connects engineering students with medical environments to identify unmet clinical needs and opportunities for device development.
+    </p>
+    <p>
+      Through this program, I completed rotations at <strong>Poudre Valley Hospital (PVH)</strong>, <strong>Medical Center of the Rockies (MCR)</strong>, and the <strong>CSU Veterinary Teaching Hospital</strong> — exploring how devices, human factors, and workflow design influence patient safety and care.
+    </p>
+    <h4>Surgical & Procedure Observations</h4>
+    <ul>
+      <li>Orthopedic trauma, thoracic surgery, vascular, and robotic-assisted procedures</li>
+      <li>Observed surgeon–nurse–rep dynamics and device setup workflows</li>
+      <li>Studied error prevention strategies and sterile field design</li>
+    </ul>
+    <h4>Medical Device & Imaging Exposure</h4>
+    <ul>
+      <li>Interventional radiology, cardiovascular imaging, and catheter-based procedures</li>
+      <li>Learned the physics and human factors behind imaging interpretation</li>
+      <li>Studied trade-offs in device selection based on patient anatomy and risk</li>
+    </ul>
+    <h4>Veterinary Medicine Rotations</h4>
+    <ul>
+      <li>Orthopedic, emergency, and interventional procedures for small animals</li>
+      <li>Compared constraints in human vs. veterinary device needs</li>
+      <li>Explored opportunities for cross-species medical innovation</li>
+    </ul>
+    <p class="summary"><strong>Summary:</strong> These rotations deepened my understanding of how device usability, workflow design, and human factors shape real-world clinical impact. They reinforced my interest in creating medical technologies driven by safety, efficiency, and human-centered engineering.</p>
+  </div>
 </section>
 
-<!-- ======================= LOCKHEED MARTIN EIEC ======================= -->
-<section id="lockheed" class="experience-section">
-  <div class="accordion">
-    <button>
-      Lockheed Martin Ethics in Engineering Case Competition (2025)
-      <span class="arrow">▶</span>
-    </button>
-  <div class="accordion-content">
-    
-  <p class="experience-intro">
-    Representing Colorado State University with my teammate, D’Andre Rogers, I competed in the
-    Lockheed Martin Ethics in Engineering Case Competition. We analyzed a complex case about
-    <strong>HotShotAI</strong>—a fictional company integrating artificial intelligence into wildfire
-    response—and were challenged to balance safety, profit, and public trust while making
-    recommendations under real-time pressure.
-  </p>
+<!-- EMPIRICAL TECHNOLOGIES CORP. EXPERIENCE CARD -->
+<section id="empirical" class="experience-card">
 
-  <!-- Banner Image -->
-  <figure class="experience-banner">
-    <img src="/assets/images/lockheed.jpg" alt="Lockheed Martin Ethics Case Competition banquet">
-  </figure>
-
-  <h4>Case Focus: HotShotAI &amp; Wildfire Response</h4>
-  <ul class="experience-list">
-    <li>Evaluated how AI systems should prioritize limited resources during high-risk wildfire events.</li>
-    <li>Identified stakeholder tensions between government agencies, local communities, firefighters, and investors.</li>
-    <li>Developed recommendations that centered safety, transparency, and long-term credibility over short-term gain.</li>
-    <li>Presented our reasoning to judges in a role-play format that simulated a real executive meeting.</li>
-  </ul>
-
-  <h4>What I Practiced &amp; Learned</h4>
-  <ul class="experience-list">
-    <li>Communicating technical and ethical trade-offs clearly under time pressure and judge questioning.</li>
-    <li>Strategic planning—deciding which arguments to emphasize and how to divide speaking roles with my teammate.</li>
-    <li>Translating abstract ethical frameworks into concrete engineering and business decisions.</li>
-    <li>Reflecting on other teams’ strategies to strengthen CSU’s competitiveness in future years.</li>
-  </ul>
-
-  <h4>Professional Development &amp; Networking</h4>
-  <ul class="experience-list">
-    <li>Toured key sites in Washington, D.C., connecting policy, national security, and engineering ethics.</li>
-    <li>Joined a call with NASA astronaut Sunita “Suni” Williams, discussing reliability and ethical decision-making when lives are on the line.</li>
-    <li>Received resume feedback, recruiting tips, and career advice directly from Lockheed engineers and hiring managers.</li>
-    <li>Built a national network of engineering students and strengthened my professional confidence.</li>
-  </ul>
-
-  <p class="summary">
-    <strong>Summary:</strong> This competition stretched me to think critically under pressure, apply ethical frameworks to
-    real engineering decisions, and communicate clearly in a high-stakes environment. It revealed how integrity,
-    transparency, and engineering innovation are deeply connected in industry—and confirmed that I want to work on
-    technologies where safety and human impact matter as much as performance.
-  </p>
-  <p class="summary"><strong>Summary:</strong> These rotations deepened my understanding of how device usability, workflow design, and human factors shape real-world clinical impact. They reinforced my interest in creating medical technologies driven by safety, efficiency, and human-centered engineering.</p>
-    </div> <!-- closes accordion-content -->
-  </div> <!-- closes accordion -->
-</section>
-
-<!-- ================= EMPIRICAL TECHNOLOGIES CORP ================= -->
-<section id="empirical" class="experience-section">
-  <div class="accordion">
-    <button>
-      Engineering Capstone: Implant Testing &amp; Biomechanics at Empirical Technologies Corp. (2022)
-      <span class="arrow">▶</span>
-    </button>
-  <div class="accordion-content">
-
-  <p class="experience-intro">
-    For my senior Capstone, I spent fifty hours shadowing engineers at Empirical Technologies Corp., a contract
-    testing lab for orthopedic and other biomedical implants. I entered with three guiding questions: 
-    how biomedical engineers design testing methods, how products are improved based on test results, and what
-    academic paths lead to this kind of work. Over two weeks of lab observation and independent research, I saw
-    how mechanical testing, standards, and engineering judgment come together to support safer implants.
-  </p>
-
-  <!-- Banner Image -->
-  <figure class="experience-banner">
+  <figure class="card-image">
     <img src="/assets/images/engineering_lab.png" alt="Mechanical testing lab at Empirical Technologies Corp.">
+    <figcaption class="card-title">
+      <button class="expand-btn">
+        Engineering Capstone: Implant Testing & Biomechanics at Empirical Technologies Corp. (2022)
+        <span class="arrow">▶</span>
+      </button>
+    </figcaption>
   </figure>
-
-  <h4>Testing Orthopedic Implants</h4>
-  <ul class="experience-list">
-    <li>Observed how engineers design test setups to meet ASTM and ISO standards for joint and spinal implants.</li>
-    <li>Watched the full workflow for fatigue and static testing: building fixtures, aligning samples, setting software parameters, and documenting results.</li>
-    <li>Helped with test support tasks including taking photos, retrieving hardware, labeling samples, and organizing post-test components.</li>
-    <li>Learned how test data is returned to clients as design feedback, showing where and how an implant fails under load so designers can iterate.</li>
-  </ul>
-
-  <h4>Example Project: Spinal Implant Testing</h4>
-  <p>
-    One memorable project involved three spinal implant designs undergoing saline soak and then mechanical testing
-    to mimic conditions in the body. After different soak durations, each design was tested in both horizontal and
-    vertical configurations to determine failure loads. Once I understood the procedure, I was trusted to help set up
-    the fixtures, run the test software, record forces at failure, and organize broken implants into labeled bags.
-    This experience gave me a concrete picture of day-to-day engineering work in a regulated testing lab.
-  </p>
-
-  <h4>Engineering Paths &amp; Career Insight</h4>
-  <ul class="experience-list">
-    <li>Spoke with three engineers whose degrees spanned mechanical, electrical, and biomedical engineering.</li>
-    <li>Found it especially encouraging that one engineer held the same CSU biomedical–mechanical dual degree I am now pursuing.</li>
-    <li>Confirmed that it is possible to do meaningful medical device work close to home while staying connected to patients through technology.</li>
-  </ul>
-
-  <h4>Independent Research &amp; Reflection</h4>
-  <p>
-    Because part of my Capstone coincided with AP exams and then COVID, I spent additional time independently 
-    researching the history of knee implants and their testing. That background, together with my coursework in 
-    physics and calculus, helped me understand the terminology, forces, and design trade-offs I observed in the lab.
-    I was struck by how heavily the work relies on software, data analysis, and documentation in addition to physical
-    testing. Overall, the experience confirmed that I want a career where I can use engineering tools to meet human
-    needs, solve problems, and advance medical technology.
-  </p>
-
-  <p class="summary">
-  <strong>Summary:</strong> This Capstone showed me how biomechanics, standards, and data-driven testing protect
-  patients and inform better implant design. It strengthened my interest in biomedical and mechanical engineering
-  as a way to bridge the operating room and the test lab through careful experimentation and communication.
-  </p>
-    </div> <!-- closes accordion-content -->
-    </div> <!-- closes accordion -->
+  <div class="card-content">
+    <p class="experience-intro">
+      For my senior Capstone, I spent fifty hours shadowing engineers at Empirical Technologies Corp., a contract testing lab for orthopedic and other biomedical implants. I entered with three guiding questions: how biomedical engineers design testing methods, how test results lead to product improvements, and which education pathways lead to this kind of work.
+    </p>
+    <h4>Testing Orthopedic Implants</h4>
+    <ul class="experience-list">
+      <li>Observed how engineers design test setups to meet ASTM and ISO standards for spinal and joint implants.</li>
+      <li>Watched full workflows: building fixtures, software setup, test alignment, and documenting final results.</li>
+      <li>Assisted with operational tasks such as photographing samples, organizing post-test hardware, and labeling components.</li>
+      <li>Learned how failure modes provide design feedback that manufacturers use to improve product durability and safety.</li>
+    </ul>
+    <h4>Example Project: Spinal Implant Fatigue + Static Testing</h4>
+    <p>
+      A highlight of my experience was observing three spinal implant designs undergoing saline soak and mechanical testing to mimic how implants behave in the body. After timed soak periods, the implants were tested in horizontal and vertical orientations. Once I understood the protocol, I assisted with fixture setup, software control, recording failure loads, and organizing fractured components into labeled sample bags.
+    </p>
+    <h4>Engineering Paths & Career Insight</h4>
+    <ul class="experience-list">
+      <li>Interviewed engineers with backgrounds in biomedical, mechanical, and electrical engineering.</li>
+      <li>One engineer held the same CSU biomedical–mechanical dual degree I am now pursuing.</li>
+      <li>Saw how engineers contribute to patient care indirectly by ensuring implant reliability and regulatory compliance.</li>
+    </ul>
+    <h4>Independent Research & Reflection</h4>
+    <p>
+      Due to schedule conflicts with AP exams and then COVID-19, half of my Capstone involved independent research into the history of knee implants and biomechanics. My physics and calculus background helped me understand forces, stresses, and loading conditions that define implant performance. I realized how essential software, documentation, and data analysis are to regulated engineering work.
+    </p>
+    <p class="summary">
+      <strong>Summary:</strong> This experience showed how biomechanics, standards, and data-driven testing protect patients and guide safer implant design. It strengthened my interest in biomedical and mechanical engineering as a bridge between surgery and lab-based testing — where engineering decisions directly influence patient safety and long-term mobility.
+    </p>
+  </div> <!-- closes card-content -->
 </section>
 <script>
 document.addEventListener("DOMContentLoaded", () => {
-  document.querySelectorAll(".accordion button").forEach(btn => {
+  document.querySelectorAll(".expand-btn").forEach(btn => {
     btn.addEventListener("click", () => {
-      const content = btn.nextElementSibling;
+      const content = btn.closest("section").querySelector(".card-content");
       const arrow = btn.querySelector(".arrow");
       const isOpen = content.style.display === "block";
-
+      // Toggle content visibility
       content.style.display = isOpen ? "none" : "block";
+      // Rotate arrow
       arrow.style.transform = isOpen ? "rotate(0deg)" : "rotate(90deg)";
     });
   });
 });
 </script>
-
