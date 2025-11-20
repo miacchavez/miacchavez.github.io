@@ -394,13 +394,11 @@ html {
 /* ---------- FEATURED EXPERIENCE BANNER ---------- */
 .experience-featured img {
   width: 100%;
-  max-height: 270px;
-  object-fit: contain;
-  border-bottom: 4px solid var(--csu-green);
+  max-height: 400px;
+  object-fit: cover;
+  border-bottom: 6px solid var(--csu-gold);
   display: block;
-  margin: 0 auto 2rem;
-  padding: 0 1rem;
-  background: white;
+  margin: 0 0 2.5rem 0;
 }
 /* ----- ACCORDION WRAPPER ----- */
 .accordion {
