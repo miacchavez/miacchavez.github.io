@@ -400,47 +400,6 @@ html {
   display: block;
   margin: 0 0 2.5rem 0;
 }
-/* ----- ACCORDION WRAPPER ----- */
-.accordion {
-  border-bottom: 1px solid #ddd;
-  margin: 2rem 0;
-}
-
-/* ----- ACCORDION BUTTON ----- */
-.accordion button {
-  width: 100%;
-  text-align: left;
-  padding: 1rem 0.6rem;
-  background: none;
-  border: none;
-  cursor: pointer;
-  font-size: 1.15rem;
-  font-weight: 700;
-  color: var(--csu-green);
-  transition: color .3s ease;
-}
-
-.accordion button:hover {
-  color: var(--csu-gold);
-}
-
-.accordion button .arrow {
-  float: right;
-  transition: transform .3s ease;
-  font-weight: 400;
-  color: #777;
-}
-
-/* ----- CONTENT INSIDE ACCORDION ----- */
-.accordion-content {
-  display: none;
-  padding: 0.5rem 0 1.4rem;
-}
-/* ---------- EXPERIENCE CARD STYLE ---------- */
-.experience-card {
-  margin: 3rem auto;
-  max-width: 950px;
-}
 
 /* Featured Image */
 .card-image img {
@@ -488,6 +447,65 @@ html {
   from { opacity: 0; transform: translateY(-4px); }
   to { opacity: 1; transform: translateY(0); }
 }
+/* ---------- EXPERIENCE GRID LAYOUT ---------- */
+.experience-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* Each card */
+.experience-card {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding-bottom: 1rem;
+  background: #fff;
+  overflow: hidden;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.08);
+}
+
+/* Ensure banner always looks clickable */
+.experience-card .experience-banner img {
+  cursor: pointer;
+}
+
+/* Card title button */
+.experience-card .expand-btn {
+  width: 100%;
+  text-align: left;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 1rem 1rem 0.5rem;
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--csu-green);
+}
+
+.experience-card .expand-btn:hover {
+  color: var(--csu-gold);
+}
+
+.experience-card .arrow {
+  float: right;
+  transition: transform .3s ease;
+  color: #777;
+}
+
+/* Hide content until clicked */
+.experience-card .card-content {
+  display: none;
+  padding: 0 1rem 0.5rem 1rem;
+}
+
+/* ---------- Responsive (Mobile: 1 Column) ---------- */
+@media (max-width: 900px) {
+  .experience-grid {
+    grid-template-columns: 1fr;
+  }
+}
 </style>
 
 <!-- ===================================================================== -->
@@ -497,6 +515,8 @@ html {
 <section id="engineering-experience" class="experience-section">
   <h2>Engineering Experience</h2>
   <p class="tagline"><em>Learning from regulated industry, clinical environments, and real medical systems.</em></p>
+
+  <div class="experience-grid">
 
 <!-- STRYKER EXPERIENCE CARD -->
 <section id="stryker" class="experience-card">
