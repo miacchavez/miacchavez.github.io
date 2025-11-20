@@ -5,12 +5,68 @@ permalink: /skills/
 ---
 
 <link rel="stylesheet" href="/assets/css/style.css">
+<!-- ==================== TOP INTERDISCIPLINARY IMAGE ==================== -->
+<section class="skills-banner">
+  <img src="/assets/images/1.png" alt="Interdisciplinary Skills Diagram">
+</section>
+
+<!-- ==================== GOLD EXPANDABLE SKILL BUTTONS ==================== -->
+<section class="skills-expansion">
+  <div class="skills-buttons">
+    <!-- Honors & Business -->
+    <button class="skill-toggle">
+      Honors & Business <span class="arrow">▶</span>
+    </button>
+    <div class="skill-content">
+      <img src="/assets/images/8.png" alt="Honors and Business Skills">
+    </div>
+    <!-- Mechanical Engineering -->
+    <button class="skill-toggle">
+      Mechanical Engineering <span class="arrow">▶</span>
+    </button>
+    <div class="skill-content">
+      <img src="/assets/images/2.png" alt="Mechanical Engineering Skills">
+    </div>
+    <!-- Biomedical Engineering -->
+    <button class="skill-toggle">
+      Biomedical Engineering <span class="arrow">▶</span>
+    </button>
+    <div class="skill-content">
+      <img src="/assets/images/3.png" alt="Biomedical Engineering Skills">
+    </div>
+    <!-- Technical Leadership -->
+    <button class="skill-toggle">
+      Technical Leadership <span class="arrow">▶</span>
+    </button>
+    <div class="skill-content">
+      <img src="/assets/images/4.png" alt="Technical Leadership Skills">
+    </div>
+    <!-- Human-Centered Design -->
+    <button class="skill-toggle">
+      Human-Centered Design <span class="arrow">▶</span>
+    </button>
+    <div class="skill-content">
+      <img src="/assets/images/5.png" alt="Human-Centered Design Skills">
+    </div>
+    <!-- Health Innovation & Ethics -->
+    <button class="skill-toggle">
+      Health Innovation & Ethics <span class="arrow">▶</span>
+    </button>
+    <div class="skill-content">
+      <img src="/assets/images/6.png" alt="Health Innovation & Ethics Diagram">
+    </div>
+  </div>
+</section>
+
+<!-- ==================== BOTTOM LARGE IMAGE ==================== -->
+<section class="skills-banner">
+  <img src="/assets/images/7.png" alt="Future Engineering Vision Graphic">
+</section>
 
 <section class="skills-section">
-  <h1>Explore My Skills Below</h1>
+  <h1>Explore More Skills Below</h1>
 
   <div class="accordion">
-
     <!-- Engineering & Technical Skills -->
     <div class="accordion-item">
       <button class="accordion-header">Engineering & Technical Skills</button>
@@ -27,7 +83,6 @@ permalink: /skills/
         </ul>
       </div>
     </div>
-
     <!-- Research, Leadership & Communication -->
     <div class="accordion-item">
       <button class="accordion-header">Research, Leadership & Communication</button>
@@ -44,7 +99,6 @@ permalink: /skills/
         </ul>
       </div>
     </div>
-
     <!-- Innovation, Business & Design Thinking -->
     <div class="accordion-item">
       <button class="accordion-header">Innovation, Business & Design Thinking</button>
@@ -148,6 +202,73 @@ permalink: /skills/
   }
 }
 </style>
+<style>
+.skills-banner img {
+  width: 100%;
+  max-height: 420px;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto 2rem;
+  border-bottom: 6px solid var(--csu-gold);
+}
+
+/* ---------- GOLD EXPANDABLE BUTTONS ---------- */
+.skills-expansion {
+  text-align: center;
+  max-width: 950px;
+  margin: 0 auto 4rem;
+}
+
+.skills-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.skill-toggle {
+  background: var(--csu-gold);
+  color: black;
+  font-weight: 700;
+  border: none;
+  padding: 0.8rem 1.2rem;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: 0.3s;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.skill-toggle:hover {
+  background: #bfa65d;
+}
+
+.skill-toggle .arrow {
+  margin-left: 0.8rem;
+  transition: transform 0.3s ease;
+  color: #333;
+}
+
+.skill-content {
+  display: none;
+  margin-top: 0.5rem;
+  animation: fadein .35s ease-in-out;
+}
+
+.skill-content img {
+  width: 100%;
+  max-width: 950px;
+  border-radius: 12px;
+  border: 4px solid var(--csu-green);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+@keyframes fadein {
+  from { opacity: 0; transform: translateY(-4px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+</style>
 
 <script>
 document.querySelectorAll(".accordion-header").forEach(button => {
@@ -174,3 +295,15 @@ document.querySelectorAll(".accordion-header").forEach(button => {
   });
 });
 </script>
+<script>
+document.querySelectorAll(".skill-toggle").forEach(btn => {
+  btn.addEventListener("click", () => {
+    const content = btn.nextElementSibling;
+    const arrow = btn.querySelector(".arrow");
+    const isOpen = content.style.display === "block";
+    content.style.display = isOpen ? "none" : "block";
+    arrow.style.transform = isOpen ? "rotate(0deg)" : "rotate(90deg)";
+  });
+});
+</script>
+
