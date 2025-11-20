@@ -477,7 +477,7 @@ html {
 <section id="clinical-rotations" class="experience-section">
   <div class="accordion">
   <button>
-    🏥 Clinical Rotations — BIOM 480: Clinical Experience for Bio-Innovation (2025)
+    Clinical Rotations — BIOM 480: Clinical Experience for Bio-Innovation (2025)
     <span class="arrow">▶</span>
   </button>
   <div class="accordion-content">
