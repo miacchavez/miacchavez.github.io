@@ -314,7 +314,7 @@ html {
 
   <p class="pdf-link">
     <a href="/assets/docs/EIEC.pdf" target="_blank" rel="noopener noreferrer">
-      View full reflection &amp; case summary (PDF)
+      View Full Case Study Work
     </a>
   </p>
 </section>
