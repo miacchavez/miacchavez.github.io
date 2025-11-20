@@ -578,6 +578,55 @@ html {
   </div>
 </section>
 
+<!-- LOCKHEED MARTIN EXPERIENCE CARD -->
+<section id="lockheed" class="experience-card">
+
+  <figure class="card-image">
+    <img src="/assets/images/lockheed.jpg" alt="Lockheed Martin Ethics Case Competition banquet">
+    <figcaption class="card-title">
+      <button class="expand-btn">
+        Lockheed Martin Ethics in Engineering Case Competition (2025)
+        <span class="arrow">▶</span>
+      </button>
+    </figcaption>
+  </figure>
+  <div class="card-content">
+    <p class="experience-intro">
+      Representing Colorado State University with my teammate, D’Andre Rogers, I competed in the Lockheed Martin Ethics in Engineering Case Competition. We analyzed a complex case about <strong>HotShotAI</strong>—a fictional company integrating artificial intelligence into wildfire response—and were challenged to balance safety, profit, and public trust while making recommendations under real-time pressure.
+    </p>
+    <h4>Case Focus: HotShotAI & Wildfire Response</h4>
+    <ul class="experience-list">
+      <li>Evaluated how AI systems should prioritize limited resources during high-risk wildfire events.</li>
+      <li>Identified stakeholder tensions between government agencies, local communities, firefighters, and investors.</li>
+      <li>Developed recommendations prioritizing safety, transparency, and long-term credibility over short-term profit.</li>
+      <li>Presented final decisions to judges in a role-play format simulating a real executive meeting.</li>
+    </ul>
+    <h4>What I Practiced & Learned</h4>
+    <ul class="experience-list">
+      <li>Communicating technical and ethical trade-offs clearly under time pressure and judge questioning.</li>
+      <li>Strategic planning: identifying key arguments and dividing roles with a teammate.</li>
+      <li>Translating abstract ethical frameworks into real-world engineering business decisions.</li>
+      <li>Reflecting on competitor strategies to strengthen future CSU team performance.</li>
+    </ul>
+    <h4>Professional Development & Networking</h4>
+    <ul class="experience-list">
+      <li>Toured key sites in Washington, D.C., connecting policy, national security, and ethics.</li>
+      <li>Joined a live call with NASA astronaut Sunita “Suni” Williams discussing reliability in life-critical decision-making.</li>
+      <li>Received resume, recruiting, and career guidance from Lockheed engineers and hiring managers.</li>
+      <li>Built a national network of engineering students with shared interests in responsible innovation.</li>
+    </ul>
+    <p class="summary">
+      <strong>Summary:</strong> This competition challenged me to think critically under pressure, evaluate ethical trade-offs in engineering design, and communicate clearly in high-stakes conversations. It strengthened my commitment to working on technologies where safety and public trust matter as much as performance.
+    </p>
+    <p class="pdf-link">
+      <a href="/assets/docs/EIEC.pdf" target="_blank" rel="noopener noreferrer">
+        View Full Case Study Work
+      </a>
+    </p>
+  </div> <!-- closes card-content -->
+</section>
+
+
 <!-- EMPIRICAL TECHNOLOGIES CORP. EXPERIENCE CARD -->
 <section id="empirical" class="experience-card">
 
