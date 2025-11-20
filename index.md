@@ -164,6 +164,11 @@ permalink: /
 <section class="interdisciplinary-buttons">
   <h2 class="interdisciplinary-title">Interdisciplinary Focus Areas</h2>
 
+  <!-- 🌟 Visual Overview FIRST -->
+  <figure class="interdisciplinary-preview">
+    <img src="/assets/images/1.png" alt="Interdisciplinary Overview Diagram">
+  </figure>
+
   <div class="button-grid">
     <!-- Button 1 -->
     <button class="expand-btn gold-btn" data-target="img1">
