@@ -5,6 +5,10 @@ permalink: /experiences/
 ---
 
 <link rel="stylesheet" href="/assets/css/style.css">
+<!-- ---------- FEATURED EXPERIENCE BANNER ---------- -->
+<section class="experience-featured">
+  <img src="/assets/images/1.png" alt="Interdisciplinary engineering diagram">
+</section>
 
 <!-- ---------- EXPERIENCE HERO ---------- -->
 <section class="experience-hero">
