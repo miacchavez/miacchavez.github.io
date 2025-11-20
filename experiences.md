@@ -462,8 +462,11 @@ html {
   border-radius: 10px;
   padding-bottom: 1rem;
   background: #fff;
-  overflow: hidden;
   box-shadow: 0 3px 8px rgba(0,0,0,0.08);
+}
+.experience-card {
+  overflow: visible;
+  padding-bottom: 1.2rem;
 }
 
 /* Ensure banner always looks clickable */
