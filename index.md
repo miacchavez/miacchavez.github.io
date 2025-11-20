@@ -129,7 +129,6 @@ permalink: /
     <figure class="headshot">
       <img src="/assets/images/headshot.jpg" alt="Headshot of Mia Chavez">
     </figure>
-
     <figure class="cfc-image">
       <img src="/assets/images/cfc.png" alt="Mia Chavez presenting with Crossover for Change in Uganda">
      <figcaption>
@@ -138,7 +137,6 @@ permalink: /
          Crossover for Change 
        </a>.
      </figcaption>
-
     </figure>
   </div>
 
@@ -149,11 +147,9 @@ permalink: /
       I’m a <strong>Biomedical and Mechanical Engineering</strong> student at
       <strong>Colorado State University</strong>, graduating in 2027 with a Business Administration Minor and Entrepreneurship Certificate in the Scott Scholars and Honors Programs. My passion lies in combining technical engineering, design thinking, and social impact to create human-centered innovations.
     </p>
-
     <p>
       I value collaboration, curiosity, and creativity — qualities that shape my approach as a researcher, leader, and changemaker. Through hands-on experiences in labs, nonprofits, and leadership roles, I strive to design technology that empowers people and strengthens communities.
     </p>
-
     <div class="hero-buttons">
       <a href="/about/" class="gold">About Me</a>
       <a href="/experiences/">Experiences</a>
@@ -164,13 +160,47 @@ permalink: /
 </section>
 
 
-<!-- ---------- INTERDISCIPLINARY IMAGES SECTION ---------- -->
-<section class="interdisciplinary-images">
-  <div class="interdisciplinary-container">
-    <img src="/assets/images/1.png" alt="Interdisciplinary Venn Diagram showing integration of disciplines">
-    <img src="/assets/images/2.png" alt="Interdisciplinary skills and applications at CSU">
-    <img src="/assets/images/3.png" alt="Interdisciplinary problem-solving principles">
+<!-- ---------- INTERDISCIPLINARY BUTTON SECTION ---------- -->
+<section class="interdisciplinary-buttons">
+  <h2 class="interdisciplinary-title">Interdisciplinary Focus Areas</h2>
+
+  <div class="button-grid">
+    <!-- Button 1 -->
+    <button class="expand-btn gold-btn" data-target="img1">
+      Honors and Business <span class="arrow">▶</span>
+    </button>
+    <img id="img1" class="expand-image" src="/assets/images/8.png" alt="Honors and Business Diagram">
+    <!-- Button 2 -->
+    <button class="expand-btn gold-btn" data-target="img2">
+      Mechanical Engineering <span class="arrow">▶</span>
+    </button>
+    <img id="img2" class="expand-image" src="/assets/images/2.png" alt="Mechanical Engineering Diagram">
+    <!-- Button 3 -->
+    <button class="expand-btn gold-btn" data-target="img3">
+      Biomedical Engineering <span class="arrow">▶</span>
+    </button>
+    <img id="img3" class="expand-image" src="/assets/images/3.png" alt="Biomedical Engineering Diagram">
+    <!-- Button 4 -->
+    <button class="expand-btn gold-btn" data-target="img4">
+      Technical Leadership <span class="arrow">▶</span>
+    </button>
+    <img id="img4" class="expand-image" src="/assets/images/4.png" alt="Technical Leadership Diagram">
+    <!-- Button 5 -->
+    <button class="expand-btn gold-btn" data-target="img5">
+      Human-Centered Design <span class="arrow">▶</span>
+    </button>
+    <img id="img5" class="expand-image" src="/assets/images/5.png" alt="Human-Centered Design Diagram">
+    <!-- Button 6 -->
+    <button class="expand-btn gold-btn" data-target="img6">
+      Health Innovation & Ethics <span class="arrow">▶</span>
+    </button>
+    <img id="img6" class="expand-image" src="/assets/images/6.png" alt="Health Innovation & Ethics Diagram">
   </div>
+</section>
+
+<!-- ---------- FULL IMAGE UNDERNEATH ---------- -->
+<section class="full-width-image">
+  <img src="/assets/images/7.png" alt="Full interdisciplinary graphic">
 </section>
 
 <style>
@@ -252,7 +282,65 @@ permalink: /
   line-height: 1.3;
 }
 </style>
+<style>
+.interdisciplinary-title {
+  text-align: center;
+  color: var(--csu-green);
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  border-bottom: 3px solid var(--csu-gold);
+  display: inline-block;
+  padding-bottom: 0.4rem;
+}
 
+.button-grid {
+  max-width: 900px;
+  margin: 2rem auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.gold-btn {
+  background-color: var(--csu-gold);
+  color: black;
+  border: none;
+  padding: 0.8rem 1.2rem;
+  font-weight: 700;
+  cursor: pointer;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  text-align: left;
+  transition: 0.3s ease;
+}
+
+.gold-btn:hover {
+  background-color: #e0d39a;
+  transform: translateY(-2px);
+}
+
+.expand-image {
+  display: none;
+  width: 100%;
+  max-width: 950px;
+  margin: 0.5rem auto 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+.arrow {
+  float: right;
+  transition: transform .3s ease;
+  color: #333;
+}
+
+.full-width-image img {
+  width: 100%;
+  max-width: 950px;
+  margin: 3rem auto;
+  display: block;
+}
+</style>
 <section>
   <div class="gallery">
     <figure>
@@ -273,3 +361,15 @@ permalink: /
     </figure>
   </div>
 </section>
+<script>
+document.querySelectorAll(".expand-btn").forEach(btn => {
+  btn.addEventListener("click", () => {
+    const img = document.getElementById(btn.dataset.target);
+    const arrow = btn.querySelector(".arrow");
+    const isOpen = img.style.display === "block";
+
+    img.style.display = isOpen ? "none" : "block";
+    arrow.style.transform = isOpen ? "rotate(0deg)" : "rotate(90deg)";
+  });
+});
+</script>
