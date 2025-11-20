@@ -394,8 +394,8 @@ html {
 /* ---------- FEATURED EXPERIENCE BANNER ---------- */
 .experience-featured img {
   width: 100%;
-  max-height: 400px;
-  object-fit: cover;
+  height: auto;            /* keep full proportions */
+  object-fit: contain;     /* prevent cropping */
   border-bottom: 6px solid var(--csu-gold);
   display: block;
   margin: 0 0 2.5rem 0;
