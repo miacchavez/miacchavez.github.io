@@ -749,15 +749,14 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 </script>
 <style>
-/* ---------- FORCE CONSISTENT EXPERIENCE CARD IMAGE SIZING ---------- */
+/* ---------- EXPERIENCE CARD IMAGES: NATURAL SIZE ---------- */
 .card-image img {
   width: 100%;
-  aspect-ratio: 16 / 9;
-  object-fit: contain;
+  height: auto;              /* let image define height */
   display: block;
   border-radius: 12px;
   border: 4px solid var(--csu-green);
   box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  object-fit: unset;         /* remove forced fitting */
 }
-</style>
-
+<style>
