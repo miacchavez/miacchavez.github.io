@@ -731,29 +731,28 @@ html {
         </p>
       </div>
     </section>
-    <!-- TURTLE FEEDER / MECH 103 CARD -->
+<!-- TURTLE FEEDER / MECH 103 CARD -->
 <section id="turtle-feeder" class="experience-card">
   <figure class="card-image">
     <img src="/assets/images/TurtleFeeder.png" alt="Automatic Turtle Feeder prototype">
     <figcaption class="card-title">
       <button class="expand-btn">
-        Automatic Turtle Feeder (MECH 103 — Final Project)
+        Automatic Turtle Feeder
         <span class="arrow">▶</span>
       </button>
     </figcaption>
   </figure>
-
   <div class="card-content">
     <p>
       Designed and built an automatic turtle feeder to dispense food <strong>once per day for up to four days</strong>
       while the owner is away, using an Arduino-controlled servo and a rotating “ferris wheel” compartment design.
     </p>
     <ul>
-      <li><strong>Built a compartment wheel</strong> (4 sections) that rotates to drop one serving per day. :contentReference[oaicite:0]{index=0}</li>
-      <li><strong>Integrated Arduino + micro servo control</strong> using timed rotation (24-hour delay between feedings). :contentReference[oaicite:1]{index=1}</li>
-      <li><strong>Iterated the design</strong> from an initial conveyor concept to a more reliable rotating wheel mechanism. :contentReference[oaicite:2]{index=2}</li>
-      <li><strong>Troubleshot premature dispensing</strong> by adding a thin hot-glue lip to hold pellets until release. :contentReference[oaicite:3]{index=3}</li>
-      <li><strong>Validated performance</strong>: dispensed the correct amount of food for four consecutive days. :contentReference[oaicite:4]{index=4}</li>
+      <li><strong>Built a compartment wheel</strong> (4 sections) that rotates to drop one serving per day.</li>
+      <li><strong>Integrated Arduino + micro servo control</strong> using timed rotation (24-hour delay between feedings).</li>
+      <li><strong>Iterated the design</strong> from an initial conveyor concept to a more reliable rotating wheel mechanism.</li>
+      <li><strong>Troubleshot premature dispensing</strong> by adding a thin hot-glue lip to hold pellets until release.</li>
+      <li><strong>Validated performance</strong>: dispensed the correct amount of food for four consecutive days.</li>
     </ul>
     <p class="summary">
       <strong>Summary:</strong> Strengthened my mechanical design + prototyping skills while integrating basic embedded control to solve a real user need.
