@@ -864,7 +864,6 @@ document.addEventListener("DOMContentLoaded", () => {
 </section>
 <!-- CSU SPUR UNDERGRADUATE RESEARCH CARD -->
 <section id="spur-research" class="experience-card">
-
   <figure class="card-image">
     <img src="/assets/images/spur.png" alt="CSU Spur campus and interdisciplinary research environment">
     <figcaption class="card-title">
@@ -874,7 +873,6 @@ document.addEventListener("DOMContentLoaded", () => {
       </button>
     </figcaption>
   </figure>
-
   <div class="card-content">
     <p>
       As a Scott Undergraduate Researcher, I conducted an independent impact study on the
@@ -905,6 +903,64 @@ document.addEventListener("DOMContentLoaded", () => {
       <strong>Summary:</strong> This research strengthened my ability to evaluate complex systems,
       translate data into actionable recommendations, and communicate impact across technical,
       institutional, and community audiences.
+    </p>
+  </div>
+</section>
+<!-- BIOM 480 WIRELESS ECG PROJECT CARD -->
+<section id="biom-480" class="experience-card">
+
+  <figure class="card-image">
+    <img src="/assets/images/biom.png" alt="Wireless ECG monitoring concept from BIOM 480">
+    <figcaption class="card-title">
+      <button class="expand-btn">
+        Wireless ECG Monitoring System — BIOM 480 Clinical Innovation Proposal
+        <span class="arrow">▶</span>
+      </button>
+    </figcaption>
+  </figure>
+  <div class="card-content">
+    <p>
+      Developed a clinical innovation proposal addressing a critical patient-safety and workflow issue:
+      <strong>unreliable wireless ECG monitoring due to lead detachment, signal dropouts, and excessive bedside wiring</strong>.
+      The project was grounded in direct hospital and veterinary clinical observations across ICU, telemetry,
+      perioperative, and recovery environments.
+    </p>
+    <h4>Clinical Need & Problem Identification</h4>
+    <ul>
+      <li>Observed frequent ECG signal loss, motion artifact, and alarm fatigue in human and veterinary settings.</li>
+      <li>Identified long bedside wires and poor lead adhesion as major contributors to monitoring failure.</li>
+      <li>Recognized added challenges in veterinary care including chewing, scratching, and fur-related adhesion issues.</li>
+    </ul>
+    <h4>Proposed Solution Concept</h4>
+    <ul>
+      <li>Designed a <strong>wearable onboard ECG processing unit</strong> integrated into a chest-mounted patch.</li>
+      <li>Shortened RA/LA/LL lead lengths to reduce snagging, motion artifact, and disconnections.</li>
+      <li>Processed ECG signals locally and transmitted cleaned data wirelessly to existing monitoring systems.</li>
+      <li>Incorporated improved adhesive strategies inspired by continuous glucose monitor designs.</li>
+    </ul>
+    <h4>Feasibility & Engineering Considerations</h4>
+    <ul>
+      <li>Outlined use of standard ECG electrodes, low-noise analog front ends, microcontrollers, and wireless modules.</li>
+      <li>Evaluated strain relief, housing durability, infection control, and reusable vs. disposable components.</li>
+      <li>Assessed regulatory pathway considerations (Class II, 510(k)) and interoperability constraints.</li>
+      <li>Compared human and veterinary deployment needs, including bite-resistant housing strategies.</li>
+    </ul>
+    <h4>Impact & Value Proposition</h4>
+    <ul>
+      <li>Improves signal reliability and reduces missed arrhythmias and false alarms.</li>
+      <li>Reduces clinician workload by minimizing lead repositioning and troubleshooting.</li>
+      <li>Enhances patient comfort and mobility by eliminating excess bedside wiring.</li>
+      <li>Creates downstream cost savings through reduced equipment damage and alarm fatigue.</li>
+    </ul>
+    <p class="summary">
+      <strong>Summary:</strong> This project strengthened my ability to translate clinical observations into
+      engineering requirements, evaluate feasibility in regulated environments, and design human-centered
+      medical technology solutions that balance safety, usability, and workflow efficiency.
+    </p>
+    <p class="pdf-link">
+      <a href="/assets/docs/BIOM_480_FinalProposalReport.pdf" target="_blank" rel="noopener noreferrer">
+        View Full BIOM 480 Proposal (PDF)
+      </a>
     </p>
   </div>
 </section>
