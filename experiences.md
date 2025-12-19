@@ -779,6 +779,57 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 </script>
+<!-- MRI-SAFE PROTECTIVE CASE PROJECT CARD -->
+<section id="mri-case" class="experience-card">
+
+  <figure class="card-image">
+    <img src="/assets/images/philips.png" alt="Protective case concept for Philips Expression MR Wireless SpO₂ Module">
+    <figcaption class="card-title">
+      <button class="expand-btn">
+        MRI-Safe Protective Case Design — Philips Expression MR SpO₂ Module
+        <span class="arrow">▶</span>
+      </button>
+    </figcaption>
+  </figure>
+
+  <div class="card-content">
+    <p>
+      Designed a medical-grade, MRI-safe protective enclosure for the
+      <strong>Philips Expression MR Wireless SpO₂ Module</strong>, a critical yet fragile device
+      used during MRI procedures. The project was informed by direct clinical observation,
+      technician interviews, and workflow analysis in radiology suites.
+    </p>
+    <ul>
+      <li>
+        <strong>Identified a real clinical pain point:</strong> modules costing $3,000+ are frequently
+        damaged during transport and cleaning, causing workflow delays and costly downtime.
+      </li>
+      <li>
+        <strong>Developed a standards-aware design</strong> using non-ferromagnetic,
+        biocompatible polymers (PEEK + Lexan) compatible with MRI environments.
+      </li>
+      <li>
+        <strong>Engineered for usability:</strong> maintained full access to ports, LEDs, and the
+        battery compartment while improving drop resistance and chemical durability.
+      </li>
+      <li>
+        <strong>Integrated regulatory thinking</strong> by aligning material and geometry choices
+        with ASTM MR-safety standards and ISO biocompatibility considerations.
+      </li>
+    </ul>
+    <p class="summary">
+      <strong>Summary:</strong> This project combined clinical insight, materials engineering,
+      workflow analysis, and business awareness to propose a cost-effective solution that
+      protects hospital assets while improving reliability and patient care in MRI environments.
+    </p>
+    <p class="pdf-link">
+      <a href="/assets/docs/Proposal_ProtectiveCaseDesignforthePhilipsExpressionMR WirelessSpO₂Module.pdf"
+         target="_blank" rel="noopener noreferrer">
+        View Full Design Proposal (PDF)
+      </a>
+    </p>
+  </div>
+</section>
 <style>
 /* ---------- EXPERIENCE CARD IMAGES: NATURAL SIZE ---------- */
 .card-image img {
