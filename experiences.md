@@ -965,6 +965,21 @@ document.addEventListener("DOMContentLoaded", () => {
     </p>
   </div>
 </section>
+  </div> <!-- closes experience-grid -->
+</section> <!-- closes engineering-projects-research -->
+<!-- ===================================================================== -->
+<!-- ===================== BUSINESS & NONPROFIT WORK ===================== -->
+<!-- ===================================================================== -->
+
+<section id="business-nonprofit" class="experience-section">
+  <h2>Business & Nonprofit Work</h2>
+  <p class="tagline">
+    <em>Building organizations, managing operations, and creating impact beyond the classroom.</em>
+  </p>
+
+  <div class="experience-grid">
+    <!-- Cards will go here -->
+
 <style>
 /* ---------- EXPERIENCE CARD IMAGES: NATURAL SIZE ---------- */
 .card-image img {
