@@ -23,7 +23,6 @@ permalink: /experiences/
       <a href="#clinical-rotations">Clinical Rotations at UCHealth</a>
       <a href="#lockheed">Lockheed Martin Ethics in Engineering Case Competition</a>
       <a href="#empirical">Engineering Capstone: Empirical Technologies Corp.</a>
-      <a href="#biom-480">Wireless ECG Monitoring System</a>
     </div>
   </div>
 
@@ -36,6 +35,7 @@ permalink: /experiences/
       <a href="#mri-case">MRI-Safe Protective Case Proposal</a>
       <a href="#extremity-normothermia">Extremity Normothermia Support Proposal</a>
       <a href="#spur-research">Scott Undergraduate Research – CSU Spur</a>
+      <a href="#biom-480">Wireless ECG Monitoring System</a>
     </div>
   </div>
 
@@ -1039,7 +1039,50 @@ document.addEventListener("DOMContentLoaded", () => {
 
   </div>
 </section>
+<!-- Pro Sports MVP EXPERIENCE CARD -->
+<section id="pro-sports-mvp" class="experience-card">
 
+  <figure class="card-image">
+    <img src="/assets/images/mvp.png" alt="Pro Sports MVP live event operations and logistics">
+    <figcaption class="card-title">
+      <button class="expand-btn">
+        Pro Sports MVP — Project Management Intern
+        <span class="arrow">▶</span>
+      </button>
+    </figcaption>
+  </figure>
+  <div class="card-content">
+    <p class="experience-intro">
+      I worked as a <strong>Project Management Intern</strong> with Pro Sports MVP, supporting the planning and execution
+      of large-scale live entertainment events including professional eating competitions, MMA events, concerts,
+      and military-base activations. This role placed me in fast-paced, high-visibility environments where logistics,
+      timing, and communication were critical to success.
+    </p>
+    <h4>Event Operations & Logistics</h4>
+    <ul class="experience-list">
+      <li>Coordinated event logistics for <strong>large-scale productions</strong> at military bases and public venues.</li>
+      <li>Managed on-site operations including schedules, equipment setup, talent needs, and volunteer coordination.</li>
+      <li>Supported real-time problem-solving during live events to ensure smooth execution under tight timelines.</li>
+    </ul>
+    <h4>Project Management & Coordination</h4>
+    <ul class="experience-list">
+      <li>Assisted with event timelines, task delegation, and execution plans across multi-day productions.</li>
+      <li>Worked directly with performers, clients, vendors, and internal staff to align expectations and deliverables.</li>
+      <li>Helped manage contingency planning for weather, travel delays, and last-minute operational changes.</li>
+    </ul>
+    <h4>Communication & Business Support</h4>
+    <ul class="experience-list">
+      <li>Conducted outreach, research, and phone communication to support talent acquisition and client engagement.</li>
+      <li>Designed digital assets and promotional materials used for event marketing and client presentations.</li>
+      <li>Developed professional communication skills through client-facing coordination and stakeholder interaction.</li>
+    </ul>
+    <p class="summary">
+      <strong>Summary:</strong> This role strengthened my ability to manage complex logistics, communicate clearly
+      under pressure, and contribute to high-stakes operations where execution, teamwork, and adaptability are essential.
+      It laid a strong foundation for operational leadership in fast-moving environments.
+    </p>
+  </div>
+</section>
 
 <style>
 /* ---------- EXPERIENCE CARD IMAGES: NATURAL SIZE ---------- */
