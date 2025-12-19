@@ -753,7 +753,7 @@ document.addEventListener("DOMContentLoaded", () => {
 .card-image img {
   width: 100%;
   aspect-ratio: 16 / 9;
-  object-fit: cover;
+  object-fit: contain;
   display: block;
   border-radius: 12px;
   border: 4px solid var(--csu-green);
