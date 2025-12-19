@@ -830,6 +830,38 @@ document.addEventListener("DOMContentLoaded", () => {
     </p>
   </div>
 </section>
+<!-- EXTREMITY NORMOTHERMIA SUPPORT PROPOSAL CARD -->
+<section id="extremity-normothermia" class="experience-card">
+  <figure class="card-image">
+    <img src="/assets/images/support.png" alt="Extremity Normothermia Support proposal visual">
+    <figcaption class="card-title">
+      <button class="expand-btn">
+        Extremity Normothermia Support Proposal
+        <span class="arrow">▶</span>
+      </button>
+    </figcaption>
+  </figure>
+
+  <div class="card-content">
+    <p>
+      Proposed a clinical solution to support extremity normothermia (hands/feet) in surgical and ICU settings, with a focus on
+      reducing heat loss while maintaining visibility, access, and workflow compatibility for clinicians.
+    </p>
+    <ul>
+      <li><strong>Problem focus:</strong> Prevent heat loss in extremities without blocking IV access, monitoring, or patient assessment.</li>
+      <li><strong>Design priorities:</strong> Safe, regulated warming; clinically realistic materials/cleaning; minimal workflow disruption.</li>
+      <li><strong>Human factors:</strong> Designed around line access, quick checks (color/perfusion), and ease of use for staff.</li>
+    </ul>
+    <p class="summary">
+      <strong>Summary:</strong> Strengthened my ability to translate a clinical need into clear design requirements and a proposal-ready concept.
+    </p>
+    <p class="pdf-link">
+      <a href="/assets/docs/Proposal_ExtremityNormothermiaSupport.pdf" target="_blank" rel="noopener noreferrer">
+        View Full Proposal (PDF)
+      </a>
+    </p>
+  </div>
+</section>
 <style>
 /* ---------- EXPERIENCE CARD IMAGES: NATURAL SIZE ---------- */
 .card-image img {
