@@ -978,7 +978,68 @@ document.addEventListener("DOMContentLoaded", () => {
   </p>
 
   <div class="experience-grid">
-    <!-- Cards will go here -->
+ <!-- Crossover for Change EXPERIENCE CARD -->
+<section id="cfc-cofounder" class="experience-card">
+
+  <figure class="card-image">
+    <img src="/assets/images/cfc2.png" alt="Crossover for Change Uganda education and basketball initiatives">
+    <figcaption class="card-title">
+      <button class="expand-btn">
+        Crossover for Change — Co-Founder & Board Chair
+        <span class="arrow">▶</span>
+      </button>
+    </figcaption>
+  </figure>
+  <div class="card-content">
+    <p class="experience-intro">
+      I co-founded <strong>Crossover for Change</strong>, a registered 501(c)(3) nonprofit focused on expanding access to
+      education and athletics for young women in underserved communities, with a primary emphasis on Uganda.
+      What began as a basketball initiative has grown into a multi-year, international organization supporting
+      scholarships, school partnerships, leadership development, and infrastructure projects.
+    </p>
+    <h4>Technical, Writing & Communication Skills</h4>
+    <ul class="experience-list">
+      <li><strong>Technical document writing:</strong> Authored formal proposals, operational manuals, impact reports, and donor-facing documentation.</li>
+      <li><strong>Newsletter development:</strong> Wrote and designed recurring newsletters translating program data and outcomes into clear, engaging updates.</li>
+      <li><strong>Sponsorship & pitch materials:</strong> Built structured sponsorship decks and fundraising narratives aligned with stakeholder priorities.</li>
+    </ul>
+    <h4>Operations, Leadership & Coordination</h4>
+    <ul class="experience-list">
+      <li>Planned and executed <strong>international programs in Uganda</strong>, coordinating travel, schedules, schools, and on-site logistics.</li>
+      <li>Interviewed and onboarded <strong>new board members</strong>, supporting governance, continuity, and long-term growth.</li>
+      <li>Managed timelines, budgets, deliverables, and cross-continental communication with partners and educators.</li>
+    </ul>
+    <h4>Global Impact & Program Outcomes</h4>
+    <ul class="experience-list">
+      <li>Supported thousands of students through basketball camps, court builds, and education-centered programming.</li>
+      <li>Launched a <strong>scholarship program</strong> funding secondary education for girls facing financial barriers.</li>
+      <li>Contributed to technology access initiatives supporting learning and communication.</li>
+    </ul>
+    <p class="summary">
+      <strong>Summary:</strong> Leading Crossover for Change has been my most formative professional experience.
+      I developed skills in technical writing, systems-level planning, stakeholder communication, and international
+      coordination — translating mission-driven ideas into structured, measurable impact.
+    </p>
+    <!-- Document Links -->
+    <div class="pdf-link">
+      <a href="/assets/docs/ImpactReportCFC2025.pdf" target="_blank" rel="noopener noreferrer">
+        View 2025 Impact Report
+      </a>
+    </div>
+    <div class="pdf-link">
+      <a href="/assets/docs/CFCxUgandaManual2025.pdf" target="_blank" rel="noopener noreferrer">
+        View Uganda Program & Operations Manual
+      </a>
+    </div>
+    <div class="pdf-link">
+      <a href="/assets/docs/September2022Newsletter.pdf" target="_blank" rel="noopener noreferrer">
+        View Newsletter (September 2022)
+      </a>
+    </div>
+
+  </div>
+</section>
+
 
 <style>
 /* ---------- EXPERIENCE CARD IMAGES: NATURAL SIZE ---------- */
