@@ -23,6 +23,7 @@ permalink: /experiences/
       <a href="#clinical-rotations">Clinical Rotations at UCHealth</a>
       <a href="#lockheed">Lockheed Martin Ethics in Engineering Case Competition</a>
       <a href="#empirical">Engineering Capstone: Empirical Technologies Corp.</a>
+      <a href="#biom-480">Wireless ECG Monitoring System</a>
     </div>
   </div>
 
