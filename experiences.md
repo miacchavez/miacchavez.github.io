@@ -687,6 +687,8 @@ html {
     </p>
   </div> <!-- closes card-content -->
 </section>
+</div> <!-- closes experience-grid for Engineering Experience -->
+</section> <!-- closes #engineering-experience section -->
 <!-- ===================================================================== -->
 <!-- ================== ENGINEERING PROJECTS & RESEARCH ================== -->
 <!-- ===================================================================== -->
@@ -746,3 +748,16 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 </script>
+<style>
+/* ---------- FORCE CONSISTENT EXPERIENCE CARD IMAGE SIZING ---------- */
+.card-image img {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  display: block;
+  border-radius: 12px;
+  border: 4px solid var(--csu-green);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+</style>
+
