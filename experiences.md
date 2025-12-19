@@ -1083,7 +1083,52 @@ document.addEventListener("DOMContentLoaded", () => {
     </p>
   </div>
 </section>
+<!-- NOCO SPORTS CENTER EXPERIENCE CARD -->
+<section id="noco-supervisor" class="experience-card">
 
+  <figure class="card-image">
+    <img src="/assets/images/noco.png" alt="NoCo Sports Center facility operations and events">
+    <figcaption class="card-title">
+      <button class="expand-btn">
+        NoCo Sports Center — Supervisor
+        <span class="arrow">▶</span>
+      </button>
+    </figcaption>
+  </figure>
+
+  <div class="card-content">
+    <p class="experience-intro">
+      As a <strong>Supervisor at NoCo Sports Center</strong>, I oversee day-to-day operations for a high-volume,
+      multi-court athletic facility hosting leagues, practices, clinics, tournaments, and camps. This role requires
+      real-time decision-making, workflow optimization, and coordination across staff, coaches, referees, and customers
+      to keep complex systems running smoothly.
+    </p>
+    <h4>Facility Operations & Workflow Management</h4>
+    <ul class="experience-list">
+      <li>Managed daily operations across multiple courts, balancing schedules for practices, leagues, clinics, and tournaments.</li>
+      <li>Adjusted staffing plans in real time to respond to attendance changes, delays, or unexpected issues.</li>
+      <li>Streamlined event flow to reduce downtime between games and improve overall customer experience.</li>
+    </ul>
+    <h4>Staff Leadership & Coordination</h4>
+    <ul class="experience-list">
+      <li>Supervised and trained front-desk staff, scorekeepers, and event personnel on procedures and safety protocols.</li>
+      <li>Assigned roles and responsibilities during high-traffic events to ensure efficient coverage.</li>
+      <li>Served as the primary escalation point for operational issues, resolving conflicts quickly and professionally.</li>
+    </ul>
+    <h4>Scheduling, Logistics & Customer Communication</h4>
+    <ul class="experience-list">
+      <li>Coordinated schedules and logistics for referees, coaches, teams, and external partners.</li>
+      <li>Maintained accurate rosters, bookings, and event details using facility management software.</li>
+      <li>Handled customer communication and issue resolution, ensuring clarity, fairness, and positive outcomes.</li>
+    </ul>
+    <p class="summary">
+      <strong>Summary:</strong> This role strengthened my operational leadership, process optimization, and
+      people-management skills in a fast-paced environment. It directly reflects how effective systems,
+      clear communication, and adaptability drive reliable outcomes — principles that translate strongly
+      to operations and supply chain roles.
+    </p>
+  </div>
+</section>
 <style>
 /* ---------- EXPERIENCE CARD IMAGES: NATURAL SIZE ---------- */
 .card-image img {
