@@ -862,6 +862,52 @@ document.addEventListener("DOMContentLoaded", () => {
     </p>
   </div>
 </section>
+<!-- CSU SPUR UNDERGRADUATE RESEARCH CARD -->
+<section id="spur-research" class="experience-card">
+
+  <figure class="card-image">
+    <img src="/assets/images/spur.png" alt="CSU Spur campus and interdisciplinary research environment">
+    <figcaption class="card-title">
+      <button class="expand-btn">
+        Scott Undergraduate Researcher — CSU Spur Impact Study
+        <span class="arrow">▶</span>
+      </button>
+    </figcaption>
+  </figure>
+
+  <div class="card-content">
+    <p>
+      As a Scott Undergraduate Researcher, I conducted an independent impact study on the
+      <strong>CSU Spur campus</strong>, focusing on how its programs support sustainability,
+      community engagement, and interdisciplinary collaboration. The project evaluated how
+      engineering, agriculture, business, and education initiatives intersect to address
+      real-world challenges in an urban setting.
+    </p>
+    <ul>
+      <li>
+        <strong>Analyzed CSU Spur initiatives</strong> across sustainability, workforce development,
+        and community-facing education programs.
+      </li>
+      <li>
+        <strong>Synthesized qualitative and quantitative data</strong> from public reports,
+        program materials, and institutional metrics to evaluate impact.
+      </li>
+      <li>
+        <strong>Produced a formal research report</strong> outlining strengths, gaps, and
+        recommendations to improve long-term engagement and interdisciplinary outcomes.
+      </li>
+      <li>
+        <strong>Developed policy- and strategy-oriented insights</strong> connecting engineering
+        innovation to social and community needs.
+      </li>
+    </ul>
+    <p class="summary">
+      <strong>Summary:</strong> This research strengthened my ability to evaluate complex systems,
+      translate data into actionable recommendations, and communicate impact across technical,
+      institutional, and community audiences.
+    </p>
+  </div>
+</section>
 <style>
 /* ---------- EXPERIENCE CARD IMAGES: NATURAL SIZE ---------- */
 .card-image img {
