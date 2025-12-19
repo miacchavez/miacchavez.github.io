@@ -687,6 +687,50 @@ html {
     </p>
   </div> <!-- closes card-content -->
 </section>
+<!-- ===================================================================== -->
+<!-- ================== ENGINEERING PROJECTS & RESEARCH ================== -->
+<!-- ===================================================================== -->
+
+<section id="engineering-projects-research" class="experience-section">
+  <h2>Engineering Projects & Research</h2>
+  <p class="tagline"><em>Hands-on builds, testing, and design work that strengthened my process + data mindset.</em></p>
+
+  <div class="experience-grid">
+    <!-- LED BATTERY TESTER / MECH 207 CARD -->
+    <section id="led-battery-tester" class="experience-card">
+      <figure class="card-image">
+        <img src="/assets/images/LEDBatterTester.png" alt="LED Bar Graph Voltage Meter prototype">
+        <figcaption class="card-title">
+          <button class="expand-btn">
+            LED Bar Graph Voltage Meter (MECH 207 — Lab 3)
+            <span class="arrow">▶</span>
+          </button>
+        </figcaption>
+      </figure>
+      <div class="card-content">
+        <p>
+          Built a low-cost battery tester that converts a 9V battery’s voltage into a clear 5-step LED “charge level” indicator
+          using Zener-diode thresholds and current-limited LED stages. The project emphasized voltage threshold design,
+          verification testing, and iterative troubleshooting to improve reliability and accuracy.
+        </p>
+        <ul>
+          <li><strong>Designed & built</strong> a 5-stage LED bar-graph meter using Zener diodes as voltage thresholds and resistors for safe current limiting.</li>
+          <li><strong>Verified performance</strong> by testing single-stage thresholds, then validating full-chain sequential LED activation with increasing input voltage.</li>
+          <li><strong>Troubleshot & improved accuracy</strong> by recalculating trigger points, updating Zener/resistor values, and refining thresholds for more consistent behavior.</li>
+          <li><strong>Packaged the prototype</strong> with a custom 3D-printed enclosure for safer handling and a cleaner battery connection interface.</li>
+        </ul>
+        <p class="summary">
+          <strong>Summary:</strong> Strengthened my circuit design, testing/verification, troubleshooting, and documentation skills through an end-to-end build.
+        </p>
+        <p class="pdf-link">
+          <a href="/assets/docs/Project207.pdf" target="_blank" rel="noopener noreferrer">
+            View Full Report (PDF)
+          </a>
+        </p>
+      </div>
+    </section>
+  </div>
+</section>
 <script>
 document.addEventListener("DOMContentLoaded", () => {
   document.querySelectorAll(".expand-btn").forEach(btn => {
